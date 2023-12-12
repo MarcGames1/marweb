@@ -1,0 +1,5 @@
+Integrare aplicatie nextjs cu Cpannel (
+    
+)
+
+1. Redirect 308 de la /cpannel, la https://89.42.218.12:2083
