@@ -1,10 +1,9 @@
 'use client';
 import React from 'react';
-import styles from './logo.module.css';
 import { motion } from 'framer-motion';
 import useIsScrolled from '@/hooks/isScrooled';
 
-function Logo({ width = 150, height = 50, ...props }) {
+function LogoComponent({ width = 150, height = 50 }) {
 
  
 const isSmall = useIsScrolled()
@@ -25,12 +24,6 @@ const isSmall = useIsScrolled()
     small:{scale: 0.9},
   }
 
-  const moveR = {
-    initial: { x: 0 },
-    left: {
-      x: 230,
-    },
-  };
 
   return (
     <motion.svg
@@ -255,4 +248,4 @@ const isSmall = useIsScrolled()
   );
 }
 
-export default Logo;
+export default LogoComponent;
