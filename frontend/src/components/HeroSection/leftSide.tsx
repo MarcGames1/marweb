@@ -1,4 +1,5 @@
 import React from 'react'
+import Buttons from '../Buttons';
 
 const LeftSide = () => {
   return (
@@ -20,10 +21,8 @@ const LeftSide = () => {
           Programeaza-te la o sedinta de consultanta gratuita!
         </span>
         <div className="flex justify-around  ">
-          <button className="btn btn-accent">Programeaza-te!</button>
-          <button className="btn btn-outline btn-accent">
-            Programeaza-te!
-          </button>
+         <Buttons.Calendly />
+         <Buttons.Whatsapp />
         </div>
       </div>
       </div>
