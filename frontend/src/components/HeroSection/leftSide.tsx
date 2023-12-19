@@ -2,8 +2,8 @@ import React from 'react'
 
 const LeftSide = () => {
   return (
-    <div className="container self-center  m-auto p-5">
-      <div className="prose p-5 text-white flex flex-col justify-center items-start ">
+    <>
+      <div className=" p-5 text-white flex flex-col justify-center items-start ">
         <h1 className="text-center prose-3xl text-primary-content">
           AGENTIE MARKETING ONLINE
         </h1>
@@ -27,7 +27,7 @@ const LeftSide = () => {
         </div>
       </div>
       </div>
-    </div>
+    </>
   );
 }
 

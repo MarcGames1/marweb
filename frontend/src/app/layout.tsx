@@ -1,13 +1,11 @@
-import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-
+import { metadata as md} from '@/date/homepage'
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: 'MarWeb',
-  description: 'Agentie Marketing ONline',
-}
+
+ 
+export const metadata = md
 
 export default function RootLayout({
   children,

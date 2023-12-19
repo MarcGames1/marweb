@@ -2,9 +2,9 @@ import { ReactNode } from 'react'
 import Image from 'next/image';
 const bg = ({children}:{children:ReactNode}) => {
   return (
-    <div className=" relative   overflow-hidden  object-cover ">
+    <div className=" relative   object-cover ">
       <Image
-        className="-z-10 overflow-hidden"
+        className="-z-10   overflow-hidden"
         src={'/bg.gif'}
         alt="bg-image"
         width={1920}
