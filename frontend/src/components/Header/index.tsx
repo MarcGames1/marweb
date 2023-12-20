@@ -1,11 +1,11 @@
 import React from 'react';
-import Logo from './HeaderComponents/Logo';
-import { Menu } from './HeaderComponents/Menu';
 import MobileMenu from './MobileMenu';
-
+import DesktopMenu from './DesktopMenu';
+import useIsMobile from '@/hooks/useIsMobile';
 const Header = () => {
   return (
 <>
+<DesktopMenu />
 <MobileMenu />
 </>
   );
