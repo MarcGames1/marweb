@@ -7,7 +7,7 @@ const Whatsapp = () => {
       role="button"
       href={'https://wa.me/+40750472447'}
       title="Scrie-mi un mesaj pe Whatsapp"
-      className="btn btn-outline btn-accent"
+      className="btn btn-outline btn-success "
     >
       <FaWhatsapp />
       Whatsapp
