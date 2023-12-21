@@ -15,7 +15,7 @@ const DesktopMenu = () => {
     <header className=" hidden sticky inset-0 z-10 bg-transparent lg:flex backdrop-blur-lg shadow-2xl items-center justify-center	 px-2 ">
       <Logo />
       <nav className="flex  flex-nowrap justify-evenly   navbar  ">
-        <ul className="menu menu-horizontal   px-1">
+        <ul className=" bg-transparent menu-horizontal gap-4   px-1">
           {MenuData.map((menu, idx) => {
             return (
               <li key={idx}>
