@@ -12,10 +12,10 @@ const DesktopMenu = () => {
     
     if(isMobile){return}
   return (
-    <header className=" hidden sticky inset-0 z-10 bg-transparent lg:flex backdrop-blur-lg shadow-2xl 	 justify-between px-2 items-center">
+    <header className=" hidden sticky inset-0 z-10 bg-transparent lg:flex backdrop-blur-lg shadow-2xl items-center justify-center	 px-2 ">
       <Logo />
-      <nav className="flex justify-between  navbar w-full ">
-        <ul className="menu menu-horizontal  px-1">
+      <nav className="flex  flex-nowrap justify-evenly   navbar  ">
+        <ul className="menu menu-horizontal   px-1">
           {MenuData.map((menu, idx) => {
             return (
               <li key={idx}>
@@ -24,7 +24,7 @@ const DesktopMenu = () => {
             ); 
           })}
         </ul>
-      <div className='flex gap-4 justify-self-end'>
+      <div className='flex gap-4 items-center justify-self-end'>
       <Buttons.Whatsapp />
       <Buttons.Calendly />
       </div>

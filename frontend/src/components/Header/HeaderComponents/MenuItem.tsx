@@ -9,7 +9,7 @@ const MenuItem = ({ menu }: { menu: { text: string; href: string } }) => {
 
   return (
     <Link
-      className={`text-white hover:bg-base-100 hover:text-secondary ${
+      className={`text-white hover:bg-base-100 hover:text-secondary active decoration-accent decoration-4 underline-offset-4  ${
         isActive ? 'underline' : ''
       }`}
       href={menu.href}
