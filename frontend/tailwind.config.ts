@@ -29,13 +29,13 @@ module.exports = {
     themes: [
       {
         marwebTheme: {
-          primary: '#143D73',
+          primary: '#0b1a2f',
 
-          secondary: '#123159',
+          secondary: '#FF4000',
 
-          accent: '#88E8F2',
+          accent: '#0075C4',
 
-          neutral: '#102540',
+          neutral: '#6E7271',
 
           'base-100': '#ffffff',
 

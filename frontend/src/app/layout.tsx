@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html data-theme="marwebTheme" lang="ro">
-      <body className={` -z-20 bg-primary-gradient ${inter.className}`}>{children}</body>
+      <body className={` -z-20 bg-primary-gradient relative ${inter.className}`}>{children}</body>
     </html>
   );
 }

@@ -35,7 +35,7 @@ export const Menu = () => {
       onClick={() => {
         toggleOpen();
       }}
-      className=" cursor-pointer"
+      className="cursor-pointer"
       initial={false}
       animate={isOpen ? 'opened' : 'closed'}
     >
