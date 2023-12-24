@@ -1,7 +1,6 @@
 'use client'
 import React from 'react';
-import Buttons from '../Buttons';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 
 const HeroContent = () => {
   return (

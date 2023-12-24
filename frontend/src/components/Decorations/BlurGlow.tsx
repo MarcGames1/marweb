@@ -1,5 +1,4 @@
 'use client'
-import useMousePosition from '@/hooks/useMousePosition';
 import {motion} from 'framer-motion'
 
 /**
@@ -28,13 +27,25 @@ const BlurGlow = ({
   color = 'bg-[#13DAC0]',
 }: IBlurGlow): JSX.Element => {
 
-    const {x, y} = useMousePosition()
+  
   return (
     <motion.div
-        style={{}}
-      className={`absolute w-[${w}] h-[${h}] ${position} ${color} blur-3xl drop-shadow-xl`}
+     
+      animate={{  scale: [1, 0.8, 1, .6, 1, .7] }}
+      transition={{
+        type: 'tween',
+        duration: 10,
+        repeatType: 'mirror',
+        repeat: Infinity,
+      }}
+      style={{
+        height: h,
+        width: w,
+      }}
+      className={`absolute  ${position} ${color} blur-3xl  drop-shadow-xl`}
     />
   );
+       
 };
 
 export default BlurGlow;

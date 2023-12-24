@@ -1,6 +1,6 @@
 import HeroVideo from "./heroVideo";
 import Loader from "./Loader";
-import HeroSection from "./HeroSection";
+import HeroSectionBG from "./HeroSection";
 import Buttons from "./Buttons";
 
 
@@ -17,6 +17,6 @@ import Buttons from "./Buttons";
 export {
     HeroVideo,
     Loader,
-    HeroSection,
+    HeroSectionBG as HeroSection,
     Buttons
  }
