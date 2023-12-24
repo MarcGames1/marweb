@@ -1,35 +1,16 @@
-import React, { PropsWithChildren } from 'react';
+import React from 'react'
+import FirstPart from './FirstPart/FirstPart'
+import SecondPart from './SecondPart/SecondPart'
+import ThirdPart from './ThirdPart'
 
-import Image from 'next/image';
-import { BlurGlow } from '../Decorations';
-import HeroContent from './HeroContent';
-
-const HeroSectionBG = ({children}:PropsWithChildren) => {
+const HeroSection = () => {
   return (
-    <div className="flex w-full z-0 relative  ">
-      <div className="absolute inset-0 overflow-clip  -z-10">
-        <Image
-          src={'/assets/decorations/semicerc-1289-674.svg'}
-          width={300}
-          height={100}
-          alt="bg-decorations"
-        />
-        <BlurGlow  position="left-20 top-1/3" />
-        <BlurGlow position="right-0" />
-        
-      </div>
-      {children}
-    </div>
-  );
-};
-
-
-
-const HeroSection = () =>{
-  return <HeroSectionBG>
-    <HeroContent />
-  </HeroSectionBG>
+    <>
+    <FirstPart />
+    <SecondPart />
+    <ThirdPart />
+    </>
+  )
 }
 
-
-export default HeroSection;
+export default HeroSection

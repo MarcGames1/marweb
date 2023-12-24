@@ -1,5 +1,5 @@
 'use client'
-import {motion} from 'framer-motion'
+import {Variants, motion} from 'framer-motion'
 
 /**
  * Interfața pentru proprietățile componenteii BlurGlow.
@@ -9,6 +9,8 @@ export interface IBlurGlow {
   w?: string; // Lățimea elementului (opțional)
   h?: string; // Înălțimea elementului (opțional)
   color?: string; // Culoarea de fundal a elementului (opțional)
+  variants?: Variants // Proprietăți pentru animații în Framer Motion
+  duration ?: number; 
 }
 
 /**
@@ -25,16 +27,21 @@ const BlurGlow = ({
   w = '300px',
   h = '200px',
   color = 'bg-[#13DAC0]',
+  variants = {
+    initial: { scale: 1 },
+    animate: { scale: [1, 0.8, 1, 0.6, 1, 0.7] },
+  },
+  duration = 10
 }: IBlurGlow): JSX.Element => {
-
-  
+ 
   return (
     <motion.div
-     
-      animate={{  scale: [1, 0.8, 1, .6, 1, .7] }}
+      animate="animate"
+      initial="initial"
+      variants={variants}
       transition={{
         type: 'tween',
-        duration: 10,
+        duration,
         repeatType: 'mirror',
         repeat: Infinity,
       }}
@@ -45,7 +52,6 @@ const BlurGlow = ({
       className={`absolute  ${position} ${color} blur-3xl  drop-shadow-xl`}
     />
   );
-       
 };
 
 export default BlurGlow;
