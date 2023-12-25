@@ -7,7 +7,7 @@ import HeroContent from '../HeroContent';
 const HeroSectionBG = ({ children }: PropsWithChildren) => {
   return (
     <div className="flex w-full z-0 relative  ">
-      <div className="absolute inset-0 overflow-clip  -z-10">
+      <div className="absolute inset-0 overflow-y-clip  -z-10">
         <Image
           src={'/assets/decorations/semicerc-1289-674.svg'}
           width={300}
