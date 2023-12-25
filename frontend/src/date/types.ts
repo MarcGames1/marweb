@@ -15,10 +15,18 @@ export interface SectionWithCards extends GeneralSectionData {
 export interface SectionWithCardsAndPic extends GeneralSectionData {
   content: CardDataWithPicture[];
 }
+export interface SectionWithCardsLinkAndPic extends SectionWithCardsAndPic {
+  content: CardDataWithPictureAndLink[];
+}
 
+
+export interface CardDataWithPictureAndLink extends CardDataWithPicture {
+  href: string;
+}
 export interface CardData {
   heading: string | ReactNode;
   description: string | ReactNode;
+  
 }
 
 export interface CardDataWithPicture extends CardData {
