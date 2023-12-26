@@ -5,7 +5,7 @@ const RootTemplate = ({children}:{children:React.ReactNode}) => {
   return (
     <>
       <Header />
-      <main className="flex min-h-screen flex-col items-center">
+      <main>
         {children}
       </main>
       <footer>Footer</footer>

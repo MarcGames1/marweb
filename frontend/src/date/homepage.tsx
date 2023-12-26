@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { HeroSectionData, SectionWithCardsAndPic } from './types';
+import { HeroSectionData, SectionWithCardsAndPic, SectionWithCardsLinkAndPic } from './types';
 import { SEOInfo } from '@/app/classes/SeoInfo';
 
 
@@ -30,9 +30,21 @@ const S1: HeroSectionData = {
   decoration: '',
 };
 
-const S2:SectionWithCardsAndPic = {
+const S2: SectionWithCardsLinkAndPic = {
   heading: <>Uite cum te putem ajuta să-ți atingi obiectivele:</>,
   content: [
+    {
+      heading: 'CREARE SITE WEB',
+      description:
+        'Asigurăm servicii complete de creare site-uri web performante, ușor de administrat, complet funcționale, pregătite să vândă și să te poziționeze drept autoritate în piață. Integrăm misiunea și viziunea afacerii tale într-un design responsive cu ajutorul celor mai noi tehnologii.',
+      image: {
+        width: 300,
+        height: 300,
+        alt: 'Poza Reprezentativa Creare site-uri web',
+        src: '/assets/services/webdevelopment.png',
+      },
+      href: '/servicii/creare-website',
+    },
     {
       heading: 'Optimizare SEO',
       description:
@@ -40,9 +52,10 @@ const S2:SectionWithCardsAndPic = {
       image: {
         width: 300,
         height: 300,
-        alt: '',
-        src: '',
+        alt: 'Poza Reprezentativa Servicii SEO',
+        src: '/assets/services/seo.png',
       },
+      href: '/servicii/seo',
     },
     {
       heading: 'GOOGLE ADS',
@@ -51,31 +64,21 @@ const S2:SectionWithCardsAndPic = {
       image: {
         width: 300,
         height: 300,
-        alt: '',
-        src: '',
+        alt: 'Poza Reprezentativa servicii Google ADs',
+        src: '/assets/services/GoogleAds.png',
       },
+      href: '/servicii/google-ads',
     },
     {
-      heading: 'STRATEGIE DE CONȚINUT',
-      description:
-        'Realizăm articole de blog optimizate Seo pentru a atrage către site-ul tău trafic relevant ce crește rata de conversie și poziționarea brandului tău în piață. Colaborăm cu creatori de conținut pasionați care au experiență notabilă în domeniu și au capacitatea de a traduce în cuvinte esența business-ului tău.',
+      heading: 'Mentorat',
+      description: 'Mentorat SEO sau WebDevelopment',
       image: {
         width: 300,
         height: 300,
-        alt: '',
-        src: '',
+        alt: 'poza reprezentativa servicii mentorat',
+        src: '/assets/services/mentorat.png',
       },
-    },
-    {
-      heading: 'CREARE SITE WEB',
-      description:
-        'Asigurăm servicii complete de creare site-uri web performante, ușor de administrat, complet funcționale, pregătite să vândă și să te poziționeze drept autoritate în piață. Integrăm misiunea și viziunea afacerii tale într-un design responsive cu ajutorul celor mai noi tehnologii.',
-      image: {
-        width: 300,
-        height: 300,
-        alt: '',
-        src: '',
-      },
+      href: '/servicii/mentorat',
     },
   ],
 };
@@ -88,10 +91,10 @@ const S3: SectionWithCardsAndPic = {
       description:
         'Programezi o ședință 1 la 1 – complet gratuită, în care îți vom solicita câteva informații relevante pentru a reuși să identificăm nevoile tale de business.',
       image: {
-        width: 300,
-        height: 300,
-        alt: '',
-        src: '',
+        width: 100,
+        height: 100,
+        alt: 'Poza Reprezentativa',
+        src: '/assets/colaborare/1.png',
       },
     },
     {
@@ -99,10 +102,10 @@ const S3: SectionWithCardsAndPic = {
       description:
         'Stabilim obiective strategice și măsurabile pe termen scurt, mediu și lung. Identificăm cuvintele cheie pe care putem crește și acțiunile necesare atât din partea noastră cât și a ta.',
       image: {
-        width: 300,
-        height: 300,
-        alt: '',
-        src: '',
+        width: 100,
+        height: 100,
+        alt: 'Poza Reprezentativa',
+        src: '/assets/colaborare/2.png',
       },
     },
     {
@@ -112,8 +115,8 @@ const S3: SectionWithCardsAndPic = {
       image: {
         width: 300,
         height: 300,
-        alt: '',
-        src: '',
+        alt: 'Poza Reprezentativa',
+        src: '/assets/colaborare/3.png',
       },
     },
     {
@@ -123,8 +126,8 @@ const S3: SectionWithCardsAndPic = {
       image: {
         width: 300,
         height: 300,
-        alt: '',
-        src: '',
+        alt: 'Poza Reprezentativa',
+        src: '/assets/colaborare/4.png',
       },
     },
   ],

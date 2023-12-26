@@ -41,7 +41,7 @@ const MobileMenuContent = ({isOpen}:props) => {
         {MenuData.map((m, i) => {
           return (
             <motion.li
-              className="text-xl my-5   z-10 relative  hover:btn-secondary btn btn-accent transition-colors ease-in-out duration-100 border-primary  rounded-2xl text-center flex items-center gap-10 hover:text-white"
+              className="text-xl my-5   z-0 relative  hover:btn-secondary btn btn-accent transition-colors ease-in-out duration-100 border-primary  rounded-2xl text-center flex items-center gap-10 hover:text-white"
               //@ts-ignore
               variants={variants}
               key={i}

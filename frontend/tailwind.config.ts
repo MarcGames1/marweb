@@ -4,6 +4,7 @@ module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/date/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     'node_modules/daisyui/dist/**/*.js',
     'node_modules/react-daisyui/dist/**/*.js',
@@ -29,13 +30,13 @@ module.exports = {
     themes: [
       {
         marwebTheme: {
-          primary: '#143D73',
+          primary: '#0b1a2f',
 
-          secondary: '#123159',
+          secondary: '#FF4000',
 
-          accent: '#88E8F2',
+          accent: '#0075C4',
 
-          neutral: '#102540',
+          neutral: '#6E7271',
 
           'base-100': '#ffffff',
 

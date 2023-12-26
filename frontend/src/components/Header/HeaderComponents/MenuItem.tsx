@@ -2,8 +2,9 @@
 import Link from 'next/link';
 import React from 'react';
 import useIsCurrentURL from '@/hooks/useCurrentUrl';
+import { IMenuData } from '@/date/menuData';
 
-const MenuItem = ({ menu }: { menu: { text: string; href: string } }) => {
+const MenuItem = ({ menu }: { menu: IMenuData }) => {
   const isActive = useIsCurrentURL(menu.href);
 
 
