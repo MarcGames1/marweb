@@ -3,7 +3,7 @@ import Loader from "./Loader";
 import HeroSectionBG from "./HeroSection";
 import Buttons from "./Buttons";
 import { ServiciiSection } from "./Servicii";
-
+import ColaborareSection from "./ColaborareSection";
 
 
 
@@ -18,5 +18,6 @@ export {
     Loader,
     HeroSectionBG as HeroSection,
     Buttons,
-    ServiciiSection
+    ServiciiSection,
+    ColaborareSection
  }

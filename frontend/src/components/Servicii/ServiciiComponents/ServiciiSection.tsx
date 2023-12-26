@@ -2,7 +2,6 @@ import React from 'react';
 import ServiciiCard from './ServiciiCard';
 import HomepageData from '@/date/homepage';
 import { typography } from '@/date/styles';
-const servicii = [1, 2, 3, 4]
 
 const ServiciiSection = () => {
   return (
