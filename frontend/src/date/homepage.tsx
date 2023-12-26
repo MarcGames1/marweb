@@ -93,7 +93,7 @@ const S3: SectionWithCardsAndPic = {
       image: {
         width: 100,
         height: 100,
-        alt: '',
+        alt: 'Poza Reprezentativa',
         src: '/assets/colaborare/1.png',
       },
     },
@@ -104,7 +104,7 @@ const S3: SectionWithCardsAndPic = {
       image: {
         width: 100,
         height: 100,
-        alt: '',
+        alt: 'Poza Reprezentativa',
         src: '/assets/colaborare/2.png',
       },
     },
@@ -115,7 +115,7 @@ const S3: SectionWithCardsAndPic = {
       image: {
         width: 300,
         height: 300,
-        alt: '',
+        alt: 'Poza Reprezentativa',
         src: '/assets/colaborare/3.png',
       },
     },
@@ -126,8 +126,8 @@ const S3: SectionWithCardsAndPic = {
       image: {
         width: 300,
         height: 300,
-        alt: '',
-        src: '/assets/colaborare/3.png',
+        alt: 'Poza Reprezentativa',
+        src: '/assets/colaborare/4.png',
       },
     },
   ],

@@ -3,6 +3,7 @@ import {
   HeroSection,
   HeroVideo,
   ServiciiSection,
+  DeCeNoi
 } from '@/components';
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroSection />
       <ServiciiSection />
       <ColaborareSection />
+      <DeCeNoi /> 
     </>
   );
 }
