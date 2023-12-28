@@ -26,7 +26,6 @@ module.exports = {
   plugins: [
     require('daisyui'),
     require('@tailwindcss/typography'),
-    require('@xpd/tailwind-3dtransforms'), // css 3D transforms
   ],
 
   daisyui: {

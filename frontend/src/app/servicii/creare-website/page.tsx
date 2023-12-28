@@ -1,8 +1,9 @@
+import { CatFace } from '@/components'
 import React from 'react'
 
 const CreareWebsitePage = () => {
   return (
-    <div>Creare Website</div>
+    <div className=''><CatFace /></div>
   )
 }
 

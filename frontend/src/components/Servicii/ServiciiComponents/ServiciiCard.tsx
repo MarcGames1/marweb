@@ -37,7 +37,7 @@ const getVariantStyles = (variant?:string) =>{
     case 'leftSidePicture':
       return {
         containerStyle: 'flex flex-col items-center lg:flex-row',
-        imageStyle: 'w-full lg:w-auto',
+        imageStyle: 'w-full h-full lg:w-auto',
       };
     case 'default':
     default:
