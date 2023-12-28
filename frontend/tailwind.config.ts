@@ -24,7 +24,11 @@ module.exports = {
   },
 
   // add daisyUI plugin
-  plugins: [require('daisyui'), require('@tailwindcss/typography')],
+  plugins: [
+    require('daisyui'),
+    require('@tailwindcss/typography'),
+    require('@xpd/tailwind-3dtransforms'), // css 3D transforms
+  ],
 
   daisyui: {
     themes: [

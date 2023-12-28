@@ -8,7 +8,7 @@ const Content = ({ text = '', withButtons=false }) => {
       <div className={` ${typography.h2}`}>{text}</div>
       {withButtons && (
         <>
-          <p className={`z-0 ${typography.h2}`}>Programeaza-te la o sedinta de consultanta gratuita!</p>
+          <p className={` z-10 ${typography.h2}`}>Programeaza-te la o sedinta de consultanta gratuita!</p>
         <div className="flex items-center  justify-items-center gap-5 mb-5">
           <Buttons.Calendly />
           <Buttons.Whatsapp />
