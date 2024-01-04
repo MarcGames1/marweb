@@ -16,8 +16,11 @@ const DeCeNoi = () => {
   return (
     <section>
       <h2 className={`${typography.h2} py-20`}>{S4.heading}</h2>
-      <div className="flex">
+      <div className="grid grid-flow-col">
         <DeCeNoiPhone content={S4.content} />
+        <div className=" items-center  ">
+          
+        </div>
       </div>
     </section>
   );

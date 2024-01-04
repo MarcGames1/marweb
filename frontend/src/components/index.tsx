@@ -7,7 +7,7 @@ import ColaborareSection from "./ColaborareSection";
 import DeCeNoi from "./DeCeNoiSection";
 import ChatBuble from "./ChatBuble";
 import PhoneMockup from "./PhoneMockup";
-import CatFace from "./CatFace/Catsvg";
+
 
 
 
@@ -23,5 +23,5 @@ export {
     DeCeNoi,
     ChatBuble,
     PhoneMockup,
-    CatFace
+    
  }

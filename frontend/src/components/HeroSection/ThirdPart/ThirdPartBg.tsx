@@ -16,7 +16,7 @@ const ThirdPartBg = ({ children }: ThirdPartBg) => {
   };
 
   return (
-    <div className="relative pt-9  min-h-screen  h-screen  ">
+    <div className="relative pt-9 mix-blend-difference  min-h-screen  h-screen  ">
       <Image
         className="absolute"
         src={'/assets/decorations/piramida-778-575.svg'}
