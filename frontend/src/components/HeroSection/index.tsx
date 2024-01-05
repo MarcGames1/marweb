@@ -5,12 +5,12 @@ import ThirdPart from './ThirdPart'
 
 const HeroSection = () => {
   return (
-    <>
-    <FirstPart />
-    <SecondPart />
-    <ThirdPart />
-    </>
-  )
+    <section className=" overflow-x-clip">
+      <FirstPart />
+      <SecondPart />
+      <ThirdPart />
+    </section>
+  );
 }
 
 export default HeroSection

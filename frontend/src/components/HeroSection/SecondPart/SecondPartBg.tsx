@@ -13,36 +13,45 @@ const SecondPartBg = ({ children }: SecondPartBg) => {
     offset: ['start end', 'end start'],
   });
 
-  const y = useTransform(scrollYProgress, [0, 0.5, 0.9], [0, 0, 500]);
-  const rotateZ = useTransform(
-    scrollYProgress,
-    [0, 0.25, 0.35, 0.75, 1],
-    [0, 30, 0, 0, -30]
-  );
-  const scaleLaptop = useTransform(
-    scrollYProgress,
-    [0, 0.25, 0.35, 0.75, 1],
-    [10, 1, 1.2, 1, 0.5]
-  );
- const translateXLaptop = useTransform(
-   scrollYProgress,
-   [0, 0.25, 0.35, 0.75, 1],
-   [0, -500 , 0 ,0 ,0 ]
- );
-  const textScale = useTransform(scrollYProgress, [0, 0.7, 1], [1, 1, 5]);
-  const textY = useTransform(
+ 
+
+
+
+ const laptopStyles = {
+  //  x: useTransform(
+  //    scrollYProgress,
+  //    [0, 0.25, 0.35, 0.75, 1],
+  //    [0, -500, 0, 0, 0]
+  //  ),
+   rotateZ: useTransform(
+     scrollYProgress,
+     [0, 0.25, 0.35, 0.75, 1],
+     [0, 30, 0, 0, -30]
+   ),
+   scale: useTransform(
+     scrollYProgress,
+     [0,0.1, 0.25, 0.35, 0.75, 1],
+     [0, 1.2, 1, 1.2, 1, 0.5]
+   ),
+ };
+
+  const childrenStyles = {
+    scale: useTransform(scrollYProgress, [0, 0.7, 1], [1, 1, 5]),
+    y:useTransform(
     scrollYProgress,
     [0, 0.25, 0.35, 0.75, 1],
     [0, -300, -100, 0, 0]
-  );
-  const textOpacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1, 0])
+  ),
+    opacity: useTransform(scrollYProgress, [0, 0.5,0.8 , 1], [1, 1,0, 0]),
+  };
+
   return (
     <motion.div
       ref={targetRef}
-      className="relative  pt-9 flex lg:flex-row flex-col items-center  min-h-screen    overflow-x-clip "
+      className="relative  pt-9 flex lg:flex-row flex-col items-center  min-h-screen "
     >
       <motion.div
-        style={{ rotateZ, x: translateXLaptop, scale: scaleLaptop }}
+        style={laptopStyles }
         className="m-10 lg:w-full"
       >
         <Image
@@ -54,7 +63,7 @@ const SecondPartBg = ({ children }: SecondPartBg) => {
       </motion.div>
 
       <motion.div
-        style={{ scale: textScale, y:textY ,  opacity: textOpacity }}
+        style={childrenStyles}
         className="relative w-full h-full mix-blend-plus-lighter"
       >
         {children}

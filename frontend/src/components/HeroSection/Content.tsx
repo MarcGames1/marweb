@@ -11,7 +11,7 @@ const Content = ({ text = '', withButtons=false }) => {
           <p className={` z-10 ${typography.h2}`}>
             Programeaza-te la o sedinta de consultanta gratuita!
           </p>
-          <div className=" z-10 flex items-center  justify-items-center gap-5 mb-5">
+          <div className=" z-10 flex items-center py-10  justify-items-center gap-10 animate-pulse mb-5">
             <Buttons.Calendly />
             <Buttons.Whatsapp />
           </div>
