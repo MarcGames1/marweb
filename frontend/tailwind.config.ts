@@ -23,10 +23,7 @@ module.exports = {
   },
 
   // add daisyUI plugin
-  plugins: [
-    require('daisyui'),
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [require('daisyui'), require('@tailwindcss/typography')],
 
   daisyui: {
     themes: [
@@ -34,7 +31,7 @@ module.exports = {
         marwebTheme: {
           primary: '#0b1a2f',
 
-          secondary: '#FF4000',
+          secondary: '#018FA6',
 
           accent: '#0075C4',
 
