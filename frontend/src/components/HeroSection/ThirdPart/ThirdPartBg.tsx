@@ -1,7 +1,6 @@
 import React, { ReactNode } from 'react';
 import Image from 'next/image';
 import { BlurGlow } from '@/components/Decorations';
-import AnimatedDecoration from '../SecondPart/AnimatedDecoration';
 interface ThirdPartBg {
   children: ReactNode;
 }
@@ -27,7 +26,7 @@ const ThirdPartBg = ({ children }: ThirdPartBg) => {
       <BlurGlow variants={variants} duration={5} position="" />
 
       <div className="relative w-full h-full">{children}</div>
-      <AnimatedDecoration />
+      {/* <AnimatedDecoration /> */}
     </div>
   );
 };

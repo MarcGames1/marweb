@@ -4,7 +4,7 @@ import { Buttons } from '..';
 
 const Content = ({ text = '', withButtons=false }) => {
   return (
-    <div className="flex items-center flex-col justify-center justify-items-center p-5  place-items-center w-full h-full ">
+    <div className="flex items-center flex-col justify-center justify-items-center p-5  place-items-center  h-full ">
       <div className={` ${typography.h2}`}>{text}</div>
       {withButtons && (
         <>

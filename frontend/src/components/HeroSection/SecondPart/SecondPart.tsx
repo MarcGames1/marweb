@@ -1,6 +1,6 @@
-import React from 'react'
-import SecondPartBg from './SecondPartBg'
-import Content from '../Content'
+import React from 'react';
+import SecondPartBg from './SecondPartBg';
+import Content from '../Content';
 
 const SecondPart = () => {
   return (
@@ -11,6 +11,6 @@ const SecondPart = () => {
       />
     </SecondPartBg>
   );
-}
+};
 
-export default SecondPart
+export default SecondPart;
