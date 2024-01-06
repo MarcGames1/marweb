@@ -1,8 +1,9 @@
+
 import React from 'react'
 
 const CreareWebsitePage = () => {
   return (
-    <div>Creare Website</div>
+    <div className=''></div>
   )
 }
 

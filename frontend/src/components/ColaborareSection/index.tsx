@@ -15,7 +15,7 @@ const ColaborareSection = () => {
               key={i}
               className={`w-7/12 lg:w-4/12`}
             >
-              <ServiciiCard href={undefined} {...s} />
+              <ServiciiCard variant={'default'} href={undefined} {...s} />
             </div>
           );
         })}

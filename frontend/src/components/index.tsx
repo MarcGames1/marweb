@@ -22,5 +22,6 @@ export {
     ColaborareSection,
     DeCeNoi,
     ChatBuble,
-    PhoneMockup
+    PhoneMockup,
+    
  }

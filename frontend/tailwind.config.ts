@@ -15,8 +15,7 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'primary-gradient':
-          'linear-gradient(to top, oklch(var(--p)), oklch(var(--n)))',
+        'primary-gradient': 'linear-gradient(to top, oklch(var(--p)) ,black)',
         'secondary-gradient':
           'linear-gradient(to top,  theme("colors.red.100"), theme("colors.white"))',
       },
@@ -32,7 +31,7 @@ module.exports = {
         marwebTheme: {
           primary: '#0b1a2f',
 
-          secondary: '#FF4000',
+          secondary: '#018FA6',
 
           accent: '#0075C4',
 

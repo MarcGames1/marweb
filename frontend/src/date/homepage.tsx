@@ -71,7 +71,7 @@ const S2: SectionWithCardsLinkAndPic = {
     },
     {
       heading: 'Mentorat',
-      description: 'Mentorat SEO sau WebDevelopment',
+      description: 'Descoperă mentoratul personalizat în SEO și web development! Îți ofer soluții practice pentru creșterea afacerii tale online. Conectează-te acum pentru ghidare expertă!',
       image: {
         width: 300,
         height: 300,

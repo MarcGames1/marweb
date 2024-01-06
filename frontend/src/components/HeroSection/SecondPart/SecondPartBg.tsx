@@ -1,37 +1,76 @@
-import React, { ReactNode } from 'react'
-import Image from 'next/image'
-import { BlurGlow } from '@/components/Decorations';
-import AnimatedDecoration from './AnimatedDecoration';
+'use client';
+import React, { ReactNode, useRef } from 'react';
+import Image from 'next/image';
+import { useScroll, useTransform, motion } from 'framer-motion';
 interface SecondPartBg {
-    children: ReactNode
+  children: ReactNode;
 }
 
-const SecondPartBg = ({children}:SecondPartBg) => {
-    const variants = {  
-    initial: { scale: 0 },
-    animate: { 
-      scale: [.8, 1, .9, 1],
-      y:[0, 10 , 0, -15],
-     } 
-}
+const SecondPartBg = ({ children }: SecondPartBg) => {
+  const targetRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ['start end', 'end start'],
+  });
 
+ 
+
+
+
+ const laptopStyles = {
+  //  x: useTransform(
+  //    scrollYProgress,
+  //    [0, 0.25, 0.35, 0.75, 1],
+  //    [0, -500, 0, 0, 0]
+  //  ),
+   rotateZ: useTransform(
+     scrollYProgress,
+     [0, 0.25, 0.35, 0.75, 1],
+     [0, 30, 0, 0, -30]
+   ),
+   scale: useTransform(
+     scrollYProgress,
+     [0,0.1, 0.25, 0.35, 0.75, 1],
+     [0, 1.2, 1, 1.2, 1, 0.5]
+   ),
+ };
+
+  const childrenStyles = {
+    scale: useTransform(scrollYProgress, [0, 0.7, 1], [1, 1, 5]),
+    y:useTransform(
+    scrollYProgress,
+    [0, 0.25, 0.35, 0.75, 1],
+    [0, -300, -100, 0, 0]
+  ),
+    opacity: useTransform(scrollYProgress, [0, 0.5,0.8 , 1], [1, 1,0, 0]),
+  };
 
   return (
-    <div className="relative pt-9  min-h-screen  h-screen overflow-clip ">
-      <Image
-        className="absolute"
-        src={'/assets/decorations/piramida-778-575.svg'}
-        alt="bg-decoration"
-        width={300}
-        height={300}
-      />
-      <BlurGlow variants={variants} duration={5} position="" />
+    <motion.div
+      ref={targetRef}
+      className="relative  pt-9 flex lg:flex-row flex-col items-center  min-h-screen "
+    >
+      <motion.div
+        style={laptopStyles }
+        className="m-10 lg:w-full"
+      >
+        <Image
+          src={'/assets/mockups/LaptopSEO.png'}
+          alt="bg-decoration"
+          width={406}
+          height={412}
+        />
+      </motion.div>
 
-      <div className="relative w-full h-full">{children}</div>
-    <AnimatedDecoration />
-      
-    </div>
+      <motion.div
+        style={childrenStyles}
+        className="relative w-full h-full mix-blend-plus-lighter"
+      >
+        {children}
+      </motion.div>
+      {/* <AnimatedDecoration /> */}
+    </motion.div>
   );
-}
+};
 
-export default SecondPartBg
+export default SecondPartBg;
