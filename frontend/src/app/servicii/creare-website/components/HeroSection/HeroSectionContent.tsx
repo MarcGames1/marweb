@@ -14,7 +14,7 @@ const HeroSectionContent = () => {
       });
 
       const containerStyles = {
-        display: useTransform(scrollYProgress, [0, .99, 1], ['flex', 'flex', 'none'])
+        display: useTransform(scrollYProgress, [0, .99, 1], ['flex', 'flex', 'flex'])
       }
 
 
@@ -27,7 +27,12 @@ const HeroSectionContent = () => {
         scale: useTransform(
           scrollYProgress,
           [0, 0.1, 0.25, 0.35, 0.75, 1],
-          [.9 , 1.2, 1, 1.2, 1, .9]
+          [0.9, 1.2, 1, 1.2, 1, 0.9]
+        ),
+        display: useTransform(
+          scrollYProgress,
+          [0, 0.99, 1],
+          ['block', 'block', 'none']
         ),
       };
 
@@ -38,7 +43,16 @@ const HeroSectionContent = () => {
           [0, 0.25, 0.35, 0.75, 1],
           [0, 300, 400, 500, 600]
         ),
-        opacity: useTransform(scrollYProgress, [0, 0.5, 0.7, 1], [1, .5, 0, 0]),
+        opacity: useTransform(
+          scrollYProgress,
+          [0, 0.5, 0.7, 1],
+          [1, 0.5, 0, 0]
+        ),
+        display: useTransform(
+          scrollYProgress,
+          [0, 0.99, 1],
+          ['flex', 'flex', 'none']
+        ),
       };
 
   return (
@@ -46,6 +60,7 @@ const HeroSectionContent = () => {
       ref={targetRef}
       className=" flex-col lg:flex-row mx-10 items-center justify-items-center"
       style={containerStyles}
+     
     >
       <motion.div style={laptopStyles} className="w-1/2 lg:mix-blend-normal mix-blend-hard-light">
         <Image

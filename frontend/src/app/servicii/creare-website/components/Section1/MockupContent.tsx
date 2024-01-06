@@ -1,6 +1,11 @@
 'use client'
-import React, {useState} from 'react'
+import React, {useRef, useState} from 'react'
 import Navbar from './MockupContentComponents/Navbar'
+import Buttons from '@/components/Buttons';
+import { RiNetflixFill } from 'react-icons/ri';
+import { FaFacebook } from 'react-icons/fa';
+import { HiAcademicCap } from 'react-icons/hi2';
+import { motion, useMotionValue, useScroll } from 'framer-motion';
 
 
 interface Variants {
@@ -9,32 +14,49 @@ interface Variants {
 
 
 const MockupContent = () => {
+    const targetRef = useRef<HTMLDivElement>(null);
+    const { scrollYProgress } = useScroll({
+      target: targetRef,
+      offset: ['start end', 'end start'],
+    });
+const x = useMotionValue(0);
+const y = useMotionValue(0);
+ 
+
+const handleMouseMove = (event: { clientX: number; clientY: number; }) => {
+    x.set(event.clientX);
+    y.set(event.clientY);
+  };
 
     const [variant, setVariant] = useState<number>(1);
 
-    const variants :Variants  = {
+    const variants: Variants = {
       1: (
-        <div className="hero min-h-[50vh] bg-base-200">
+        <div className=" relative hero min-h-[50vh] bg-base-200">
+          <div className=" my-10 self-center m-auto flex flex-col gap-4 w-52 relative">
+            <div className="skeleton h-32 w-full"></div>
+            <div className="skeleton h-4 w-28"></div>
+            <div className="skeleton h-4 w-full"></div>
+            <div className="skeleton h-4 w-full"></div>
 
-        <div className=" my-10 self-center m-auto flex flex-col gap-4 w-52">
-          <div className="skeleton h-32 w-full"></div>
-          <div className="skeleton h-4 w-28"></div>
-          <div className="skeleton h-4 w-full"></div>
-          <div className="skeleton h-4 w-full"></div>
-        </div>
+            <p className="text-center alert-info block text-secondary my-2">
+              Apasa pe butoanele de mai jos si vezi ce inseamna cu adevarat site{' '}
+              <b>custom</b>
+            </p>
+          </div>
         </div>
       ),
       2: (
         <div className="hero min-h-[50vh] bg-base-200">
           <div className="hero-content text-center">
             <div className="max-w-md">
-              <h1 className="text-5xl font-bold">Hello there</h1>
+              <h3 className="text-5xl font-bold">
+                Viteza de incarcare <span className="text-accent">Rapida</span>
+              </h3>
               <p className="py-6">
-                Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                assumenda excepturi exercitationem quasi. In deleniti eaque aut
-                repudiandae et a id nisi.
+                In momentul in care interactionezi cu site-ul sau treci de la o
+                pagina la alta, timpul de incarcare este <b>insesizabil</b>
               </p>
-              <button className="btn btn-primary btn-disabled">Get Started</button>
             </div>
           </div>
         </div>
@@ -47,13 +69,12 @@ const MockupContent = () => {
               className="max-w-sm rounded-lg shadow-2xl"
             />
             <div>
-              <h1 className="text-5xl font-bold">Box Office News!</h1>
+              <h3 className="text-5xl font-bold">Hero Section </h3>
               <p className="py-6">
-                Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                assumenda excepturi exercitationem quasi. In deleniti eaque aut
-                repudiandae et a id nisi.
+                Este o sectiune care indeamna utilizatorul la o actiune poate fi
+                o programare pentru un apel de consultanta
               </p>
-              <button className="btn btn-primary">Get Started</button>
+              <Buttons.Calendly />
             </div>
           </div>
         </div>
@@ -66,13 +87,17 @@ const MockupContent = () => {
               className="max-w-sm rounded-lg shadow-2xl"
             />
             <div>
-              <h1 className="text-5xl font-bold">Box Office News!</h1>
+              <h1 className="text-5xl font-bold"> La fel de interesant</h1>
               <p className="py-6">
-                Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                assumenda excepturi exercitationem quasi. In deleniti eaque aut
-                repudiandae et a id nisi.
+                Site-ul tau poate aparea printre primele rezultate in Google
               </p>
-              <button className="btn btn-primary">Get Started</button>
+              <b className="py-6">de ce?</b>
+              <p className="py-6">
+                Pentru ca o implementare custom ofera utilizatorului o
+                experienta mai placuta iar algoritmul Google favorizeaza
+                site-urile rapide si relevante pentru utilizatori
+              </p>
+              <button className="btn btn-primary">Get started</button>
             </div>
           </div>
         </div>
@@ -81,15 +106,24 @@ const MockupContent = () => {
         <div className="hero min-h-[50vh] bg-base-200">
           <div className="hero-content flex-col lg:flex-row-reverse">
             <div className="text-center lg:text-left">
-              <h1 className="text-5xl font-bold">Login now!</h1>
+              <h1 className="text-5xl font-bold"></h1>
               <p className="py-6">
-                Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                assumenda excepturi exercitationem quasi. In deleniti eaque aut
-                repudiandae et a id nisi.
+                Site-ul tau poate fi chiar o platforma complexa nu doar un
+                simplu site de prezentare
               </p>
+              <div className="w-full flex justify-around">
+                <RiNetflixFill size={'3em'} />
+                <FaFacebook size={'3em'} />
+                <HiAcademicCap size={'3em'} />
+              </div>
             </div>
             <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-              <form className="card-body">
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                }}
+                className="card-body"
+              >
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text">Email</span>
@@ -126,27 +160,36 @@ const MockupContent = () => {
         </div>
       ),
       6: (
+       <motion.div
+       
+      >
         <div
-          className="hero min-h-[50vh]"
+          className="hero-background"
           style={{
-            backgroundImage:
-              'url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)',
+            width: '200%',
+            height: '200%',
+            backgroundImage: `radial-gradient(circle, rgba(var(--primary),0.5), black)`,
+            position: 'absolute',
+            top: `calc(${y.get()}px - 50%)`,
+            left: `calc(${x.get()}px - 50%)`,
+            transform: 'translate(-50%, -50%)',
           }}
-        >
-          <div className="hero-overlay bg-opacity-60"></div>
-          <div className="hero-content text-center text-neutral-content">
-            <div className="max-w-md">
-              <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-              <p className="mb-5">
-                Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                assumenda excepturi exercitationem quasi. In deleniti eaque aut
-                repudiandae et a id nisi.
-              </p>
-              <button className="btn btn-primary">Get Started</button>
-            </div>
+        ></div>
+        <div className=""></div>
+        <div className=" text-center text-neutral-content">
+          <div className="max-w-md">
+            <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+            <p className="mb-5">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+              et a id nisi.
+            </p>
+            <button className="btn btn-primary">Get Started</button>
           </div>
         </div>
-      ),
+      </motion.div>
+    ),
+     
     };
 
 const handleVariantChange = (newVariant: number) => {
@@ -154,7 +197,7 @@ const handleVariantChange = (newVariant: number) => {
 };
 
   return (
-    <div className="w-full ">
+    <motion.div ref={targetRef} className="w-full ">
       <Navbar />
       {variants[variant]}
       <div className="flex items-center justify-center w-full gap-10">
@@ -170,7 +213,7 @@ const handleVariantChange = (newVariant: number) => {
           </button>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
