@@ -10,11 +10,11 @@ const HeroSectionContent = () => {
       const targetRef = useRef<HTMLDivElement>(null);
       const { scrollYProgress } = useScroll({
         target: targetRef,
-        offset: ['start end', 'end start'],
+        offset: ['end end', 'end start'],
       });
 
       const containerStyles = {
-
+        display: useTransform(scrollYProgress, [0, .99, 1], ['flex', 'flex', 'none'])
       }
 
 
@@ -22,12 +22,12 @@ const HeroSectionContent = () => {
         rotateZ: useTransform(
           scrollYProgress,
           [0, 0.25, 0.35, 0.75, 1],
-          [0, 30, 0, 0, -30]
+          [30, -30, 0, 0, -30]
         ),
         scale: useTransform(
           scrollYProgress,
           [0, 0.1, 0.25, 0.35, 0.75, 1],
-          [0, 1.2, 1, 1.2, 1, 0.5]
+          [.9 , 1.2, 1, 1.2, 1, .9]
         ),
       };
 
@@ -36,15 +36,16 @@ const HeroSectionContent = () => {
         y: useTransform(
           scrollYProgress,
           [0, 0.25, 0.35, 0.75, 1],
-          [0, -300, -100, 0, 0]
+          [0, 300, 400, 500, 600]
         ),
-        opacity: useTransform(scrollYProgress, [0, 0.5, 0.8, 1], [1, 1, 0, 0]),
+        opacity: useTransform(scrollYProgress, [0, 0.5, 0.7, 1], [1, .5, 0, 0]),
       };
 
   return (
     <motion.div
       ref={targetRef}
-      className="flex flex-col lg:flex-row mx-10 items-center justify-items-center"
+      className=" flex-col lg:flex-row mx-10 items-center justify-items-center"
+      style={containerStyles}
     >
       <motion.div style={laptopStyles} className="w-1/2 lg:mix-blend-normal mix-blend-hard-light">
         <Image

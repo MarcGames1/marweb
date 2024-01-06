@@ -1,14 +1,14 @@
 import React from 'react';
 
-import HeroSectionContainer from './HeroSectionContainer';
-import HeroSectionContent from './HeroSectionContent';
 
+import HeroSectionContent from './HeroSectionContent';
+import { SectionContainer } from '@/components';
 
 const HeroSection = () => {
   return (
-    <HeroSectionContainer>
-     <HeroSectionContent />
-    </HeroSectionContainer>
+    <SectionContainer>
+      <HeroSectionContent />
+    </SectionContainer>
   );
 };
 
