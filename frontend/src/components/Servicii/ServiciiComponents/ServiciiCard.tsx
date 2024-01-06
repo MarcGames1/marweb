@@ -1,4 +1,6 @@
+'use client'
 import { CardDataWithPicture } from '@/date/types'; 
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -50,15 +52,25 @@ const getVariantStyles = (variant?:string) =>{
 
 const {containerStyle, imageStyle} = getVariantStyles(variant)
 
+const cardVariant = {
+scaled: {scaleX:1,},
+initial: {scaleX:0}
+}
   return (
-    <div className={` glass bg-black/70 ${containerStyle}`}>
+    <motion.div
+      variants={cardVariant}
+      transition={{ type: 'spring', duration: .5 ,delay:0.5 ,staggerChildren: 1 }}
+      initial={'initial'}
+      whileInView={'scaled'}
+      className={` glass bg-black/70 ${containerStyle}`}
+    >
       <Image className={`${imageStyle} `} {...image} />{' '}
-      <div className="p-8 flex mix-blend-lighten  flex-col leading-7 tracking-wider">
-        <h3 className="text-center text-base-100 y font-semibold">{heading}</h3>
-        <p className=" mix-blend-screen text-base-300 ">{description}</p>
-        <div className="card-actions justify-end"></div>
-      </div>
-    </div>
+      <motion.div className="p-8 flex mix-blend-lighten  flex-col leading-7 tracking-wider">
+        <motion.h3  className="text-center text-base-100 y font-semibold">{heading}</motion.h3>
+        <motion.p className=" mix-blend-screen text-base-300 ">{description}</motion.p>
+        
+      </motion.div>
+    </motion.div>
   );
 };
 
