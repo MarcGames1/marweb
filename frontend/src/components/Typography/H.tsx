@@ -1,6 +1,4 @@
-
 import React, { PropsWithChildren } from 'react'
-
 
 
 type alignment =
@@ -11,7 +9,7 @@ type alignment =
     | 'start'
     | 'end'
 
-type size = '7xl' | '5xl';
+type size = '7xl' | '5xl' | '3xl';
 
 type color = 'primary' | 'secondary' | 'accent'
 

@@ -4,7 +4,10 @@ import HeroSection from './components/HeroSection'
 
 const CreareWebsitePage = () => {
   return (
+    <>
    <HeroSection />
+  
+    </>
   )
 }
 

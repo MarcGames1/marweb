@@ -18,11 +18,7 @@ const SecondPartBg = ({ children }: SecondPartBg) => {
 
 
  const laptopStyles = {
-  //  x: useTransform(
-  //    scrollYProgress,
-  //    [0, 0.25, 0.35, 0.75, 1],
-  //    [0, -500, 0, 0, 0]
-  //  ),
+  
    rotateZ: useTransform(
      scrollYProgress,
      [0, 0.25, 0.35, 0.75, 1],
