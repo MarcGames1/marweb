@@ -2,8 +2,7 @@
 
 import React from 'react';
 import HomepageData from '@/date/homepage';
-import { typography } from '@/date/styles';
-import { ChatBuble } from '..';
+import { ChatBuble, H } from '..';
 import { PhoneMockup } from '..';
 import {
   AnimatePresence,
@@ -15,8 +14,8 @@ const DeCeNoi = () => {
   const { S4 } = HomepageData;
   return (
     <section>
-      <h2 className={`${typography.h2} py-20`}>{S4.heading}</h2>
-      <div className="grid grid-flow-col">
+      <H color='primary' level={2} size='5xl' alignment='center' className={`py-20`}>{S4.heading}</H>
+      <div className="grid grid-flow-col max-w-[90vw]">
         <DeCeNoiPhone content={S4.content} />
         <div className=" items-center  ">
           

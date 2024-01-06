@@ -1,9 +1,10 @@
 
 import React from 'react'
+import HeroSection from './components/HeroSection'
 
 const CreareWebsitePage = () => {
   return (
-    <div className=''></div>
+   <HeroSection />
   )
 }
 

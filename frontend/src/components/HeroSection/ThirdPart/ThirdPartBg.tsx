@@ -76,7 +76,7 @@ const piramidStyles = {
       </motion.div>
 
       <motion.div style={childrenStyles} className="relative w-full h-full ">{children}</motion.div>
-      {/* <AnimatedDecoration /> */}
+     
     </motion.div>
   );
 };

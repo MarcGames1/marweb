@@ -1,11 +1,12 @@
 import React from 'react'
 import ServiciiCard from '../Servicii/ServiciiComponents/ServiciiCard';
 import HomepageData from '@/date/homepage';
-import { typography } from '@/date/styles';
+
+import { H } from '..';
 const ColaborareSection = () => {
   return (
     <section className="w-full h-full">
-      <h2 className={`${typography.h2} py-20`}>{HomepageData.S3.heading}</h2>
+      <H level={2} color='primary' alignment='center' size='5xl' className={` py-20`}>{HomepageData.S3.heading}</H>
       <div
         className={`flex flex-row flex-wrap items-center gap-5 justify-around `}
       >
