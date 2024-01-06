@@ -7,17 +7,24 @@ import SiteMockup from './SiteMockup';
 import MockupContent from './MockupContent';
 const Section1Content = () => {
 
-      const constraintsRef = useRef(null);
+      const containerRef = useRef(null);
+const { scrollYProgress } = useScroll({
+  target: containerRef,
+  offset: ['start end', 'end start'],
+});
 
+const leftSideStyles = {}
+
+const rightSideStyles = {}
 
   return (
-    <motion.div className="">
+    <motion.div ref={containerRef} className="">
       <H level={2}>
         Design Personalizat pentru <span className="text-accent">Brand</span>-ul
         Tău
       </H>
-      <motion.div className="container my-10  m-auto bg-red-500  grid w-full h-full lg:grid-cols-2 grid-cols-none grid-flow-row">
-        <motion.div className="">
+      <motion.div style={leftSideStyles} className="container my-10  justify-items-center items-center m-auto grid w-full h-full lg:grid-cols-2 grid-cols-none grid-flow-row">
+        <motion.div className=" m-5 ">
           <H level={'p'}>
             Creaza un prim impact puternic și diferențiază-ți afacerea cu un
             website
@@ -25,12 +32,10 @@ const Section1Content = () => {
             identității și obiectivelor brandului tău.
           </H>
         </motion.div>
-        <motion.div ref={constraintsRef} className="w-full h-full bg-green-300">
+        <motion.div style={rightSideStyles}  className="w-full h-full bg-green-300">
           <SiteMockup>
             <MockupContent />
           </SiteMockup>
-
-            
         </motion.div>
       </motion.div>
     </motion.div>

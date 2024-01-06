@@ -22,13 +22,14 @@ const HeroSectionContent = () => {
         rotateZ: useTransform(
           scrollYProgress,
           [0, 0.25, 0.35, 0.75, 1],
-          [30, -30, 0, 0, -30]
+          [30, 0, 0, 0, -30]
         ),
         scale: useTransform(
           scrollYProgress,
           [0, 0.1, 0.25, 0.35, 0.75, 1],
-          [0.9, 1.2, 1, 1.2, 1, 0.9]
+          [0.7, 0.8, 0.9, 1, 1, 0.9]
         ),
+        y: useTransform(scrollYProgress, [0, 1], [-60, 60]),
         display: useTransform(
           scrollYProgress,
           [0, 0.99, 1],
