@@ -13,7 +13,7 @@ const HeroSectionBG = ({ children }: PropsWithChildren) => {
   const targetRef = useRef<HTMLDivElement>(null)
   const {scrollYProgress} = useScroll({ target:targetRef, offset: ['end end', "end start"]})
   const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.5, 0]);
-  const scale = useTransform( scrollYProgress, [0, 0.5], [1, 0.8])
+  const scale = useTransform( scrollYProgress, [0.5, 0.9], [1, 0.8])
   const x = useTransform(scrollYProgress,[0, 0.1, 0.9],[0, 100, 300] )
   const negativeX = useTransform(scrollYProgress, [0, 0.1, 0.9], [0, -100, -300]);
   const y = useTransform(scrollYProgress,[0, 0.1, 0.9],[0,0, 500] )
@@ -47,7 +47,7 @@ const HeroSectionBG = ({ children }: PropsWithChildren) => {
           />
         </motion.div>
       </motion.div>
-      <motion.div className='w-full' style={{ y, scale, opacity: textOpacity}}>
+      <motion.div className='w-full' style={{ y,  opacity: textOpacity}}>
       {children}
       </motion.div>
 

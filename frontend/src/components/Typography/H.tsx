@@ -22,16 +22,17 @@ interface HProps extends PropsWithChildren {
 }
 
 
-const H = ({level, children, alignment ='center', size = '5xl', color ='primary', className}:HProps) => {
+const H = ({level, children, alignment ='center', size = '5xl', color ='primary', className=''}:HProps) => {
 
 
-    const textStyle = (variant : alignment | size) =>{ return `text-${variant}` }
-    const textColor = (variant : color) =>{ return `text-${variant}-content` }
 
+   
+    
+  
 
-    const styles = `block m-auto  ${String(textStyle(alignment))} ${String(
-      textStyle(size)
-    )} ${String(textColor(color))}`;
+  const textStyle = `text-${alignment} text-${size} text-${color}-content`;
+  const styles = `block m-auto ${textStyle} ${className}`;
+
 
     if (level === 'div') {
       return <div className={`${styles} ${className}`}>{children}</div>;
@@ -45,7 +46,7 @@ const H = ({level, children, alignment ='center', size = '5xl', color ='primary'
       const Heading = level
         ? (`h${level}` as keyof JSX.IntrinsicElements)
         : ('span' as keyof JSX.IntrinsicElements);
-  return <Heading className={`${styles} ${className}`}>{children}</Heading>;
+  return <Heading className={`${styles} `}>{children}</Heading>;
 }
 
 export default H

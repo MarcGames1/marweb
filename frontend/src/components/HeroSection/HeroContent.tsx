@@ -10,7 +10,7 @@ const HeroContent = () => {
       <div className=" w-full m-2 mix-blend-plus-lighter ">
         <div className=" flex items-center flex-col justify-center  place-items-center  relative w-full h-full  text-white text-center">
           <div className="w-full h-screen flex justify-items-center items-center">
-            <H level={1} size='7xl'>AGENTIE MARKETING ONLINE</H>
+            <H level={1} size={'7xl'}>AGENTIE MARKETING ONLINE</H>
           </div>
         </div>
       </div>
