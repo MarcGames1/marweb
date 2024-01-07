@@ -7,8 +7,8 @@ import ColaborareSection from "./ColaborareSection";
 import DeCeNoi from "./DeCeNoiSection";
 import ChatBuble from "./ChatBuble";
 import PhoneMockup from "./PhoneMockup";
-
-
+import { H } from "./Typography";
+import SectionContainer from "./SectionContainer";
 
 
 
@@ -23,5 +23,7 @@ export {
     DeCeNoi,
     ChatBuble,
     PhoneMockup,
+    H,
+    SectionContainer
+}
     
- }
