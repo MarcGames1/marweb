@@ -31,7 +31,7 @@ const H = ({level, children, alignment ='center', size = '5xl', color ='primary'
   
 
   const textStyle = `text-${alignment} text-${size} text-${color}-content`;
-  const styles = `block m-auto ${textStyle} ${className}`;
+  const styles = ` ${textStyle} ${className}`;
 
 
     if (level === 'div') {

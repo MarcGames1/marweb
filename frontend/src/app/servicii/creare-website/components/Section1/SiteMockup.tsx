@@ -8,7 +8,7 @@ interface ISiteMockup extends PropsWithChildren {
 import {motion} from 'framer-motion'
 const SiteMockup = ({children, style = {}}:ISiteMockup) => {
   return (
-    <motion.div style={style} className="mockup-browser border bg-base-300">
+    <motion.div style={style} className=" hidden lg:block mockup-browser border bg-base-300">
       <div className="mockup-browser-toolbar">
         <div className="input">https://site-ul-tau.ro</div>
       </div>

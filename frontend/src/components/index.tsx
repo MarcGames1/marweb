@@ -9,7 +9,7 @@ import ChatBuble from "./ChatBuble";
 import PhoneMockup from "./PhoneMockup";
 import { H } from "./Typography";
 import SectionContainer from "./SectionContainer";
-
+import HWP from "./HWP";
 
 
 
@@ -24,6 +24,7 @@ export {
     ChatBuble,
     PhoneMockup,
     H,
-    SectionContainer
+    SectionContainer,
+    HWP
 }
     

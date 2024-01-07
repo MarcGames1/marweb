@@ -2,14 +2,18 @@
 import React from 'react'
 import HeroSection from './components/HeroSection'
 import Section1 from './components/Section1'
+import Section2 from './components/Section2';
+import Section3 from './components/Section3';
 
 const CreareWebsitePage = () => {
   return (
     <>
-   <HeroSection />
-  <Section1></Section1>
+      <HeroSection />
+      <Section1 />
+      <Section2 />
+      <Section3 />
     </>
-  )
+  );
 }
 
 export default CreareWebsitePage

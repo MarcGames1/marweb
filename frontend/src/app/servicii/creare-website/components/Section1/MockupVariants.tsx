@@ -9,10 +9,12 @@ interface Variants {
   [key: number]: React.JSX.Element;
 }
 
+const containerStyle =
+  'relative hero min-h-[50vh] max-w-full overflow-scroll bg-base-200';
 const Variant1 = () => {
   return (
     <>
-      <div className=" relative hero min-h-[50vh] bg-base-200">
+      <div className={containerStyle}>
         <div className=" my-10 self-center m-auto flex flex-col gap-4 w-52 relative">
           <div className="skeleton h-32 w-full"></div>
           <div className="skeleton h-4 w-28"></div>
@@ -31,7 +33,7 @@ const Variant1 = () => {
 
 const Variant2 = () => {
   return (
-    <div className="hero min-h-[50vh] bg-base-200">
+    <div className={containerStyle}>
       <div className="hero-content text-center">
         <div className="max-w-md">
           <h3 className="text-5xl font-bold">
@@ -49,7 +51,7 @@ const Variant2 = () => {
 
 const Variant3 = () => {
   return (
-    <div className="hero min-h-[50vh] bg-base-200">
+    <div className={containerStyle}>
       <div className="hero-content flex-col lg:flex-row">
         <img
           src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
@@ -70,7 +72,7 @@ const Variant3 = () => {
 
 const Variant4 = () => {
   return (
-    <div className="hero min-h-[50vh] bg-base-200">
+    <div className={containerStyle}>
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img
           src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
@@ -96,7 +98,7 @@ const Variant4 = () => {
 
 const Variant5 = () => {
   return (
-    <div className="hero min-h-[50vh] bg-base-200">
+    <div className={containerStyle}>
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
           <h1 className="text-5xl font-bold"></h1>
