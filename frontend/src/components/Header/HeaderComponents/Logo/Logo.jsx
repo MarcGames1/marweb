@@ -12,7 +12,7 @@ const isSmall = useIsScrolled()
     show: { opacty: 1 },
     unmoved: {x:0},
       left: {
-      x: 230,
+      x: 240,
     },
   };
 

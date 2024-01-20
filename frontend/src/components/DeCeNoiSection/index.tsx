@@ -14,7 +14,7 @@ const DeCeNoi = () => {
   const { S4 } = HomepageData;
   return (
     <section>
-      <H color='primary' level={2} size='5xl' alignment='center' className={`py-20`}>{S4.heading}</H>
+      <H className={`py-20`}>{S4.heading}</H>
       <div className="grid grid-flow-col max-w-[90vw]">
         <DeCeNoiPhone content={S4.content} />
         <div className=" items-center  ">
@@ -39,6 +39,8 @@ const DeCeNoiPhone = ({
   content: { heading: string; description: string }[];
 }) => {
   return (
+    <div className="grid lg:grid-cols-2 grid-flow-row justify-items-center items-center w-full">
+
     <AnimatePresence>
       <PhoneMockup>
         {content.map((item, index) => {
@@ -61,11 +63,13 @@ const DeCeNoiPhone = ({
                 text={item.description}
                 end={index % 2 === 0}
                 variant={index % 2 !== 0 ? 'accent' : 'secondary'}
-              />
+                />
             </motion.div>
           );
         })}
       </PhoneMockup>
     </AnimatePresence>
+    <div className='bg-red-500 w-full h-full '></div>
+          </div>
   );
 };

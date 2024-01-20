@@ -1,51 +1,56 @@
 import React, { PropsWithChildren } from 'react'
 
 
-type alignment =
-    | 'left'
-    | 'center'
-    | 'right'
-    | 'justify'
-    | 'start'
-    | 'end'
+export enum Alignment {
+  Left = 'text-left',
+  Center = 'text-center',
+  Right = 'text-right',
+  Justify = 'text-justify',
+  Start = 'text-start',
+  End = 'text-end',
+}
 
-type size = '7xl' | '5xl' | '3xl';
+export enum Size {
+  XL7 = 'text-7xl',
+  XL5 = 'text-5xl',
+  XL3 = 'text-3xl',
+}
 
-type color = 'primary' | 'secondary' | 'accent'
+export enum Color {
+  Primary = 'text-primary-content',
+  Secondary = 'text-secondary-content',
+  Accent = 'text-accent-content',
+}
 
 interface HProps extends PropsWithChildren {
   level?: 1 | 2 | 3 | 4 | 5 | 6 | "div" | "span" | "p";
-  alignment?: alignment,
-  size?: size,
-  color?: color
+  alignment?: Alignment,
+  size?: Size,
+  color?: Color
   className?: string
 }
 
 
-const H = ({level, children, alignment ='center', size = '5xl', color ='primary', className}:HProps) => {
+const H = ({level, children, alignment=Alignment.Center, size = Size.XL5, color =Color.Primary, className}:HProps) => {
 
 
-    const textStyle = (variant : alignment | size) =>{ return `text-${variant}` }
-    const textColor = (variant : color) =>{ return `text-${variant}-content` }
+  
+  
 
 
-    const styles = `block m-auto  ${String(textStyle(alignment))} ${String(
-      textStyle(size)
-    )} ${String(textColor(color))}`;
+    const styles = `block m-auto  ${alignment} ${size} ${color}`;
 
-    if (level === 'div') {
-      return <div className={`${styles} ${className}`}>{children}</div>;
-    }
-     if (level === 'span') {
-       return <span className={`${styles} ${className}`}>{children}</span>;
-     }
-      if (level === 'p') {
+    switch (level) {
+      case 'span':
+        return <span className={`${styles} ${className}`}>{children}</span>;
+
+      case 'p':
         return <p className={`${styles} ${className}`}>{children}</p>;
-      }
-      const Heading = level
-        ? (`h${level}` as keyof JSX.IntrinsicElements)
-        : ('span' as keyof JSX.IntrinsicElements);
-  return <Heading className={`${styles} ${className}`}>{children}</Heading>;
+      default:
+         const Heading = level ? (`h${level}` as keyof JSX.IntrinsicElements) : ('span' as keyof JSX.IntrinsicElements);
+      return <Heading className={`${styles} ${className}`}>{children}</Heading>;
+  }
+   
 }
 
 export default H
