@@ -6,17 +6,14 @@ import { Alignment, Color, H, Size } from '..';
 const ColaborareSection = () => {
   return (
     <section className="w-full h-full">
-      <H level={2} alignment={Alignment.Center} size={Size.XL5} color={Color.Primary} className={`block w-full py-20`}>{HomepageData.S3.heading}</H>
+      <H level={2} alignment={Alignment.Center} size={Size.XL5} color={Color.Primary} className={`inline-block mx-auto w-full py-20 text-center`}>{HomepageData.S3.heading}</H>
       <div
-        className={`flex flex-row flex-wrap items-center gap-5 justify-around `}
+        className={` `}
       >
         {HomepageData.S3.content.map((s, i) => {
           return (
-            <div
-              key={i}
-              className={`w-7/12 lg:w-4/12`}
-            >
-              <ServiciiCard variant={'default'} href={undefined} {...s} />
+            <div key={i} className={` mx-auto self-center justify-center flex  `}>
+              <ServiciiCard reversed={i % 2 === 0} href={undefined} {...s} />
             </div>
           );
         })}

@@ -10,7 +10,7 @@ const ServiciiSection = () => {
       <H level={2} alignment={Alignment.Center} size={Size.XL5} className={`py-20`}>{HomepageData.S2.heading}</H>
       <div className=" grid grid-flow-row  gap-5 ">
         {HomepageData.S2.content.map((s, i) => {
-          return <ServiciiCard {...{...s, i}}  key={i} />;
+          return <ServiciiCard {...s} reversed = {i % 2 === 0}  key={i} />;
         })}
       </div>
     </section>

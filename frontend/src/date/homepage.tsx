@@ -91,8 +91,8 @@ const S3: SectionWithCardsAndPic = {
       description:
         'Programezi o ședință 1 la 1 – complet gratuită, în care îți vom solicita câteva informații relevante pentru a reuși să identificăm nevoile tale de business.',
       image: {
-        width: 100,
-        height: 100,
+        width: 300,
+        height: 300,
         alt: 'Poza Reprezentativa',
         src: '/assets/colaborare/1.png',
       },
@@ -102,8 +102,8 @@ const S3: SectionWithCardsAndPic = {
       description:
         'Stabilim obiective strategice și măsurabile pe termen scurt, mediu și lung. Identificăm cuvintele cheie pe care putem crește și acțiunile necesare atât din partea noastră cât și a ta.',
       image: {
-        width: 100,
-        height: 100,
+        width: 300,
+        height: 300,
         alt: 'Poza Reprezentativa',
         src: '/assets/colaborare/2.png',
       },

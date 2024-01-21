@@ -7,6 +7,7 @@ import React from 'react';
 
 interface IServiciiCard extends CardDataWithPicture {
   href: string | null | undefined;
+  reversed?: boolean;
   
 }
 
@@ -27,15 +28,16 @@ const ServiciiCard = ({ href, ...props }: IServiciiCardWKey) => {
 };
 
 interface IServiciiCardWKey extends IServiciiCard {
-  key: number;
+
 }
 
 interface ContentPropos extends CardDataWithPicture {
- key: number;
+ reversed? : boolean;
 }
 
 
-const Content = ({ heading, description, image, key=1  }: ContentPropos) => {
+const Content = ({ heading, description, image, reversed }: ContentPropos) => {
+
 
 
 
@@ -55,9 +57,9 @@ initial: {scaleX:0}
       }}
       initial={'initial'}
       whileInView={'scaled'}
-      className={` glass bg-black/70 flex ${(key+1 % 2) === 0 ? 'flex-row ': 'flex-row-reverse'}`}
+      className={` items-center justify-items-center flex ${reversed ? 'flex-col lg:flex-row ': ' flex-col lg:flex-row-reverse'}`}
     >
-      <Image className={` text-center block m-auto min-w-[50vw] h-auto `} {...image} />{' '}
+      <Image className={` text-center block m-auto min-w-[35vw] h-auto `} {...image} />{' '}
       <motion.div className="p-8  flex mix-blend-lighten  flex-col leading-7 tracking-wider ">
         <motion.h3 className="text-center text-base-100 y font-semibold text-2xl">
           {heading}

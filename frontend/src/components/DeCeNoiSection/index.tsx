@@ -3,6 +3,7 @@
 import React from 'react';
 import HomepageData from '@/date/homepage';
 import { ChatBuble, H } from '..';
+import Image from 'next/image';
 import { PhoneMockup } from '..';
 import {
   AnimatePresence,
@@ -15,10 +16,13 @@ const DeCeNoi = () => {
   return (
     <section>
       <H className={`py-20`}>{S4.heading}</H>
-      <div className="grid grid-flow-col max-w-[90vw]">
+      <div className="flex lg:flex-row flex-col items-center justify-around  ">
+        
         <DeCeNoiPhone content={S4.content} />
-        <div className=" items-center  ">
-          
+        
+
+        <div className=" items-center ">
+         <Image src={'/assets/decorations/robot.png'} alt={'robot'} height={400} width={600} />
         </div>
       </div>
     </section>
@@ -39,14 +43,14 @@ const DeCeNoiPhone = ({
   content: { heading: string; description: string }[];
 }) => {
   return (
-    <div className="grid lg:grid-cols-2 grid-flow-row justify-items-center items-center w-full">
-
+    
     <AnimatePresence>
-      <PhoneMockup>
+      <div className=' '>
+        <br />
         {content.map((item, index) => {
           return (
             <motion.div
-              className=' overflow-hidden'
+              className=' lg:w-[50vmin]'
               variants={ChatBubleVariants}
               transition={{ type: 'spring', staggerChildren: 1 }}
               whileInView={'onScreen'}
@@ -67,9 +71,10 @@ const DeCeNoiPhone = ({
             </motion.div>
           );
         })}
-      </PhoneMockup>
+      </div>
     </AnimatePresence>
-    <div className='bg-red-500 w-full h-full '></div>
-          </div>
+
+   
+   
   );
 };
