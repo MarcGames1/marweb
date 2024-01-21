@@ -1,10 +1,10 @@
-import { Buttons } from '@/components';
+import { Buttons, Color, H } from '@/components';
 
 import React from 'react';
 import { FaFacebook } from 'react-icons/fa';
 import { HiAcademicCap } from 'react-icons/hi2';
 import { RiNetflixFill } from 'react-icons/ri';
-
+import Image from 'next/image';
 interface Variants {
   [key: number]: React.JSX.Element;
 }
@@ -34,9 +34,9 @@ const Variant2 = () => {
     <div className="hero min-h-[50vh] bg-base-200">
       <div className="hero-content text-center">
         <div className="max-w-md">
-          <h3 className="text-5xl font-bold">
+          <H color={Color.Secondary} level={3}>
             Viteza de incarcare <span className="text-accent">Rapida</span>
-          </h3>
+          </H>
           <p className="py-6">
             In momentul in care interactionezi cu site-ul sau treci de la o
             pagina la alta, timpul de incarcare este <b>insesizabil</b>
@@ -51,15 +51,23 @@ const Variant3 = () => {
   return (
     <div className="hero min-h-[50vh] bg-base-200">
       <div className="hero-content flex-col lg:flex-row">
-        <img
-          src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
+        <Image
+          width={200}
+          height={280}
+          alt="imagine"
+          src="/assets/decorations/Website Mockup.png"
           className="max-w-sm rounded-lg shadow-2xl"
         />
         <div>
-          <h3 className="text-5xl font-bold">Hero Section </h3>
+          <H color={Color.Secondary} level={3}>
+            Nu Ne Oprim doar la Design
+          </H>
           <p className="py-6">
-            Este o sectiune care indeamna utilizatorul la o actiune poate fi o
-            programare pentru un apel de consultanta
+            Facem si o strategie de <b>continut</b>, si gandim o{' '}
+            <b>experienta a utilizatorului</b> pentru ca site-ul tau{' '}
+            <span className="text-accent">
+              <b>sa vanda</b>
+            </span>
           </p>
           <Buttons.Calendly />
         </div>
@@ -72,12 +80,46 @@ const Variant4 = () => {
   return (
     <div className="hero min-h-[50vh] bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <img
-          src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
+        <Image
+          width={200}
+          height={280}
+          alt="imagine"
+          src="/assets/decorations/Website Mockup.png"
           className="max-w-sm rounded-lg shadow-2xl"
         />
         <div>
-          <h1 className="text-5xl font-bold"> La fel de interesant</h1>
+          <H color={Color.Secondary} level={3}>
+            {' '}
+            Ce inseamna asta pentru tine?
+          </H>
+          <p className="py-6">Vei Avea mai multe conversii</p>
+          <b className="py-6">de ce?</b>
+          <p className="py-6">
+            Pentru ca Vom optimiza SIte-ul sa fie performant si facut dupa{' '}
+            <b>avatarul tau de client</b>
+          </p>
+          <Buttons.Calendly />
+        </div>
+      </div>
+    </div>
+  );
+};
+const Variant5 = () => {
+  return (
+    <div className="hero min-h-[50vh] bg-base-200">
+      <div className="hero-content flex-col lg:flex-row-reverse">
+        <Image
+          width={200}
+          height={280}
+          alt="imagine"
+          src="/assets/decorations/Website Mockup.png"
+          className="max-w-sm rounded-lg shadow-2xl"
+        />
+        <div>
+          <H color={Color.Secondary} level={3}>
+            Site-urile facute Custom Vor Ajunge mai rapid pe prima pagina in
+            Google
+          </H>
           <p className="py-6">
             Site-ul tau poate aparea printre primele rezultate in Google
           </p>
@@ -87,14 +129,14 @@ const Variant4 = () => {
             mai placuta iar algoritmul Google favorizeaza site-urile rapide si
             relevante pentru utilizatori
           </p>
-          <button className="btn btn-primary">Get started</button>
+          <Buttons.Calendly />
         </div>
       </div>
     </div>
   );
 };
 
-const Variant5 = () => {
+const Variant6 = () => {
   return (
     <div className="hero min-h-[50vh] bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
@@ -159,6 +201,7 @@ const variants: Variants = {
   3: <Variant3 />,
   4: <Variant4 />,
   5: <Variant5 />,
+  6: <Variant6 />,
 };
 
 export default variants;
