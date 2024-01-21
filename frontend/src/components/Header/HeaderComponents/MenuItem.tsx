@@ -6,7 +6,7 @@ import { IMenuData } from '@/date/menuData';
 
 const MenuItem = ({ menu }: { menu: IMenuData }) => {
   const isActive = useIsCurrentURL(menu.href);
-
+const {text, href} = menu
 
   return (
     <Link aria-label='navigation'
@@ -15,7 +15,8 @@ const MenuItem = ({ menu }: { menu: IMenuData }) => {
       }`}
       href={menu.href}
     >
-      {menu.text}
+      
+      {menu.text.toUpperCase()}
     </Link>
   );
 };

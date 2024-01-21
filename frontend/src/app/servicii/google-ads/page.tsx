@@ -1,9 +1,9 @@
 import React from 'react'
+import GoogleAdsComponents from './components';
 
-const GoogleAdsPage = () => {
-  return (
-    <div>Google Ads</div>
-  )
-}
+
+
+
+const GoogleAdsPage = GoogleAdsComponents
 
 export default GoogleAdsPage

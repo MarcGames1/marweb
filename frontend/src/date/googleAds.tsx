@@ -10,7 +10,7 @@ export const metadata: Metadata = new SEOInfo(
 
 
 const S1: HeroSectionData = {
-  heading: <>AGENTIE MARKETING ONLINE</>,
+  heading: <>Servicii Promovare Google Ads</>,
   content: (
     <>
       <p>
@@ -24,7 +24,7 @@ const S1: HeroSectionData = {
     </>
   ),
 
-  decoration: '',
+  decoration: '/assets/decorations/robot.png',
 };
 
 const S2: SectionWithCards = {

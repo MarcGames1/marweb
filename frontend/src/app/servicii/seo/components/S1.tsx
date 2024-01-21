@@ -9,7 +9,7 @@ const S1 = ({heading, content, decoration}:HeroSectionData) => {
   return (
     <section className="flex flex-row gap-10 mx-10 items-center justify-items-around ">
       <div className="flex flex-col">
-        <H>{heading}</H>
+        <H size={Size.XL7} level={1}>{heading}</H>
         <H className="flex items-center flex-col w-full h-full gap-10 py-10" level={'div'} size={Size.XL3}>
           {content}
         </H>
