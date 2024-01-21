@@ -2,7 +2,7 @@
 import React, { PropsWithChildren, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Image from 'next/image';
-import { Buttons, H } from '@/components';
+import { Buttons, H, Size } from '@/components';
 
 
 const HeroSectionContent = () => {
@@ -77,15 +77,14 @@ const HeroSectionContent = () => {
         <H
           className="  "
           level={1}
-          alignment={'center'}
-          size={'5xl'}
-          color={'primary'}
+          size={Size.XL7}
+         
         >
           Transformă Viziunea în Realitate Online: Creăm Website-uri{' '}
           <span className=" text-accent">Unice și Eficiente</span>
         </H>
         <div className="flex flex-col items-center justify-center justify-items-center gap-10">
-          <H alignment={'center'} size={'3xl'} color={'accent'}>
+          <H level={'span'} size={Size.XL3}>
             Design personalizat, performanță optimă și strategie SEO pentru
             afacerea ta online
           </H>

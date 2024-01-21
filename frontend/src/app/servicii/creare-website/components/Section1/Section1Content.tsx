@@ -32,7 +32,7 @@ const rightSideStyles = {}
             identității și obiectivelor brandului tău.
           </H>
         </motion.div>
-        <motion.div style={rightSideStyles}  className="w-full h-full bg-green-300">
+        <motion.div style={rightSideStyles}  className="w-full h-full">
           <SiteMockup>
             <MockupContent />
           </SiteMockup>
