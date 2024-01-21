@@ -4,9 +4,9 @@ import { HeroSectionData, SectionWithCardsAndPic } from './types';
 import Link from 'next/link';
 
 export const metadata: Metadata = new SEOInfo(
-  'Servicii Promovare Google Ads » MarWeb 🚀',
+  'Servicii Promovare SEO oriunde in Romania » MarWeb 🚀',
   'Servicii de optimizare SEO profesionale GARANTAM exclusivitate pe Domeniu de Activitate! » MarWeb 🚀.',
-  '/seo/'
+  '/servicii/seo/'
 );
 
 
@@ -22,7 +22,7 @@ const S1: HeroSectionData = {
     </>
   ),
 
-  decoration: '',
+  decoration: '/assets/decorations/robot.png',
 };
 
 const S2: SectionWithCardsAndPic = {
