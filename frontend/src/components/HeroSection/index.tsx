@@ -1,13 +1,18 @@
 import React from 'react'
 import styles from './styles.module.css'
 import Image from 'next/image'
-import { H } from '..';
-
+import { Buttons, H } from '..';
+import HomepageData from '@/date/homepage';
 const HeroSection = () => {
   return (
-    <section className={`${styles.section} overflow-x-clip w-full h-full`}>
-      <div className="w-full h-screen relative">
-        {/* <Image alt="bg-image" width={1440} height={1162} src={'/assets/decorations/bg.jpg'} /> */}
+    <section className={`${styles.section} overflow-x-clip w-full`}>
+      <div className="container flex flex-col gap-20 items-center">
+       <H level={1} size={'5xl'} className={styles.heading}>{HomepageData.S1.heading}</H>
+       <H size={'xl'} level={'div'}>{HomepageData.S1.content}</H>
+       <div className='flex flex-row gap-20'>
+        <Buttons.Calendly />
+        <Buttons.Whatsapp />
+       </div>
       </div>
     </section>
   );

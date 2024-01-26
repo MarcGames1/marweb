@@ -9,7 +9,7 @@ type alignment =
     | 'start'
     | 'end'
 
-type size = '7xl' | '5xl' | '3xl';
+type size = '7xl' | '5xl' | '3xl' | '2xl' | 'xl';
 
 type color = 'primary' | 'secondary' | 'accent'
 
