@@ -32,7 +32,7 @@ const MobileMenuContent = ({isOpen}:props) => {
         }}
         initial={variant}
         animate={variant}
-        className="  -z-10 h-[95vh] glass absolute bg-secondary/90 flex flex-col inset-0 items-center justify-center "
+        className="  -z-10 h-[95vh] glass absolute bg-primary/90 flex flex-col inset-0 items-center justify-center "
         style={{
           display: isOpen ? 'flex' : 'none',
           position: isOpen ? 'absolute' : 'relative',
@@ -41,7 +41,7 @@ const MobileMenuContent = ({isOpen}:props) => {
         {MenuData.map((m, i) => {
           return (
             <motion.li
-              className="text-xl my-5   z-0 relative  hover:btn-secondary btn btn-accent transition-colors ease-in-out duration-100 border-primary  rounded-2xl text-center flex items-center gap-10 hover:text-white"
+              className="text-xl my-5 hover:bg-primary/70   z-0 relative  hover:btn-secondary btn btn-outline text-white transition-colors ease-in-out duration-100 border-primary  rounded-2xl text-center flex items-center gap-10 hover:text-white"
               //@ts-ignore
               variants={variants}
               key={i}
