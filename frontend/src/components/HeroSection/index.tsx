@@ -1,14 +1,14 @@
 import React from 'react'
-import FirstPart from './FirstPart/FirstPart'
-import SecondPart from './SecondPart/SecondPart'
-import ThirdPart from './ThirdPart'
+import styles from './styles.module.css'
+import Image from 'next/image'
+import { H } from '..';
 
 const HeroSection = () => {
   return (
-    <section className=" overflow-x-clip">
-      <FirstPart />
-      <SecondPart />
-      <ThirdPart />
+    <section className={`${styles.section} overflow-x-clip w-full h-full`}>
+      <div className="w-full h-screen relative">
+        {/* <Image alt="bg-image" width={1440} height={1162} src={'/assets/decorations/bg.jpg'} /> */}
+      </div>
     </section>
   );
 }

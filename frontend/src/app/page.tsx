@@ -11,9 +11,9 @@ export default function Home() {
     <>
       <HeroVideo />
       <HeroSection />
-      <ServiciiSection />
+      {/* <ServiciiSection />
       <ColaborareSection />
-      <DeCeNoi /> 
+      <DeCeNoi />  */}
     </>
   );
 }

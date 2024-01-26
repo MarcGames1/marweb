@@ -18,12 +18,13 @@ export const Navbar = () => {
  };
   return (
     <>
-      <nav className="fixed z-30 w-full flex items-center flex-wrap glass p-3 ">
-        <div className='md:w-[100px]'>
+      <nav
+        className={`w-full z-30 w-auto flex items-center flex-wrap glass p-3 `}
+      >
+        <div className="inline-flex items-center p-2 mr-4 md:w-[100px]">
           <Logo />
         </div>
 
-        
         <button
           className=" inline-flex p-3 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none"
           onClick={handleClick}
@@ -47,13 +48,13 @@ export const Navbar = () => {
         <div
           className={`${
             active ? '' : 'hidden'
-          }   w-full lg:inline-flex lg:flex-grow lg:w-auto z-10`}
+          }    w-full lg:inline-flex text-center  lg:flex-grow lg:w-auto`}
         >
-          <div className="lg:inline-flex md:gap-2 gap-5 lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
+          <div className="lg:inline-flex md:gap-2 gap-5 lg:flex-row lg:ml-auto lg:w-auto lg:items-center items-start  flex flex-col  items-center">
             {MenuData.map((m, i) => {
               return (
                 <motion.div
-                  className="lg:inline-flex w-auto  w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white"
+                  className="lg:inline-flex md:w-auto lg:w-auto w-full   px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white  text-center"
                   //@ts-ignore
                   variants={variants}
                   key={i}
@@ -62,7 +63,7 @@ export const Navbar = () => {
                 </motion.div>
               );
             })}
-            <div className="flex md:gap-2 gap-5">
+            <div className="flex lg:w-auto w-full justify-items-around lg:flex-row flex-col md:gap-2 gap-5">
               <Buttons.Calendly />
               <Buttons.Whatsapp />
             </div>
