@@ -6,8 +6,8 @@ const RootTemplate = ({children}:{children:React.ReactNode}) => {
   return (
     <>
       <Navbar />
-      <main className={styles.main}>{children}</main>
-     <Footer />
+      <main className={`${styles.main}`}>{children}</main>
+      <Footer />
     </>
   );
 }
