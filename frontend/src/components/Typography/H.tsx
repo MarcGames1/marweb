@@ -1,37 +1,55 @@
 import React, { PropsWithChildren } from 'react'
 
+export enum TextAlignment {
+left='text-left',
+center='text-center',
+right='text-right',
+justify='text-justify',
+start='text-start',
+end='text-end'
+}
 
-type alignment =
-    | 'left'
-    | 'center'
-    | 'right'
-    | 'justify'
-    | 'start'
-    | 'end'
+export enum TextSize {
+  xl7 = 'text-7xl',
+  xl5='text-5xl',
+  xl3='text-3xl',
+  xl2='text-2xl',
+  xl='text-xl',
+  lg='text-lg',
+  base='text-base',
+}
 
-type size = '7xl' | '5xl' | '3xl' | '2xl' | 'xl';
+export enum TextColor {
+primary='text-primary-content',
+secondary='text-secondary-content',
+accent='text-accent-content',
+neutral='text-neutral-content',
+b100='text-base-100',
+b200='text-base-200',
+b300='text-base-300',
+info='text-info-content',
+success='text-success-content',
+warning='text-warning-content',
+error='text-error-content',
+}
 
-type color = 'primary' | 'secondary' | 'accent'
+
 
 interface HProps extends PropsWithChildren {
   level?: 1 | 2 | 3 | 4 | 5 | 6 | "div" | "span" | "p";
-  alignment?: alignment,
-  size?: size,
-  color?: color
+  alignment?: TextAlignment,
+  size?: TextSize,
+  color?: TextColor
   className?: string
 }
 
 
-const H = ({level, children, alignment ='center', size = '5xl', color ='primary', className}:HProps) => {
+const H = ({level, children, alignment =TextAlignment.center, size = TextSize.xl5, color =TextColor.primary, className}:HProps) => {
 
 
-    const textStyle = (variant : alignment | size) =>{ return `text-${variant}` }
-    const textColor = (variant : color) =>{ return `text-${variant}-content` }
 
 
-    const styles = `block m-auto  ${String(textStyle(alignment))} ${String(
-      textStyle(size)
-    )} ${String(textColor(color))}`;
+    const styles = `block m-auto  ${String(alignment)} ${String(size)} ${String(color)} ${String(className)}`;
 
     if (level === 'div') {
       return <div className={`${styles} ${className}`}>{children}</div>;

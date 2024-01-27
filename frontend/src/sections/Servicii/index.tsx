@@ -4,13 +4,14 @@ import React from 'react'
 import HomepageData from '@/date/homepage'
 import Link from 'next/link'
 import Image from 'next/image'
+import { TextSize } from '@/components/Typography/H'
 
 const ServiciiSection = () => {
   return (
     <section className={`${styles.section} overflow-x-clip w-full`}>
       <div>
         <div className={styles.title}>
-          <H level={2} size="xl" className={styles.title}>
+          <H level={2} size={TextSize.xl} className={styles.title}>
             {HomepageData.S2.heading}
           </H>
         </div>
