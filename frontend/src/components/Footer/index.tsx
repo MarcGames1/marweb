@@ -71,6 +71,7 @@ const Footer = () => {
           <div className="inline-flex gap-5  w-fit  place-items-center">
             {Object.keys(SocialMediaData).map((key: keyof ISocialMediaData) => (
               <Link
+                key={String(SocialMediaData[key])}
                 className="flex place-items-center flex-col gap-1"
                 href={String(SocialMediaData[key].link)}
               >
