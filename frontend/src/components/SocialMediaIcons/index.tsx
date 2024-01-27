@@ -55,7 +55,7 @@ const V2 = () => {
       {Object.keys(SocialMediaData).map((key: keyof ISocialMediaData) => (
         <Link
           key={String(SocialMediaData[key])}
-          className="flex place-items-center flex-col gap-1"
+          className="flex place-items-center flex-col gap-1  link link-hover outline_hover p-2"
           href={String(SocialMediaData[key].link)}
         >
           {SocialMediaData[key].icon}
