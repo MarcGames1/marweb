@@ -76,7 +76,7 @@ export const Navbar = () => {
               active ? '' : 'hidden'
             }    w-full lg:inline-flex text-center lg:translate-y-0  lg:flex-grow lg:w-auto`}
           >
-            <motion.div className="lg:inline-flex md:gap-2 gap-5 lg:flex-row lg:ml-auto lg:w-auto lg:items-center items-start  flex flex-col  items-center">
+            <motion.div className="lg:inline-flex md:gap-2 gap-5 lg:flex-row lg:ml-auto lg:w-auto lg:items-center   flex flex-col  items-center">
               {MenuData.map((m, i) => {
                 return (
                   <motion.div
