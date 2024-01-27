@@ -6,9 +6,9 @@ import { SEOInfo } from '@/app/classes/SeoInfo';
 
 export const metadata: Metadata = new SEOInfo(
   'Agentie Marketing Online cu rezultate • MarWeb.ro',
-  "Uite cum te putem ajuta să-ți atingi obiectivele: Optimizare SEO Îți aducem site-ul pe prima pagină prin strategii complete și personalizate adaptate business-ului tău. Nu te ajutăm doar să-ți crești numărul de vizitatori. Ne asigurăm că site-ul tău este optimizat și pregătit pentru ca o simpla vizită să se transforme într-o conversie.",
+  'Agentie Marketing Online • MarWeb.ro Te ajutam cu Strategii Unice Pentru Afacerea ta Online.',
   '/'
-  );
+);
 
 
 
