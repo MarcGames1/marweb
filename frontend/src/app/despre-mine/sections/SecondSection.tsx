@@ -2,7 +2,6 @@
 
 import { H } from '@/components';
 import { TextColor, TextSize } from '@/components/Typography/H';
-import { SocialMediaData, ISocialMediaData } from '@/date/socialMediaData';
 import React from 'react';
 import { Link } from 'react-daisyui';
 import Image from 'next/image';

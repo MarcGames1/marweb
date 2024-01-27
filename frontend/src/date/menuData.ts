@@ -9,10 +9,11 @@ export interface IMenuData {
 }
 
 export const MenuData: IMenuData[] = [
-  {href:'/servicii/seo', text: 'Servicii SEO'},
-  {href:'/servicii/google-ads', text: 'Promovare Google Ads'},
-  {href:'/servicii/creare-website', text: 'Creare Website'},
-  {href:'/servicii/mentorat', text: 'Mentorat'},
+  { href: '/despre-mine', text: 'Despre Mine' },
+  { href: '/servicii/seo', text: 'Servicii SEO' },
+  { href: '/servicii/google-ads', text: 'Promovare Google Ads' },
+  { href: '/servicii/creare-website', text: 'Creare Website' },
+  { href: '/servicii/mentorat', text: 'Mentorat' },
 ];
     // {href:'/servicii/seo', text: 'Servicii SEO'},
     // {href:'/servicii/google-ads', text: 'Promovare Google Ads'},
