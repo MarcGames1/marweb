@@ -65,7 +65,7 @@ const Footer = () => {
           <H level={'span'} size={TextSize.base} className="footer-title">
             Social Media
           </H>
-          <div className="inline-flex gap-10   place-items-center">
+          <div className="inline-flex gap-5  w-fit  place-items-center">
             {Object.keys(SocialMediaData).map((key: keyof ISocialMediaData) => (
               <Link className='flex place-items-center flex-col gap-1'  href={String(SocialMediaData[key].link)}>
                 {SocialMediaData[key].icon}

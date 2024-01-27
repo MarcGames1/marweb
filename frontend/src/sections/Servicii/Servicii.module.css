@@ -12,6 +12,9 @@ display: flex;
 max-width: 470px;
 padding: 24px 0px;
 flex-direction: column;
+text-align: center;
+self-align: center;
+justify-self:center;
 align-items: center;
 gap: 24px;
 }
