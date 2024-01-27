@@ -27,7 +27,7 @@ const FirstSection = () => {
                 (key: keyof ISocialMediaData) => (
                   <Link
                     key={String(SocialMediaData[key])}
-                    className="bg-primary shadow-lg text-primary-content p-2 rounded-full"
+                    className={`${TextColor.info} outline_hover bg-primary shadow-lg  p-2 rounded-full`}
                     href={String(SocialMediaData[key].link)}
                   >
                     {SocialMediaData[key].icon}
