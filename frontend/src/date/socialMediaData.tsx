@@ -1,3 +1,4 @@
+'use client'
 import { ReactElement } from 'react';
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube  } from 'react-icons/fa';
 export interface ISocialMediaLink {

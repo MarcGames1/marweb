@@ -21,7 +21,7 @@ const ServiciiSection = () => {
               <Link
                 href={content.href}
                 key={content.href}
-                className={` ${styles.card}`}
+                className={`outline_hover ${styles.card}`}
               >
                 <Image {...content.image} />
                 <H className={styles.card_title} level={'span'}>
