@@ -1,5 +1,5 @@
 'use client'
-import { H } from '@/components';
+import { H, SocialMediaIcons } from '@/components';
 import { TextAlignment, TextColor, TextSize } from '@/components/Typography/H';
 import { SocialMediaData, ISocialMediaData } from '@/date/socialMediaData';
 import Image from 'next/image'
@@ -22,25 +22,13 @@ const FirstSection = () => {
             <H level={'span'} size={TextSize.lg}>
               FULL-STACK DEVELOPER | SEO Expert & Google Ads | FREELANCER
             </H>
-            <div className="flex flex-row w-full px-10 pb-5 justify-between ">
-              {Object.keys(SocialMediaData).map(
-                (key: keyof ISocialMediaData) => (
-                  <Link
-                    key={String(SocialMediaData[key])}
-                    className={`${TextColor.info} outline_hover bg-primary shadow-lg  p-2 rounded-full`}
-                    href={String(SocialMediaData[key].link)}
-                  >
-                    {SocialMediaData[key].icon}
-                  </Link>
-                )
-              )}
-            </div>
+           <SocialMediaIcons.V1/>
           </div>
         </div>
         <Image
           alt="iphone-mockup"
-          width={463}
-          height={400}
+          width={231}
+          height={200}
           src={'/assets/DespreMine/iPhone 13.png'}
         />
       </div>

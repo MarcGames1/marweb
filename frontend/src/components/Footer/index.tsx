@@ -1,10 +1,11 @@
+'use client'
 import React from 'react'
 import H, { TextAlignment, TextColor, TextSize } from '../Typography/H';
 import Link from 'next/link';
 import { MenuData } from '@/date/menuData';
 import Image from 'next/image';
-import { ISocialMediaData, ISocialMediaLink, SocialMediaData } from '@/date/socialMediaData';
 
+import { SocialMediaIcons } from '..';
 const Footer = () => {
   const navClasses = 'flex flex-col items-center justify-items-center';
   return (
@@ -69,22 +70,7 @@ const Footer = () => {
             Social Media
           </H>
           <div className="inline-flex gap-5  w-fit  place-items-center">
-            {Object.keys(SocialMediaData).map((key: keyof ISocialMediaData) => (
-              <Link
-                key={String(SocialMediaData[key])}
-                className="flex place-items-center flex-col gap-1"
-                href={String(SocialMediaData[key].link)}
-              >
-                {SocialMediaData[key].icon}
-                <H
-                  size={TextSize.base}
-                  alignment={TextAlignment.center}
-                  level={'span'}
-                >
-                  {key}
-                </H>
-              </Link>
-            ))}
+           <SocialMediaIcons.V2 />
           </div>
         </nav>
       </footer>
