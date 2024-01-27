@@ -38,10 +38,10 @@ const S2: SectionWithCardsLinkAndPic = {
       description:
         'Asigurăm servicii complete de creare site-uri web performante, ușor de administrat, complet funcționale, pregătite să vândă și să te poziționeze drept autoritate în piață. Integrăm misiunea și viziunea afacerii tale într-un design responsive cu ajutorul celor mai noi tehnologii.',
       image: {
-        width: 300,
-        height: 300,
+        width: 100,
+        height: 100,
         alt: 'Poza Reprezentativa Creare site-uri web',
-        src: '/assets/services/webdevelopment.png',
+        src: '/assets/services/web.png',
       },
       href: '/servicii/creare-website',
     },
@@ -50,8 +50,8 @@ const S2: SectionWithCardsLinkAndPic = {
       description:
         'Îți aducem site-ul pe prima pagină prin strategii complete și personalizate adaptate business-ului tău. Nu te ajutăm doar să-ți crești numărul de vizitatori. Ne asigurăm că site-ul tău este optimizat și pregătit pentru ca o simpla vizită să se transforme într-o conversie.',
       image: {
-        width: 300,
-        height: 300,
+        width: 100,
+        height: 100,
         alt: 'Poza Reprezentativa Servicii SEO',
         src: '/assets/services/seo.png',
       },
@@ -62,10 +62,10 @@ const S2: SectionWithCardsLinkAndPic = {
       description:
         'Îți promovăm și creștem afacerea prin campanii Google ADS optimizate, la costuri minime și în concordanță cu strategia ta de business. Setăm publicul țintă, concepem mesaje de impact și gestionăm bugetele eficient, astfel încât să ne asigurăm că vei avea rezultate măsurabile.',
       image: {
-        width: 300,
-        height: 300,
+        width: 100,
+        height: 100,
         alt: 'Poza Reprezentativa servicii Google ADs',
-        src: '/assets/services/GoogleAds.png',
+        src: '/assets/services/ads.png',
       },
       href: '/servicii/google-ads',
     },
@@ -73,8 +73,8 @@ const S2: SectionWithCardsLinkAndPic = {
       heading: 'Mentorat',
       description: 'Descoperă mentoratul personalizat în SEO și web development! Îți ofer soluții practice pentru creșterea afacerii tale online. Conectează-te acum pentru ghidare expertă!',
       image: {
-        width: 300,
-        height: 300,
+        width: 100,
+        height: 100,
         alt: 'poza reprezentativa servicii mentorat',
         src: '/assets/services/mentorat.png',
       },

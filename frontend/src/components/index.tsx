@@ -1,14 +1,9 @@
-import HeroVideo from "./heroVideo";
+import HeroVideo from "../sections/heroVideo";
 import Loader from "./Loader";
-import HeroSectionBG from "./HeroSection";
+import HeroSection from "../sections/HeroSection";
 import Buttons from "./Buttons";
-import { ServiciiSection } from "./Servicii";
-import ColaborareSection from "./ColaborareSection";
-import DeCeNoi from "./DeCeNoiSection";
-import ChatBuble from "./ChatBuble";
-import PhoneMockup from "./PhoneMockup";
 import { H } from "./Typography";
-import SectionContainer from "./SectionContainer";
+
 
 
 
@@ -16,14 +11,8 @@ import SectionContainer from "./SectionContainer";
 export {
     HeroVideo,
     Loader,
-    HeroSectionBG as HeroSection,
+   HeroSection,
     Buttons,
-    ServiciiSection,
-    ColaborareSection,
-    DeCeNoi,
-    ChatBuble,
-    PhoneMockup,
     H,
-    SectionContainer
 }
     
