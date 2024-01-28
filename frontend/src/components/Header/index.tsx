@@ -36,7 +36,7 @@ export const Navbar = () => {
 
   return (
     <AnimatePresence>
-      <div className="z-0 relative block w-full h-[90px]">
+      <div className="z-50 relative block w-full h-[90px]">
 
       <div className="fixed w-full z-30">
         <motion.nav
