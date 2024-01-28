@@ -108,7 +108,7 @@ const S3: SectionWithCardsAndPic = {
     },
   ],
   heading: (
-    <>Cum va decurge colaborarea cu agentia de marketing online MarWeb</>
+    <>Cum Vom Lucra </>
   ),
 };
 

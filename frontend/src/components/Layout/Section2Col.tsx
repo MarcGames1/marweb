@@ -3,14 +3,21 @@ import React from 'react';
 export interface ISection2Col {
   leftside: React.ReactNode;
   rightside: React.ReactNode;
+  bgCol?: BackgroundColor
+  classes?: string
 }
 
-const Section2Col = ({ rightside, leftside }: ISection2Col) => {
+export enum BackgroundColor {
+  primary='bg-primary',
+  secondary='bg-secondary'
+}
+
+const Section2Col = ({ rightside, leftside, bgCol, classes }: ISection2Col) => {
   return (
-    <section>
-      <div className="grid grid-flow-row   m-auto  items-center justify-evenly lg:grid-flow-col">
-      {leftside}
-       {rightside}
+    <section className={`${bgCol} ${classes}`}>
+      <div className="grid grid-flow-row gap-10   lg:grid-rows-none mx-5  m-auto  items-center justify-evenly lg:grid-flow-col">
+        {leftside}
+        {rightside}
       </div>
     </section>
   );
