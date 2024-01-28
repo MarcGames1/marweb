@@ -16,7 +16,7 @@ const SecondSection = () => {
           src={'/assets/DespreMine/Poza-Alexandru-Marcu.png'}
         />
         <div
-          className={`outline_hover lg:p-10 p-5 lg:w-1/2 bg-green-300 rounded-2xl  w-full items-center justify-items-center  flex`}
+          className={`outline_hover lg:p-10 p-5 lg:w-1/2 rounded-2xl  w-full items-center justify-items-center  flex`}
         >
           <div className="flex flex-col justify-self-center gap-10 self-center">
             {' '}

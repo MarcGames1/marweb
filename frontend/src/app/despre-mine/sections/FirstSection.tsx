@@ -9,7 +9,7 @@ const FirstSection = () => {
     <section>
       <div className="flex flex-shrink-0 justify-between lg:m-32 flex-col-reverse items-center justify-items-center lg:flex-row">
         <div
-          className={`outline_hover lg:p-10 p-5 lg:w-1/2  w-full items-center justify-items-center  flex`}
+          className={`outline_hover rounded-2xl lg:p-10 p-5 lg:w-1/2  w-full items-center justify-items-center  flex`}
         >
           <div className="flex flex-col justify-self-center gap-10 self-center">
             {' '}

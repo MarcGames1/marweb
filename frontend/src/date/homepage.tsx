@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { HeroSectionData, SectionWithCardsAndPic, SectionWithCardsLinkAndPic } from './types';
+import { HeroSectionData, SectionWithCards, SectionWithCardsLinkAndPic } from './types';
 import { SEOInfo } from '@/app/classes/SeoInfo';
 
 
@@ -46,7 +46,7 @@ const S2: SectionWithCardsLinkAndPic = {
       href: '/servicii/creare-website',
     },
     {
-      heading: 'Optimizare SEO',
+      heading: 'Optimizare SEO'.toUpperCase(),
       description:
         'Îți aducem site-ul pe prima pagină prin strategii complete și personalizate adaptate business-ului tău. Nu te ajutăm doar să-ți crești numărul de vizitatori. Ne asigurăm că site-ul tău este optimizat și pregătit pentru ca o simpla vizită să se transforme într-o conversie.',
       image: {
@@ -70,8 +70,9 @@ const S2: SectionWithCardsLinkAndPic = {
       href: '/servicii/google-ads',
     },
     {
-      heading: 'Mentorat',
-      description: 'Descoperă mentoratul personalizat în SEO și web development! Îți ofer soluții practice pentru creșterea afacerii tale online. Conectează-te acum pentru ghidare expertă!',
+      heading: 'Mentorat'.toUpperCase(),
+      description:
+        'Descoperă mentoratul personalizat în SEO și web development! Îți ofer soluții practice pentru creșterea afacerii tale online. Conectează-te acum pentru ghidare expertă!',
       image: {
         width: 100,
         height: 100,
@@ -83,52 +84,32 @@ const S2: SectionWithCardsLinkAndPic = {
   ],
 };
 
-const S3: SectionWithCardsAndPic = {
+const S3: SectionWithCards = {
   heading: 'Cum va decurge colaborarea cu agentia de marketing online MarWeb',
   content: [
     {
       heading: ' FACEM CUNOȘTINȚĂ',
       description:
         'Programezi o ședință 1 la 1 – complet gratuită, în care îți vom solicita câteva informații relevante pentru a reuși să identificăm nevoile tale de business.',
-      image: {
-        width: 100,
-        height: 100,
-        alt: 'Poza Reprezentativa',
-        src: '/assets/colaborare/1.png',
-      },
+      
     },
     {
       heading: 'STABILIM OBIECTIVELE ȘI PLANUL DE ACȚIUNE',
       description:
         'Stabilim obiective strategice și măsurabile pe termen scurt, mediu și lung. Identificăm cuvintele cheie pe care putem crește și acțiunile necesare atât din partea noastră cât și a ta.',
-      image: {
-        width: 100,
-        height: 100,
-        alt: 'Poza Reprezentativa',
-        src: '/assets/colaborare/2.png',
-      },
+      
     },
     {
       heading: 'VEZI REZULTATELE ÎN TIMP REAL',
       description:
         'Vei fi în permanență în control și vei putea verifica rezultatele tuturor strategiilor implementate, precum și evoluția poziției site-ului tău în căutările Google, pe cuvintele cheie stabilite.',
-      image: {
-        width: 300,
-        height: 300,
-        alt: 'Poza Reprezentativa',
-        src: '/assets/colaborare/3.png',
-      },
+      
     },
     {
       heading: 'CALL ȘI PREZENTARE RAPORT LUNAR',
       description:
         'La finalul fiecărei luni, îți prezentăm un raport complet de activitate: ce acțiuni am întreprins, care sunt rezultatele și ce urmează să realizăm în luna următoare pentru a atinge obiectivele stabilite.',
-      image: {
-        width: 300,
-        height: 300,
-        alt: 'Poza Reprezentativa',
-        src: '/assets/colaborare/4.png',
-      },
+      
     },
   ],
 };
