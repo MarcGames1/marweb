@@ -6,7 +6,7 @@ export interface GeneralSectionData {
 
 export interface HeroSectionData extends GeneralSectionData {
   content: string | ReactNode;
-  decoration: any;
+  decoration?: any;
 }
 
 export interface SectionWithCards extends GeneralSectionData {

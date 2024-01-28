@@ -1,4 +1,3 @@
-
 import { Buttons, H } from '@/components';
 import { TextColor, TextSize } from '@/components/Typography/H';
 import { HeroSectionData } from '@/date/types';
@@ -30,7 +29,7 @@ const Section1 = ({ heading, content }: HeroSectionData) => {
           alt="iphone-mockup"
           width={400}
           height={400}
-          src={'/assets/SEO/hero.png'}
+          src={'/assets/WEBSITE/hero.png'}
         />
       </div>
     </section>

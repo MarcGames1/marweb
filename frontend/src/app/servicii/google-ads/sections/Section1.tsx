@@ -1,4 +1,3 @@
-
 import { Buttons, H } from '@/components';
 import { TextColor, TextSize } from '@/components/Typography/H';
 import { HeroSectionData } from '@/date/types';
@@ -16,7 +15,7 @@ const Section1 = ({ heading, content }: HeroSectionData) => {
             <H size={TextSize.xl3} level={1} color={TextColor.primary}>
               {heading}
             </H>
-            <H level={'div'} size={TextSize.lg}>
+            <H level={'div'} size={TextSize.base}>
               {content}
             </H>
             <div className="flex justify-around">
@@ -30,7 +29,7 @@ const Section1 = ({ heading, content }: HeroSectionData) => {
           alt="iphone-mockup"
           width={400}
           height={400}
-          src={'/assets/SEO/hero.png'}
+          src={'/assets/ADS/hero.png'}
         />
       </div>
     </section>

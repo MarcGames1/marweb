@@ -10,12 +10,12 @@ export const metadata: Metadata = new SEOInfo(
 
 
 const S1: HeroSectionData = {
-  heading: <>AGENTIE MARKETING ONLINE</>,
+  heading: <>Servicii Promovare Google Ads</>,
   content: (
     <>
       <p>
-        Te ajutăm să-ți crești veniturile și să obții notorietate în mediul
-        online prin optimizarea site-ului pentru motoarele de căutare.
+        Transformăm problemele în soluții! Te Ajutam sa ajungi la mai multi clienti,
+        prin optimizarea campaniilor de Google Ads
       </p>
       <p>
         Vrei să-ți crești numărul vizitelor pe site fără să investești bugete
