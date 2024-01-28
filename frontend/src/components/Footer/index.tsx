@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <>
       <footer
-        className={`${TextColor.primary} footer p-10 items-start justify-items-center place-items-center text-center  `}
+        className={`${TextColor.primary} footer lg:p-10 items-start justify-items-center place-items-center text-center  `}
       >
         <aside className={navClasses}>
           <Link href={'/'}>
@@ -69,7 +69,7 @@ const Footer = () => {
           <H level={'span'} size={TextSize.base} className="footer-title">
             Social Media
           </H>
-          <div className="inline-flex gap-5  w-fit  place-items-center">
+          <div className="inline-flex gap-2 lg:gap-5  w-fit  place-items-center">
            <SocialMediaIcons.V2 />
           </div>
         </nav>
