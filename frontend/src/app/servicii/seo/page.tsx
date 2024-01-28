@@ -8,7 +8,7 @@ import Section3 from './Sections/Section3'
 
 const ServiciiSeoPage = () => {
   return (<>
-   <Section1 {...SeoData.S1}/>
+   <Section1 src='/assets/SEO/hero.png' {...SeoData.S1}/>
    <Section2 {...SeoData.S2}/>
    <Section3 {...SeoData.S3}/>
   </>

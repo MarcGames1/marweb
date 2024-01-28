@@ -18,13 +18,17 @@ const Section2 = ({ heading, content }: SectionWithCards) => {
 
 const Leftside = () =>{
   return (
-    <Image
-      className=" items-center p-5 flex-0 justify-self-end"
-      alt="Process"
-      width={400}
-      height={400}
-      src={'/assets/SEO/section2.png'}
-    />
+    <>
+      {' '}
+      <Image
+        className=" items-center p-5 flex-0 justify-self-end"
+        alt="Process"
+        width={400}
+        height={400}
+        src={'/assets/SEO/section2.png'}
+      />
+   
+    </>
   );
 }
 
