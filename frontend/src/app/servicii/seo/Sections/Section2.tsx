@@ -36,7 +36,7 @@ const Leftside = () =>{
 const RightSide = ({ content, heading }: SectionWithCards) => {
   return (
     <div
-      className={` lg:p-10 m-5 w-fit p-5  items-center justify-items-center  flex flex-col  rounded-2xl `}
+      className={` lg:p-10 lg:m-5 w-fit   items-center justify-items-center  flex flex-col  rounded-2xl `}
     >
       <div className="flex flex-col justify-self-center gap-10 self-center mb-2 lg:mb-5">
         {' '}
