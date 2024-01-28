@@ -9,8 +9,8 @@ import { TbBrandReactNative, TbSeo } from 'react-icons/tb';
 const BrandBenefits = () => {
   return (
     <section className="bg-gradient-to-b from-[#2A0B70] to-[#0C0A27]   ">
-      <H></H>
-      <div className="container flex lg:flex-row  flex-col items-center justify-evenly gap-5 lg:gap-0 p-5  h-fit">
+      
+      <div className="container flex lg:flex-row m-auto  flex-col items-center justify-evenly gap-5 lg:gap-0 p-5  h-fit">
         <BenefitsCard
           beneficiu="Expertiză Remarcabilă în SEO și Google Ads"
           image={styles.image1}

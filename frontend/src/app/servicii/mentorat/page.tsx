@@ -2,8 +2,10 @@ import React from 'react'
 
 const MentoratPage = () => {
   return (
-    <div>Mentorat</div>
-  )
+    <div>
+     
+    </div>
+  );
 }
 
 export default MentoratPage
