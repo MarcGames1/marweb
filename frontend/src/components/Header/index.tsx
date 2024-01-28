@@ -54,7 +54,7 @@ export const Navbar = () => {
           </motion.div>
 
           <motion.button
-            className=" inline-flex p-3 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none"
+            className=" inline-flex p-3 hover:bg-primary rounded lg:hidden text-white ml-auto hover:text-white outline-none"
             onClick={handleClick}
             >
             <svg
@@ -83,7 +83,7 @@ export const Navbar = () => {
                 return (
                   <motion.div
                   whileTap={{ scale: 0.95 }}
-                  className="lg:inline-flex md:w-auto lg:w-auto w-full   px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white  text-center"
+                  className="lg:inline-flex md:w-auto lg:w-auto w-full   px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-primary hover:text-white  text-center"
                     //@ts-ignore
                     
                     key={i}
