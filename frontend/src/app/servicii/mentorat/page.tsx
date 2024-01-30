@@ -1,10 +1,11 @@
 import React from 'react'
+import Section1 from './Section1';
 
 const MentoratPage = () => {
   return (
-    <div>
-     
-    </div>
+    <>
+     <Section1 />
+    </>
   );
 }
 

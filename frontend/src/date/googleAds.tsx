@@ -13,14 +13,8 @@ const S1: HeroSectionData = {
   heading: <>Servicii Promovare Google Ads</>,
   content: (
     <>
-      <p>
-        Transformăm problemele în soluții! Te Ajutam sa ajungi la mai multi clienti,
-        prin optimizarea campaniilor de Google Ads
-      </p>
-      <p>
-        Vrei să-ți crești numărul vizitelor pe site fără să investești bugete
-        enorme în reclame?
-      </p>
+      Afla cum te pot ajuta sa iti eficientizezi costurile campaniilor Google
+      Ads
     </>
   ),
 

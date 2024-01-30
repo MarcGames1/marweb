@@ -60,56 +60,47 @@ const S2: SectionWithCards = {
   ],
 };
 
-const S3: SectionWithCardsAndPic = {
+const S3: SectionWithCards = {
   content: [
     {
       heading: 'Analiză și Strategie',
-      description:
-        'Înțelegem nevoile și obiectivele afacerii tale și dezvoltăm o strategie SEO personalizată.',
-      image: {
-        src: '',
-        alt: 'Poza Reprezentativa Audit SEO On Page',
-        width: 300,
-        height: 300,
-      },
+      description: (
+        <>
+          <p>
+            Înțelegem nevoile și obiectivele afacerii tale și dezvoltăm o
+            strategie SEO personalizată.
+          </p>
+          <p>
+            Asta inseamna ca vom lucra continu pentru a gasi noi oportunitati
+            SEO, monitorizam concurenta si scoatem in evidenta ceea ce te
+            diferentiaza la nivel de brand.
+          </p>
+        </>
+      ),
     },
+
     {
       heading: 'Implementare',
-      description:
-        'Pregătim site-ul tău pentru succes, optimizând fiecare aspect necesar pentru rezultate excelente.',
-      image: {
-        src: '',
-        alt: 'Poza Reprezentativa Audit SEO On Page',
-        width: 300,
-        height: 300,
-      },
+      description: (
+        <>
+          <p>Pregătim site-ul tău pentru succes, optimizând fiecare aspect necesar
+          pentru rezultate excelente.</p>
+          <p>Dupa aceasta pregatire initiala, ( Primul Audit On Page ) vom monitoriza progresul si apoi venim constant cu imbunatatiri pentru ca tu sa iti cresti vizibilitatea, rata de click si rata de conversie</p>
+        </>
+      ),
     },
     {
       heading: 'Monitorizare și Raportare',
       description:
         'Urmarim constant progresul și îți oferim rapoarte detaliate pentru a fi mereu la curent cu rezultatele.',
-      image: {
-        src: '',
-        alt: 'Poza Reprezentativa Audit SEO On Page',
-        width: 300,
-        height: 300,
-      },
     },
     {
       heading: 'Adaptare',
       description:
         'Ne ajustăm strategia pe măsură ce evoluează afacerea ta și mediul online.',
-      image: {
-        src: '',
-        alt: 'Poza Reprezentativa Audit SEO On Page',
-        width: 300,
-        height: 300,
-      },
     },
   ],
-  heading: (
-    <>Cum Vom Lucra </>
-  ),
+  heading: <>Cum Vom Lucra </>,
 };
 
 const SeoData = {S1, S2,S3}
