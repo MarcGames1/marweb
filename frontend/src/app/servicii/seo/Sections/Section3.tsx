@@ -1,12 +1,12 @@
 import { Buttons, H } from '@/components'
 import Section2Col from '@/components/Layout/Section2Col'
 import Reason from '@/components/Reason'
-import { SectionWithCards, SectionWithCardsAndPic } from '@/date/types'
+import { SectionWithCards } from '@/date/types'
 import React from 'react'
 import Image from 'next/image'
 import { TextSize } from '@/components/Typography/H'
 import ContacteazaMa from '@/components/CTA Widget/ContacteazaMa'
-const Section3 = ({heading, content}:SectionWithCardsAndPic) => {
+const Section3 = ({heading, content}:SectionWithCards) => {
   return (
     <Section2Col leftside={<LeftSide heading={heading} content={content} />} rightside={<ContacteazaMa />} />
   )
