@@ -17,6 +17,7 @@ export class SEOInfo implements Metadata{
   robots: string;
   alternates: Alternates;
   openGraph: OpenGraph;
+  metadataBase?: URL | null | undefined;
 
   constructor(
     title: string,
@@ -24,6 +25,7 @@ export class SEOInfo implements Metadata{
     canonical: string,
     index = true
   ) {
+    
     this.title = title;
     this.description = description;
     this.canonical = canonical;
@@ -37,5 +39,6 @@ export class SEOInfo implements Metadata{
       locale: 'ro-RO',
       title: title,
     };
+    this.metadataBase = new URL('https://marweb.ro')
   }
 }
