@@ -59,8 +59,10 @@ export interface SectionWithCardsLinkAndPic extends SectionWithCardsAndPic {
  * @property {string | ReactNode} description - Descrierea cardului.
  */
 export interface CardData {
+  id: string | number
   heading: string | ReactNode;
   description: string | ReactNode;
+  bg?: string
 }
 
 /**

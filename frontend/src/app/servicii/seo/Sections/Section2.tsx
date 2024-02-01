@@ -1,56 +1,50 @@
+'use client'
 import { SectionWithCards } from '@/date/types';
-import React from 'react'
+import React, { ReactNode } from 'react'
 import Image from 'next/image';
-import H, { TextColor, TextSize } from '@/components/Typography/H';
+import H, { TextAlignment, TextColor, TextSize } from '@/components/Typography/H';
 import Reason from '@/components/Reason';
 import Section2Col from '@/components/Layout/Section2Col';
+import { useTheme } from 'next-themes';
 
-
-const Section2 = ({ heading, content }: SectionWithCards) => {
-  return (
-    <Section2Col
-      rightside={<RightSide heading={heading} content={content} />}
-      leftside={<Leftside />}
-    />
-  );
-};
-
-
-const Leftside = () =>{
-  return (
-    <>
-      {' '}
-      <Image
-        className=" items-center p-5 flex-0 justify-self-end"
-        alt="Process"
-        width={400}
-        height={400}
-        src={'/assets/SEO/section2.png'}
-      />
-   
-    </>
-  );
+interface Section2Props extends SectionWithCards {
+  sectionHeading?: ReactNode | String;
+  icon?: ReactNode
 }
 
+const Section2 = ({ heading, content, icon }: Section2Props) => {
+    const { theme, setTheme } = useTheme();
 
-const RightSide = ({ content, heading }: SectionWithCards) => {
   return (
-    <div
-      className={` lg:p-10 lg:m-5 w-fit   items-center justify-items-center  flex flex-col  rounded-2xl `}
-    >
-      <div className="flex flex-col justify-self-center gap-10 self-center mb-2 lg:mb-5">
-        {' '}
-        <H size={TextSize.xl3} level={1}>
+    <>
+      <div className="flex items-center space-x-2 mb-4">
+        <div className="text-6xl text-[#F95054]">{icon}</div>
+        <H alignment={TextAlignment.center} size={TextSize.xl5}  level={2} className="after-effect w-full mt-12 text-center after:ml-5  dark:text-white font-medium">
           {heading}
         </H>
       </div>
-      <div className="flex flex-col gap-2 lg:gap-5">
-        {content.map((c, i) => {
-          return <Reason key={i + String(c.heading)} {...c} />;
-        })}
+      {/* end flex */}
+      <div className="grid grid-cols-1 md:grid-cols-2 mx-5 gap-x-6 gap-y-6 ">
+        {content.map((singleItem) => (
+          <div
+            className="py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg  dark:border-[#212425] dark:border-2"
+            style={{
+              background: `${
+                theme === 'dark' ? 'transparent' : singleItem?.bg
+              }`,
+            }}
+            key={singleItem.id}
+          >
+            <h3 className="text-xl dark:text-white"> {singleItem.heading} </h3>
+            <p className="dark:text-[#b7b7b7]">{singleItem.description}</p>
+          </div>
+        ))}
       </div>
-    </div>
+    </>
   );
 };
+
+
+
 
 export default Section2

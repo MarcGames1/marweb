@@ -30,33 +30,36 @@ const S2: SectionWithCards = {
   heading: <> Serviciile Profesionale de optimizare SEO includ:</>,
   content: [
     {
+      id: generateRandomId(),
       heading: 'Audit SEO On Page',
       description: (
         <>
           Recomandari care castiga increderea utilizatorului si a motorului de
-          cautare se mai numeste si
-          Seo on-page
+          cautare se mai numeste si Seo on-page
         </>
       ),
-     
+      bg: '#EEF5FA',
     },
     {
+      id: generateRandomId(),
       heading: 'Cercetare Avansata a Cuvintelor Cheie',
       description:
         'Vedem Cum Cauta Utilizatorii Tai in Google produsele sau serviciile tale si ce continut doreste acesta sa vada',
-      
+      bg: '#FFF4F4',
     },
     {
+      id: generateRandomId(),
       heading: 'SEO Off Page',
       description:
         'Construim un plan de Link Building care sa creasca autoritatea si increderea domeniului tau prin comunicate de presa gandite strategic',
-     
+      bg: '#FFF1FB',
     },
     {
+      id: generateRandomId(),
       heading: 'Audit SEO On Page',
       description:
         'Audit detaliat al site-ului tău pentru a identifica punctele slabe și oportunitățile de îmbunătățire',
-      
+      bg: '#F2F4FF',
     },
   ],
 };
@@ -64,6 +67,7 @@ const S2: SectionWithCards = {
 const S3: SectionWithCards = {
   content: [
     {
+      id: generateRandomId(),
       heading: 'Analiză și Strategie',
       description: (
         <>
@@ -78,27 +82,41 @@ const S3: SectionWithCards = {
           </p>
         </>
       ),
+      bg: '#EEF5FA',
     },
 
     {
+      id: generateRandomId(),
       heading: 'Implementare',
       description: (
         <>
-          <p>Pregătim site-ul tău pentru succes, optimizând fiecare aspect necesar
-          pentru rezultate excelente.</p>
-          <p>Dupa aceasta pregatire initiala, ( Primul Audit On Page ) vom monitoriza progresul si apoi venim constant cu imbunatatiri pentru ca tu sa iti cresti vizibilitatea, rata de click si rata de conversie</p>
+          <p>
+            Pregătim site-ul tău pentru succes, optimizând fiecare aspect
+            necesar pentru rezultate excelente.
+          </p>
+          <p>
+            Dupa aceasta pregatire initiala, ( Primul Audit On Page ) vom
+            monitoriza progresul si apoi venim constant cu imbunatatiri pentru
+            ca tu sa iti cresti vizibilitatea, rata de click si rata de
+            conversie
+          </p>
         </>
       ),
+      bg: '#FCF4FF',
     },
     {
+      id: generateRandomId(),
       heading: 'Monitorizare și Raportare',
       description:
         'Urmarim constant progresul și îți oferim rapoarte detaliate pentru a fi mereu la curent cu rezultatele.',
+      bg: '#FCF9F2',
     },
     {
+      id: generateRandomId(),
       heading: 'Adaptare',
       description:
         'Ne ajustăm strategia pe măsură ce evoluează afacerea ta și mediul online.',
+      bg: '#FCF4FF',
     },
   ],
   heading: <>Cum Vom Lucra </>,
