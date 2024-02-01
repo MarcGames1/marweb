@@ -1,7 +1,8 @@
 import { Metadata } from 'next/types';
 import { SEOInfo } from '@/app/classes/SeoInfo';
-import { HeroSectionData, SectionWithCards, SectionWithCardsAndPic } from './types';
+import { HeroSectionData, PortraitVideoContentGallery, SectionWithCards, SectionWithCardsAndPic } from './types';
 import Link from 'next/link';
+import { generateRandomId } from '@/utils/Helpers';
 
 export const metadata: Metadata = new SEOInfo(
   'Servicii Optimizare SEO Profesionale in Romania » MarWeb 🚀',
@@ -103,7 +104,18 @@ const S3: SectionWithCards = {
   heading: <>Cum Vom Lucra </>,
 };
 
-const SeoData = {S1, S2,S3}
+const S4: PortraitVideoContentGallery = {
+  heading: <>Studii De Caz SEO</>,
+  content: [
+    {
+      src: '',
+      id: generateRandomId(),
+      width:1080,
+      height:1920
+    },
+  ],
+};
+const SeoData = {S1, S2,S3, S4}
 
 
 export default SeoData

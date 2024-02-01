@@ -5,12 +5,7 @@ flex-direction: column;
 align-items: center;
 gap: 80px;
 align-self: stretch;
-background-image: url('/assets/decorations/bg.jpg');
-background-repeat: no-repeat;
-background-size: cover;
-/* width: 100%; */
-min-height: 100vh;
-background-attachment: fixed;
+
 
 }
 /* #FFFFFF0D, #FFFFFF00  */

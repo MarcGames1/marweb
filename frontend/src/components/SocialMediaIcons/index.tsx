@@ -6,6 +6,8 @@ import H, { TextAlignment, TextColor, TextSize } from '../Typography/H';
 
 import { ReactElement } from 'react';
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
+
+import { generateRandomId } from '@/utils/Helpers';
 export interface ISocialMediaLink {
   link: string;
   icon: ReactElement;
@@ -54,7 +56,7 @@ const V2 = () => {
     <div className="inline-flex gap-5  w-fit  place-items-center">
       {Object.keys(SocialMediaData).map((key: keyof ISocialMediaData) => (
         <Link
-          key={String(SocialMediaData[key])}
+          key={String(generateRandomId()+ SocialMediaData[key])}
           className="flex place-items-center flex-col gap-1  link link-hover outline_hover p-2"
           href={String(SocialMediaData[key].link)}
         >

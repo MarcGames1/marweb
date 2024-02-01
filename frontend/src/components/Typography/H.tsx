@@ -20,7 +20,7 @@ export enum TextSize {
 }
 
 export enum TextColor {
-primary='text-primary-content',
+primary='text-primary',
 secondary='text-secondary-content',
 accent='text-accent-content',
 neutral='text-neutral-content',

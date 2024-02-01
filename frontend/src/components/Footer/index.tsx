@@ -2,7 +2,7 @@
 import React from 'react'
 import H, { TextAlignment, TextColor, TextSize } from '../Typography/H';
 import Link from 'next/link';
-import { MenuData } from '@/date/menuData';
+import { HeaderMenuData } from '@/date/menuData';
 import Image from 'next/image';
 
 import { SocialMediaIcons } from '..';
@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <>
       <footer
-        className={`${TextColor.primary} footer lg:p-10 items-start justify-items-center place-items-center text-center  `}
+        className={`${TextColor.primary} footer lg:p-10 items-start justify-items-center place-items-center text-center overflow-hidden rounded-b-2xl bg-slate-50 dark:bg-black  `}
       >
         <aside className={navClasses}>
           <Link href={'/'}>
@@ -37,14 +37,14 @@ const Footer = () => {
           >
             Servicii
           </H>
-          {MenuData.map((m) => {
+          {HeaderMenuData.map((m) => {
             return (
               <Link
-                key={String(m.text)}
+                key={String(m.name)}
                 className="link link-hover"
-                href={m.href}
+                href={m.routePath}
               >
-                {m.text}
+                {m.name}
               </Link>
             );
           })}
@@ -70,7 +70,7 @@ const Footer = () => {
             Social Media
           </H>
           <div className="inline-flex gap-2 lg:gap-5  w-fit  place-items-center">
-           <SocialMediaIcons.V2 />
+            <SocialMediaIcons.V2 />
           </div>
         </nav>
       </footer>

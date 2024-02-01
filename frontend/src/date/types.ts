@@ -1,3 +1,4 @@
+import { UUID } from 'crypto';
 import { ReactNode } from 'react';
 
 /**
@@ -83,4 +84,20 @@ export interface CardDataWithPicture extends CardData {
  */
 export interface CardDataWithPictureAndLink extends CardDataWithPicture {
   href: string;
+}
+
+interface VideoContent {
+  src: string;
+  id: string
+  width:number,
+  height:number
+}
+
+export interface PortraitVideoContent extends VideoContent {
+  width: 1080,
+  height:1920
+}
+
+export interface PortraitVideoContentGallery extends GeneralSectionData {
+ content: PortraitVideoContent[] 
 }

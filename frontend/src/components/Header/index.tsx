@@ -1,106 +1,113 @@
 'use client'
-import { MenuData } from '@/date/menuData';
-import { motion, AnimatePresence} from 'framer-motion';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import Link from 'next/link';
 import { useState } from 'react';
-import { Buttons } from '..';
-import Logo from './HeaderComponents/Logo';
- 
-export const Navbar = () => {
-  const [active, setActive] = useState(false);
+import { HeaderMenuData } from '@/date/menuData';
+import Image from 'next/image';
 
-  const handleClick = () => {
-    setActive(!active);
-  };
-  const hideNavItemsVariant = {
-    opened: {
-      opacity: 0,
-      y: '-100%',
-      transition: {
-        duration: 0.5,
-        ease: 'easeInOut',
-      },
-    },
-    closed: {
-      opacity: 1,
-      y: '0%',
-      transition: {
-        delay: 1.1,
-        duration: 0.5,
-        ease: 'easeInOut',
-      },
-    },
-  };
+import { isActiveLink } from '@/utils/LinkActiveChecker';
+import { usePathname } from 'next/navigation';
+import { generateRandomId } from '@/utils/Helpers';
+import DarkMode from '../mode/DarkMode';
+import DarkModeMobile from '../mode/DarkModeMobile';
+
+
+const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  
+  
+  //  break-keep whitespace-nowrap
 
 
 
   return (
-    <AnimatePresence>
-      <div className="z-50 relative block w-full h-[90px]">
-
-      <div className="fixed w-full z-30">
-        <motion.nav
-          initial="closed"
-          animate={active ? 'opened' : 'closed'}
-          className={`${
-            active ? 'absolute top-0' : ''
-          } w-full  z-30  flex items-center flex-wrap glass p-3 `}
-          >
-          <motion.div
-            variants={hideNavItemsVariant}
-            className="inline-flex items-center p-2 mr-4 md:w-[100px]"
-            >
-            <Logo />
-          </motion.div>
-
-          <motion.button
-            className=" inline-flex p-3 hover:bg-primary rounded lg:hidden text-white ml-auto hover:text-white outline-none"
-            onClick={handleClick}
-            >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
+    <div className="z-50 break-keep whitespace-nowrap ">
+      <div className="container">
+        {/* Header menu start  */}
+        <header className="flex justify-between items-center fixed top-0 left-0 w-full lg:static z-[1111111111]  ">
+          <div className=" flex justify-between w-full px-4 lg:px-0 bg-[#F3F6F6] lg:bg-transparent lg:dark:bg-transparent dark:bg-black ">
+            <div className="flex justify-between w-full items-center space-x-4 lg:my-8 my-5 ">
+              <Link className="text-5xl font-semibold" href="/">
+                {/* website logo  */}
+                {/* <Logo /> */}
+                <Image
+                  className="max-h-fit h-[50px] lg:h-[75px]"
+                  width={153}
+                  height={26}
+                  priority
+                  src="/marwebLogo/Logo-Mare-100.svg"
+                  alt="logo"
                 />
-            </svg>
-          </motion.button>
-          {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
-          <motion.div
+              </Link>
+
+              {/* start mobile menu toggle and mode btn */}
+              <div className="flex items-center">
+                <DarkModeMobile />
+                {!menuOpen ? (
+                  <span
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    className="lg:opacity-0 lg:invisible visible opacity-100  bg-[#ef4060] w-[40px] h-[40px] rounded-full flex justify-center cursor-pointer items-center text-white dark:text-white text-3xl ml-3 "
+                  >
+                    <AiOutlineMenu />
+                  </span>
+                ) : (
+                  <span
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    className="lg:opacity-0 cursor-pointer lg:invisible visible opacity-100  bg-[#ef4060] w-[40px] h-[40px] rounded-full flex justify-center items-center text-white text-3xl ml-3 "
+                  >
+                    <AiOutlineClose />
+                  </span>
+                )}
+              </div>
+              {/* End mobile menu toggle and mode btn */}
+            </div>
+          </div>
+          {/* End flex */}
+
+          {/* mobile nav menu start */}
+          <nav
             className={`${
-              active ? '' : 'hidden'
-            }    w-full lg:inline-flex text-center lg:translate-y-0  lg:flex-grow lg:w-auto`}
+              menuOpen ? 'block  dark:bg-black   ' : 'hidden lg:block'
+            }`}
+          >
+            {/* Menu items start  */}
+            <ul
+              className={`${
+                menuOpen
+                  ? 'block lg:hidden  absolute left-0 rounded-b-[20px] top-20 z-[22222222222222] w-full bg-white dark:bg-[#212425] drop-shadow-lg py-4 '
+                  : 'flex my-12 '
+              }`}
             >
-            <motion.div className="lg:inline-flex md:gap-2 gap-5 lg:flex-row lg:ml-auto lg:w-auto lg:items-center   flex flex-col  items-center">
-              {MenuData.map((m, i) => {
-                return (
-                  <motion.div
-                  whileTap={{ scale: 0.95 }}
-                  className="lg:inline-flex md:w-auto lg:w-auto w-full   px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-primary hover:text-white  text-center"
-                    //@ts-ignore
-                    
-                    key={i}
-                    >
-                    <Link href={m.href}>{m.text}</Link>
-                  </motion.div>
-                );
-              })}
-              <div className="flex lg:w-auto w-full justify-items-around lg:flex-row flex-col md:gap-2 gap-5">
-                <Buttons.Calendly />
-                <Buttons.Whatsapp />
-              </div>
-            </motion.div>
-          </motion.div>
-        </motion.nav>
+              {HeaderMenuData.map((item) => (
+                <li key={generateRandomId() + item.id} className="mb-1">
+                  <Link
+                    className={`${
+                      
+                      isActiveLink(item.routePath, pathname)
+                        ? 'rounded-md  cursor-pointer font-poppins bg-white text-gray-lite font-medium mx-2.5 flex text-xtiny py-2.5 px-2 md:px-4 xl:px-5 items-center transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425] hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] dark:text-[#A6A6A6] linked bg-gradient-to-r '
+                        : 'px-2 rounded-md  cursor-pointer font-poppins bg-white text-gray-lite font-medium mx-2.5 flex text-xtiny py-2.5 md:px-4 xl:px-5 items-center transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425] hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] dark:text-[#A6A6A6]'
+                    } `}
+                    href={item.routePath}
+                  >
+                    <span className="mr-2 text-xl">{item.icon}</span>
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+              {/* light dark mode button start */}
+              <DarkMode />
+              {/* light dark mode button end */}
+            </ul>
+            {/* Menu items end  */}
+          </nav>
+          {/* End mobile nav menu end */}
+        </header>
+        {/* Header menu End  */}
       </div>
-              </div>
-    </AnimatePresence>
+    </div>
   );
 };
+
+export default Header;
