@@ -14,9 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ro">
-      <body className={` -z-20  relative bg-fixed  ${inter.className}`}>
+      <body className={`  ${inter.className}`}>
         <Providers>
-          <div className="bg-homeBg min-h-screen dark:bg-homeBg-dark bg-no-repeat bg-center bg-cover bg-fixed  md:pb-16 w-full">
+          <div className=" min-h-screen dark:bg-homeBg-dark bg-center bg-repeat bg-cover bg-fixed   w-full">
            
             {children}
           </div>

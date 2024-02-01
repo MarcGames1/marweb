@@ -6,8 +6,8 @@ import Header from '@/components/Header';
 
 const GoogleAdsPage = () => {
   return (
+    
     <>
-      <Header />
       <Section1 src="/assets/ADS/hero.png" {...GoogleAdsData.S1} />
       <Section2 {...GoogleAdsData.S2} />
     </>

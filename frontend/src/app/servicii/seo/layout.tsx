@@ -1,18 +1,9 @@
-import React from 'react';
-
 import { Metadata } from 'next/types';
 import { metadata as md } from '@/date/seo';
-import Header from '@/components/Header';
+import PageTemplate from '@/components/PageTemplate/PageTemplate';
 
 export const metadata: Metadata = md;
 
-const SeoLayout = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <>
-      <Header />
-      {children}
-    </>
-  );
-};
+const SeoLayout = PageTemplate
 
 export default SeoLayout;

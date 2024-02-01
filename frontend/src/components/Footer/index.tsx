@@ -8,13 +8,13 @@ import Image from 'next/image';
 import { SocialMediaIcons } from '..';
 const Footer = () => {
   const navClasses =
-    'flex flex-col items-center justify-items-center text-center text-gray-lite  dark:text-color-910';
+    'flex  flex-col items-center justify-items-center text-center text-gray-lite  dark:text-color-910';
 
     const footerTitle = ''
   return (
     <>
       <footer
-        className={`px-5  overflow-hidden rounded-b-2xl bg-slate-50 dark:bg-black  `}
+        className={`px-5 py-20 overflow-hidden rounded-b-2xl bg-slate-50 dark:bg-black  `}
       >
         <div className="flex flex-col gap-5 lg:flex-row justify-between items-center">
           <aside className={navClasses}>

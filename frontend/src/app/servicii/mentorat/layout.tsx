@@ -1,10 +1,9 @@
-
 import { Metadata } from 'next/types';
 import { metadata as md } from '@/date/googleAds';
 import PageTemplate from '@/components/PageTemplate/PageTemplate';
 
-export const metadata: Metadata = md
+export const metadata: Metadata = md;
 
-const GoogleAdsLayout = PageTemplate
+const MentoratLayout = PageTemplate;
 
-export default GoogleAdsLayout;
+export default MentoratLayout;

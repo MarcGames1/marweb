@@ -23,7 +23,7 @@ export default function Providers({ children }: { children: React.ReactNode }) {
         draggable
         pauseOnHover
       />
-      <ThemeProvider attribute="class">{children}</ThemeProvider>;
+      <ThemeProvider attribute="class">{children}</ThemeProvider>
     </div>
   );
 }

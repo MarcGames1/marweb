@@ -8,7 +8,7 @@ import Header from '@/components/Header';
 const CreareWebsitePage = () => {
   return (
     <>
-    <Header />
+    
       <Section1 src="/assets/WEBSITE/hero.png" {...S1} />
     </>
   );

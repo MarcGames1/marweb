@@ -1,8 +1,8 @@
 
-import React from 'react'
 
 import { Metadata } from 'next/types';
 import { SEOInfo } from '@/app/classes/SeoInfo';
+import PageTemplate from '@/components/PageTemplate/PageTemplate';
 
 export const metadata: Metadata = new SEOInfo(
   'Creare Website • MarWeb.ro',
@@ -11,10 +11,6 @@ export const metadata: Metadata = new SEOInfo(
 );
 
 
-const CreareWebsiteLayout = ({ children }: {
-  children: React.ReactNode
-}) => {
-  return <>{children}</>;
-};
+const CreareWebsiteLayout = PageTemplate
 
 export default CreareWebsiteLayout
