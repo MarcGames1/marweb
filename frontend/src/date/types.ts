@@ -62,7 +62,7 @@ export interface CardData {
   id: string | number
   heading: string | ReactNode;
   description: string | ReactNode;
-  bg?: string
+  bg?: CardBGColor
 }
 
 /**
@@ -100,6 +100,27 @@ export interface PortraitVideoContent extends VideoContent {
   height:1920
 }
 
+export interface VideoWithHeadingAndDescription extends CardData {
+  
+    id: string;
+    video: PortraitVideoContent;
+    
+    
+}
 export interface PortraitVideoContentGallery extends GeneralSectionData {
- content: PortraitVideoContent[] 
+  content: VideoWithHeadingAndDescription[]  
+}
+
+
+
+export enum CardBGColor {
+  c1 = '#FFF4F4',
+  c2 = '#FFF1FB',
+  c3 = '#FFF4F4',
+  c4 = '#EEF5FA',
+  c5 = '#F2F4FF',
+  c6 = '#EEF5FA',
+  c7 = '#FCF4FF',
+  c8 = '#FCF9F2',
+  c9 = '#FCF4FF',
 }

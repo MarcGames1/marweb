@@ -1,3 +1,5 @@
+import dynamic from "next/dynamic";
+
 const Video = ({ isMuted = true, src = '/videos/Marweb_Video.mp4' }) => {
   return (
     <video
@@ -11,4 +13,6 @@ const Video = ({ isMuted = true, src = '/videos/Marweb_Video.mp4' }) => {
     ></video>
   );
 };
-export default Video
+export default dynamic(() => Promise.resolve(Video), {
+  ssr: false,
+});

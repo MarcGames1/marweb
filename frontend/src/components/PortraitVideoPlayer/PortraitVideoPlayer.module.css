@@ -1,0 +1,26 @@
+.player_wrapper {
+ 
+  position: relative;
+  
+}
+
+.react_player {
+  /* padding-top: 56.25%;  */
+ 
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  align-self: center;
+  position: relative; 
+  /* aspect-ratio: 16 / 9; */
+  width: 100%;
+  height: 100%;
+}
+
+.react_player  video {
+    /* position: absolute; */
+    margin:auto;
+    display: block;
+    max-height: 70vmin;
+    /* position: absolute; */
+}

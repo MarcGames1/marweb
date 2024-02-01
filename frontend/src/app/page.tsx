@@ -6,18 +6,20 @@ import {
   // DeCeNoi
 } from '@/components';
 import ServiciiSection from '@/sections/Servicii';
-import Section2 from './servicii/seo/Sections/Section2';
+
 import HomepageData from '@/date/homepage';
 import BrandBenefits from '@/components/BrandBenefits';
+import SectionWithCardsComponent from '@/components/SectionWithCardsComponent/SectionWithCardsComponent';
+import Container from '@/components/Container';
 export default function Home() {
   return (
-    <>
+    <Container>
       <HeroVideo />
       <HeroSection />
       <BrandBenefits />
       <ServiciiSection />
-      <Section2 {...HomepageData.S3} />
+      <SectionWithCardsComponent {...HomepageData.S3} />
       
-    </>
+    </Container>
   );
 }
