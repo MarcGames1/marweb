@@ -14,9 +14,7 @@ const HeroFullScreenVideo = () => {
   );
 };
 
-export default dynamic(() => Promise.resolve(HeroFullScreenVideo), {
-  ssr: false,
-});
+export default HeroFullScreenVideo;
 
   
 
