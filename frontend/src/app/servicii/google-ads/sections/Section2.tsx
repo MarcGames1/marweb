@@ -35,7 +35,7 @@ const LeftSide = ({ content }: SectionWithCards) => {
                   c.heading?.toLocaleString() || idx + 'xCollapsable' + idx
                 )}
                 tabIndex={0}
-                className={`${TextColor.primary} border-2 collapse collapse-arrow mb-5  border-base-300`}
+                className={` border-2 collapse collapse-arrow mb-5  border-base-300`}
               >
                 <div className="collapse-title text-xl font-medium">
                   {c.heading}

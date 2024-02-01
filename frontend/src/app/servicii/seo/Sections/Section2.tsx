@@ -40,7 +40,7 @@ const RightSide = ({ content, heading }: SectionWithCards) => {
     >
       <div className="flex flex-col justify-self-center gap-10 self-center mb-2 lg:mb-5">
         {' '}
-        <H size={TextSize.xl3} level={1} color={TextColor.primary}>
+        <H size={TextSize.xl3} level={1}>
           {heading}
         </H>
       </div>

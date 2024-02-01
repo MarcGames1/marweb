@@ -53,7 +53,7 @@ const BenefitsCard = ({ image, beneficiu, Icon }: IBenefitsCard) => {
           level={'div'}
           className="font-bold"
           size={TextSize.lg}
-          color={TextColor.primary}
+          
         >
           {beneficiu}
         </H>
