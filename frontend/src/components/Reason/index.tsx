@@ -8,11 +8,11 @@ const Reason = ({heading, description }: CardData) => {
   return (
     <div className=" flex flex-row items-center justify-items-center gap-5">
       <div
-        className={`outline_hover rounded-full bg-accent ${TextSize.lg} ${TextColor.primary}`}
+        className={`outline_hover rounded-full  ${TextSize.lg} from-[#FA5252] to-[#DD2476]`}
       >
         <IoIosCheckmark size={'3rem'} color={'currentColor'} />
       </div>
-        <div className="flex flex-col lg:p-5 p-2 rounded-xl w-full  border-2 border-accent ">
+      <div className="flex flex-col lg:p-5 p-2 rounded-xl w-full  border-2 border-accent ">
         <H level={3} size={TextSize.xl}>
           {heading}
         </H>

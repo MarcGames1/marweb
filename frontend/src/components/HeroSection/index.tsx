@@ -17,7 +17,7 @@ const HeroSection = ({ heading, content, src }: IHeroSectionProps) => {
         >
           <div className="flex flex-col justify-self-center gap-10 self-center">
             {' '}
-            <H size={TextSize.xl3} level={1} color={TextColor.primary}>
+            <H size={TextSize.xl3} level={1} >
               {heading}
             </H>
             <H level={'div'} size={TextSize.lg}>

@@ -20,7 +20,6 @@ export enum TextSize {
 }
 
 export enum TextColor {
-primary='text-primary',
 secondary='text-secondary-content',
 accent='text-accent-content',
 neutral='text-neutral-content',
@@ -44,7 +43,7 @@ interface HProps extends PropsWithChildren {
 }
 
 
-const H = ({level, children, alignment =TextAlignment.center, size = TextSize.xl5, color =TextColor.primary, className}:HProps) => {
+const H = ({level, children, alignment =TextAlignment.center, size = TextSize.xl5, color, className}:HProps) => {
 
 
 

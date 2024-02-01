@@ -7,11 +7,12 @@ import Image from 'next/image';
 
 import { SocialMediaIcons } from '..';
 const Footer = () => {
-  const navClasses = 'flex flex-col items-center justify-items-center';
+  const navClasses =
+    'flex flex-col items-center justify-items-center  text-gray-lite  dark:text-color-910';
   return (
     <>
       <footer
-        className={`${TextColor.primary} footer lg:p-10 items-start justify-items-center place-items-center text-center overflow-hidden rounded-b-2xl bg-slate-50 dark:bg-black  `}
+        className={`footer lg:p-10 items-start justify-items-center place-items-center text-center overflow-hidden rounded-b-2xl bg-slate-50 dark:bg-black  `}
       >
         <aside className={navClasses}>
           <Link href={'/'}>
@@ -37,11 +38,11 @@ const Footer = () => {
           >
             Servicii
           </H>
-          {HeaderMenuData.map((m) => {
+          {HeaderMenuData.slice(1,-2).map((m) => {
             return (
               <Link
                 key={String(m.name)}
-                className="link link-hover"
+                className="hover:text-[#FA5252] duration-300 transition"
                 href={m.routePath}
               >
                 {m.name}
@@ -54,13 +55,22 @@ const Footer = () => {
           <H level={'span'} className="footer-title" size={TextSize.base}>
             Legal
           </H>
-          <Link href={'/termene-conditii'} className="link link-hover">
+          <Link
+            href={'/termene-conditii'}
+            className="hover:text-[#FA5252] duration-300 transition"
+          >
             Termeni si Conditii
           </Link>
-          <Link href={'/politica-cookie'} className="link link-hover">
+          <Link
+            href={'/politica-cookie'}
+            className="hover:text-[#FA5252] duration-300 transition"
+          >
             Politica Cookie
           </Link>
-          <a className="link link-hover" href={'mailto:alexandru@marweb.ro'}>
+          <a
+            className="hover:text-[#FA5252] duration-300 transitionr"
+            href={'mailto:alexandru@marweb.ro'}
+          >
             alexandru@marweb.ro
           </a>
         </nav>
