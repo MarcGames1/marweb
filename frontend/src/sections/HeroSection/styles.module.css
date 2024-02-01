@@ -10,9 +10,3 @@ align-self: stretch;
 }
 /* #FFFFFF0D, #FFFFFF00  */
 
-.heading {
-background: linear-gradient(146deg, #ECECEC 20.35%, rgba(236, 236, 236, 0.00) 128.73%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}

@@ -10,7 +10,7 @@ export interface IHeroSectionProps extends HeroSectionData {
 
 const HeroSection = ({ heading, content, src }: IHeroSectionProps) => {
   return (
-    <section className="flex   m-auto flex-col-reverse items-center justify-evenly lg:flex-row">
+    <section className="flex py-12 px-5  m-auto flex-col-reverse items-center justify-evenly lg:flex-row">
       
         <div
           className={` lg:p-10 p-5 w-fit   items-center justify-items-center  flex`}
