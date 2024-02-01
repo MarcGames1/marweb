@@ -60,18 +60,19 @@ const Brand = () => {
   return (
     <div className="overflow-hidden">
       <Slider {...settings} arrows={false}>
-        {BrandSlideData.map((item: { id: Key | null | undefined; img: string | StaticImport; }) => (
-          <div className=' overflow-hidden  p-2 rounded-lg bg-white'>
-
-          <Image
+        {BrandSlideData.map((item: { id: Key; img: string | StaticImport }) => (
+          <div
             key={item.id}
-            className=" overflow-hidden "
-            src={item.img}
-            width={148}
-            height={106}
-            alt="brand"
+            className=" overflow-hidden  p-2 rounded-lg bg-white"
+          >
+            <Image
+              className=" overflow-hidden "
+              src={item.img}
+              width={148}
+              height={106}
+              alt="brand"
             />
-            </div>
+          </div>
         ))}
       </Slider>
     </div>
