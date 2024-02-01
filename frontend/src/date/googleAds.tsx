@@ -1,6 +1,7 @@
 import { Metadata } from 'next/types';
 import { HeroSectionData, SectionWithCards } from './types';
 import { SEOInfo } from '@/app/classes/SeoInfo';
+import { generateRandomId } from '@/utils/Helpers';
 
 export const metadata: Metadata = new SEOInfo(
   'Servicii Promovare Google Ads » MarWeb 🚀',
@@ -25,6 +26,7 @@ const S2: SectionWithCards = {
   heading: <>Tipuri de Campanii in Google Ads</>,
   content: [
     {
+      id: generateRandomId(),
       heading: <>Campanii de Rețea de Căutare:</>,
       description: (
         <>
@@ -35,6 +37,7 @@ const S2: SectionWithCards = {
       ),
     },
     {
+      id: generateRandomId(),
       heading: <>Campanii de Rețea de Display</>,
       description: (
         <>
@@ -45,6 +48,7 @@ const S2: SectionWithCards = {
       ),
     },
     {
+      id: generateRandomId(),
       heading: <>Campanii de Remarketing</>,
       description: (
         <>
@@ -55,6 +59,7 @@ const S2: SectionWithCards = {
       ),
     },
     {
+      id: generateRandomId(),
       heading: <>Campanii Video</>,
       description: (
         <>
@@ -65,6 +70,7 @@ const S2: SectionWithCards = {
       ),
     },
     {
+      id: generateRandomId(),
       heading: <>Campanii de Shopping</>,
       description: (
         <>
@@ -75,6 +81,7 @@ const S2: SectionWithCards = {
       ),
     },
     {
+      id: generateRandomId(),
       heading: <>Campanii de Aplicație Mobilă</>,
       description: (
         <>
@@ -85,6 +92,7 @@ const S2: SectionWithCards = {
       ),
     },
     {
+      id: generateRandomId(),
       heading: <>Campanii Smart</>,
       description: (
         <>
