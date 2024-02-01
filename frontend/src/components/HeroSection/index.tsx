@@ -35,6 +35,7 @@ const HeroSection = ({ heading, content, src }: IHeroSectionProps) => {
           width={400}
           height={400}
           src={src}
+          loading='eager'
         />
       
     </section>
