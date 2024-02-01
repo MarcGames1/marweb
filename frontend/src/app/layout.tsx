@@ -16,7 +16,10 @@ export default function RootLayout({
     <html lang="ro">
       <body className={` -z-20  relative bg-fixed  ${inter.className}`}>
         <Providers>
-          {children}
+          <div className="bg-homeBg min-h-screen dark:bg-homeBg-dark bg-no-repeat bg-center bg-cover bg-fixed  md:pb-16 w-full">
+           
+            {children}
+          </div>
         </Providers>
       </body>
     </html>
