@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import MobileMenuToggle from './MobileMenuToggle';
 import MobileNav from './MobileNav';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 
 const HeaderMenu = () => {
 
@@ -38,4 +39,6 @@ const HeaderMenu = () => {
   );
 }
 
-export default HeaderMenu
+export default dynamic(() => Promise.resolve(HeaderMenu), {
+  ssr: false,
+});

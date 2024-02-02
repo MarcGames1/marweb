@@ -12,6 +12,7 @@ import BrandBenefits from '@/components/BrandBenefits';
 import SectionWithCardsComponent from '@/components/SectionWithCardsComponent/SectionWithCardsComponent';
 import Container from '@/components/Container';
 import Header from '@/components/Header';
+import ClientSlider from '@/components/ClientSlidet/ClientSlider';
 export default function Home() {
   return (
     <>
@@ -22,6 +23,7 @@ export default function Home() {
         <BrandBenefits />
         <ServiciiSection />
         <SectionWithCardsComponent {...HomepageData.S3} />
+        <ClientSlider />
       </Container>
     </>
   );

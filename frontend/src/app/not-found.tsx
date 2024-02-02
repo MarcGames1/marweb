@@ -3,7 +3,7 @@ import { TextSize } from '@/components/Typography/H';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import React from 'react'
-import { SEOInfo } from './classes/SeoInfo';
+import { SEOInfo } from '../classes/SeoInfo';
 import Container from '@/components/Container';
 
 export const metadata:Metadata = new SEOInfo('Pagina nu a fost gasita', '', '/', false)

@@ -1,9 +1,10 @@
 'use client'
 import { ThemeProvider } from 'next-themes';
+import dynamic from 'next/dynamic';
 
 import { ToastContainer } from 'react-toastify';
 
-export default function Providers({ children }: { children: React.ReactNode }) {
+ function Providers({ children }: { children: React.ReactNode }) {
 
   return (
     <div>
@@ -22,3 +23,7 @@ export default function Providers({ children }: { children: React.ReactNode }) {
     </div>
   );
 }
+
+export default dynamic(() => Promise.resolve(Providers), {
+  ssr: false,
+});

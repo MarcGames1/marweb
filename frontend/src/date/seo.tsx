@@ -1,5 +1,5 @@
 import { Metadata } from 'next/types';
-import { SEOInfo } from '@/app/classes/SeoInfo';
+import { SEOInfo } from '@/classes/SeoInfo';
 import { CardBGColor, HeroSectionData, PortraitVideoContentGallery, SectionWithCards, SectionWithCardsAndPic } from './types';
 import Link from 'next/link';
 import { generateRandomId } from '@/utils/Helpers';

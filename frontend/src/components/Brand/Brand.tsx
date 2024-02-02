@@ -5,6 +5,7 @@ import Slider from 'react-slick';
 import BrandSlideData from '@/date/brandSlideData';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import { Key } from 'react';
+import dynamic from 'next/dynamic';
 
 
 
@@ -79,4 +80,6 @@ const Brand = () => {
   );
 };
 
-export default Brand;
+export default dynamic(() => Promise.resolve(Brand), {
+  ssr: false,
+});

@@ -21,7 +21,7 @@ const SectionWithCardsComponent = ({ heading, content }: Section2Props) => {
           alignment={TextAlignment.left}
           size={TextSize.xl5}
           level={'div'}
-          className="after-effect w-full mt-12 mx-5 after:ml-5  dark:text-white font-medium"
+          className=" w-full mt-12 mx-5  dark:text-white font-medium"
         >
           {heading}
         </H>

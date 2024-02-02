@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { ServiceData } from '@/date/ServiceData';
 import { motion } from 'framer-motion';
+import dynamic from 'next/dynamic';
 
 export enum bgClassName {
   Transparent = 'bg-transparent',
@@ -73,4 +74,6 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default dynamic(() => Promise.resolve(Service), {
+  ssr: false,
+});

@@ -42,7 +42,7 @@ export interface SectionWithCardsAndPic extends GeneralSectionData {
   content: CardDataWithPicture[];
 }
 
-/**
+/**tsx
  * Interfața pentru secțiunea cu carduri, imagini și link-uri.
  * @typedef {Object} SectionWithCardsLinkAndPic
  * @property {string | ReactNode} heading - Similar cu GeneralSectionData.
