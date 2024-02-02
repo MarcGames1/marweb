@@ -1,9 +1,6 @@
-import About1 from '@/components/About/about1';
-import ClientSlider from '@/components/ClientSlidet/ClientSlider';
 import ContactForm from '@/components/ContactForm/ContactForm';
 import Container from '@/components/Container';
 import Address from '@/components/contact/Address';
-import Service from '@/components/service/Service';
 
 
 const ContactComponent = () => {

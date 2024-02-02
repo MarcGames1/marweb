@@ -6,8 +6,8 @@ import PageTemplate from '@/components/PageTemplate/PageTemplate';
 
 export const metadata: Metadata = new SEOInfo(
   'Creare Website • MarWeb.ro',
-  'Agentie Marketing Online • MarWeb.ro Te ajutam cu Strategii Unice Pentru Afacerea ta Online.',
-  '/'
+  'Creare Website • MarWeb.ro Te ajutam cu Strategii Unice Pentru Afacerea ta Online.',
+  '/servicii/creare-website'
 );
 
 
