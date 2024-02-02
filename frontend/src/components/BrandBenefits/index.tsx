@@ -10,7 +10,7 @@ import { CardBGColor } from '@/date/types';
 const BrandBenefits = () => {
   return (
     <section className="   ">
-      <div className="container flex lg:flex-row m-auto  flex-col items-center justify-evenly gap-5 lg:gap-0 p-5  h-fit">
+      <div className="container flex lg:flex-row m-auto  flex-col items-center justify-evenly gap-5  p-5  h-fit">
         <BenefitsCard
           beneficiu="Expertiză Remarcabilă în SEO și Google Ads"
           image={styles.image1}
@@ -40,21 +40,10 @@ interface IBenefitsCard {
 const BenefitsCard = ({ image, beneficiu, Icon }: IBenefitsCard) => {
     
   return (
-    <div className="relative shrink-0  w-[300px] h-[200px]   rounded-2xl ">
-      <div
-        className={`${image}  w-[300px] h-[200px] rounded-2xl   absolute  inset-0 mix-blend-overlay hover:mix-blend-normal transition-all duration-300	`}
-      ></div>
-      <div className="absolute top-1 left-1 mix-blend-normal ">
-        {Icon}
-      </div>
-      <div className="absolute bottom-0 bg-color-500/90 dark:bg-black/90 rounded-2xl p-2">
-        {' '}
-        <H
-          level={'div'}
-          className="font-bold"
-          size={TextSize.lg}
-          
-        >
+    <div className="relative shrink-0 max-w-[300px]   rounded-2xl ">
+      <div className="  flex flex-row justify-items-center items-center  gap-10  bg-color-500/90 dark:bg-black/90 rounded-2xl p-2">
+        <div className="   ">{Icon}</div>{' '}
+        <H level={'div'} className="font-bold" size={TextSize.lg}>
           {beneficiu}
         </H>
       </div>
