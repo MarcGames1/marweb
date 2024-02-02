@@ -42,7 +42,7 @@ const BenefitsCard = ({ image, beneficiu, Icon }: IBenefitsCard) => {
   return (
     <div className="relative shrink-0  w-[300px] h-[200px]   rounded-2xl ">
       <div
-        className={`${image}  w-[300px] h-[200px] rounded-2xl   absolute  inset-0	`}
+        className={`${image}  w-[300px] h-[200px] rounded-2xl   absolute  inset-0 mix-blend-overlay hover:mix-blend-normal transition-all duration-300	`}
       ></div>
       <div className="absolute top-1 left-1 mix-blend-normal ">
         {Icon}
