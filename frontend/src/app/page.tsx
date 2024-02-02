@@ -13,6 +13,7 @@ import SectionWithCardsComponent from '@/components/SectionWithCardsComponent/Se
 import Container from '@/components/Container';
 import Header from '@/components/Header';
 import ClientSlider from '@/components/ClientSlidet/ClientSlider';
+import ContactForm from '@/components/ContactForm/ContactForm';
 export default function Home() {
   return (
     <>
@@ -24,6 +25,10 @@ export default function Home() {
         <ServiciiSection />
         <SectionWithCardsComponent {...HomepageData.S3} />
         <ClientSlider />
+        <div className='lg:w-1/2 block m-auto' >
+        <ContactForm />
+        </div>
+
       </Container>
     </>
   );

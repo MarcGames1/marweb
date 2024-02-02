@@ -4,6 +4,7 @@ import { TbSeo } from 'react-icons/tb';
 import { FaCode } from 'react-icons/fa6';
 import { LuScrollText } from 'react-icons/lu';
 import { RiContactsBookLine } from 'react-icons/ri';
+import { SiGoogleads } from 'react-icons/si';
 export interface IMenuData {
   routePath: string;
   name: string | ReactNode;
@@ -38,7 +39,7 @@ export const HeaderMenuData: IMenuData[] = [
     name: 'Google Ads',
     icon: (
       <>
-        <TbSeo />
+        <SiGoogleads />
       </>
     ),
   },
