@@ -23,7 +23,7 @@ gap: 24px;
 .card {
 /* aspect-ratio: 1; */
 display: flex;
-padding: 60px;
+
 flex-direction: column;
 align-items: center;
 gap: 16px;
@@ -35,20 +35,8 @@ border-radius: 20px;
 
 
 .card_title{ 
-color: #ECECEC;
+
 font-feature-settings: 'clig' off, 'liga' off;
-font-size: 32px;
-font-style: normal;
-font-weight: 500;
-line-height: 130%; /* 41.6px */
-letter-spacing: -0.16px;
+
 }
 
-.card_description {
-color: #ECECEC;
-
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 150%; /* 21px */
-}

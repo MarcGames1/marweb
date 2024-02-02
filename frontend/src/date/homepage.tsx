@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { HeroSectionData, SectionWithCards, SectionWithCardsLinkAndPic } from './types';
+import { CardBGColor, HeroSectionData, SectionWithCards, SectionWithCardsLinkAndPic } from './types';
 import { SEOInfo } from '@/app/classes/SeoInfo';
 import { generateRandomId } from '@/utils/Helpers';
 
@@ -97,12 +97,15 @@ const S3: SectionWithCards = {
       heading: ' FACEM CUNOȘTINȚĂ',
       description:
         'Programezi o ședință 1 la 1 – complet gratuită, în care îți vom solicita câteva informații relevante pentru a reuși să identificăm nevoile tale de business.',
+      bg: CardBGColor.c4,
     },
+
     {
       id: generateRandomId(),
       heading: 'STABILIM OBIECTIVELE ȘI PLANUL DE ACȚIUNE',
       description:
         'Stabilim obiective strategice și măsurabile pe termen scurt, mediu și lung. Identificăm cuvintele cheie pe care putem crește și acțiunile necesare atât din partea noastră cât și a ta.',
+      bg: CardBGColor.c5,
     },
     {
       id: generateRandomId(),
@@ -115,6 +118,7 @@ const S3: SectionWithCards = {
       heading: 'CALL ȘI PREZENTARE RAPORT LUNAR',
       description:
         'La finalul fiecărei luni, îți prezentăm un raport complet de activitate: ce acțiuni am întreprins, care sunt rezultatele și ce urmează să realizăm în luna următoare pentru a atinge obiectivele stabilite.',
+      bg: CardBGColor.c6,
     },
   ],
 };
@@ -123,21 +127,29 @@ const S4 = {
   heading: 'De Ce Sa COLABOREZI cu Agentia de Marketing Online MarWeb?',
   content: [
     {
+      id: generateRandomId(),
+      bg: CardBGColor.c7,
       heading: 'Suntem transparenți',
       description:
         'Nu promitem imposibilul. Analizăm atent oportunitățile de dezvoltare specifice domeniului tău și adaptăm strategiile de marketing în funcție de obiectivele tale de business și de bugete.',
     },
     {
+      id: generateRandomId(),
+      bg: CardBGColor.c8,
       heading: 'Dezvoltăm parteneriate durabile',
       description:
         'Clienții noștri nu sunt simpli clienți ci devin partenerii noștri. Ne implicăm activ în fiecare proiect și dezvoltăm parteneriate bazate pe încredere și rezultate concrete.',
     },
     {
+      id: generateRandomId(),
+      bg: CardBGColor.c9,
       heading: 'Comunicare și proactivitate',
       description:
         'O relație de business solidă se construiește prin comunicare. Comunicăm cu partenerii noștri ori de câte ori este nevoie pentru a ne asigura că nu pierdem nicio oportunitate de creștere dar și pentru a ține sub control provocările care apar pe parcursul colaborării.',
     },
     {
+      id: generateRandomId(),
+      bg: CardBGColor.c1,
       heading: 'Analiză și raportare',
       description:
         'Analizăm rezultatele constant și adaptăm obiectivele strategice în funcție de performanțele realizate. Te ținem la curent cu metricii importanți rezultați în urma campaniilor implementate, astfel încât să știi în orice moment unde te afli și care sunt perspectivele de viitor.',
