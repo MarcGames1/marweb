@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@types/uuid": "^9.0.8",
-    "aos": "^2.3.4",
     "daisyui": "^4.4.19",
     "framer-motion": "^10.16.16",
     "next": "14.1.0",
@@ -27,7 +26,6 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
-    "@types/aos": "^3.0.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
