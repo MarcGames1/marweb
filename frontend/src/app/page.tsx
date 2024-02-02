@@ -25,7 +25,7 @@ export default function Home() {
         <ServiciiSection />
         <SectionWithCardsComponent {...HomepageData.S3} />
         <ClientSlider />
-        <div className='lg:w-1/2 block m-auto' >
+        <div className='lg:w-1/2 block m-auto mt-5' >
         <ContactForm />
         </div>
 
