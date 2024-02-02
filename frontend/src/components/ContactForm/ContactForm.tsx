@@ -23,7 +23,7 @@ const ContactForm = () => {
         </span>
         <br />
         <span className="font-semibold dark:text-white">
-          WebDevelopment, SEO, Google Ads,
+          WebDevelopment, SEO, Google Ads
         </span>
       </h3>
 
