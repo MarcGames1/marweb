@@ -46,6 +46,7 @@ const S2: SectionWithCardsLinkAndPic = {
         src: '/assets/services/web.png',
       },
       href: '/servicii/creare-website',
+      bg: CardBGColor.c1,
     },
     {
       id: generateRandomId(),
@@ -59,6 +60,7 @@ const S2: SectionWithCardsLinkAndPic = {
         src: '/assets/services/seo.png',
       },
       href: '/servicii/seo',
+      bg: CardBGColor.c2,
     },
     {
       id: generateRandomId(),
@@ -72,6 +74,7 @@ const S2: SectionWithCardsLinkAndPic = {
         src: '/assets/services/ads.png',
       },
       href: '/servicii/google-ads',
+      bg: CardBGColor.c3,
     },
     {
       id: generateRandomId(),
@@ -84,6 +87,7 @@ const S2: SectionWithCardsLinkAndPic = {
         alt: 'poza reprezentativa servicii mentorat',
         src: '/assets/services/mentorat.png',
       },
+      bg: CardBGColor.c4,
       href: '/servicii/mentorat',
     },
   ],
