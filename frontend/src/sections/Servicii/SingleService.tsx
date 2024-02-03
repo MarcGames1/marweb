@@ -1,4 +1,4 @@
-'use client'
+
 import { H } from '@/components';
 import { TextSize, TextAlignment } from '@/components/Typography/H';
 import { CardDataWithPictureAndLink } from '@/date/types';
@@ -6,10 +6,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import React from 'react'
 import styles from './Servicii.module.css'
-import { useTheme } from 'next-themes';
+
 import dynamic from 'next/dynamic';
 const SingleService = ({content} :{content:CardDataWithPictureAndLink}) => {
-   const { theme, setTheme } = useTheme();
+   
 
    
 
@@ -17,10 +17,8 @@ const SingleService = ({content} :{content:CardDataWithPictureAndLink}) => {
     <Link
       href={content.href}
       key={content.id}
-      className={` flex flex-col items-center gap-5 self-stretch rounded-xl  about-box dark:bg-transparent`}
-      style={{
-        background: `${theme === 'dark' ? 'transparent' : content?.bg}`,
-      }}
+      className={` flex flex-col items-center gap-5 self-stretch rounded-xl bg-[${content.bg}]  about-box dark:bg-transparent`}
+   
     >
       <Image className=" w-10 h-10" {...content.image} />
       <div className="space-y-2 ">
@@ -51,5 +49,5 @@ const SingleService = ({content} :{content:CardDataWithPictureAndLink}) => {
 }
 
 export default dynamic(() => Promise.resolve(SingleService), {
-  ssr: false,
+  ssr: true,
 });
