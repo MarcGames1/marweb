@@ -1,15 +1,14 @@
-'use client'
+
 import { H } from '@/components';
 import PortraitVideoPlayer from '@/components/PortraitVideoPlayer/PortraitVideoPlayer';
 import { TextAlignment, TextSize } from '@/components/Typography/H';
 import { PortraitVideoContentGallery } from '@/date/types';
 import { motion } from 'framer-motion';
-import { useTheme } from 'next-themes';
 import dynamic from 'next/dynamic';
 import React from 'react'
 
 const Section4 = ({ heading, content }: PortraitVideoContentGallery) => {
-   const { theme, setTheme } = useTheme();
+ 
    
   
 
@@ -30,13 +29,9 @@ const Section4 = ({ heading, content }: PortraitVideoContentGallery) => {
       <div className=" flex flex-flow-col flex-wrap items-stretch justify-items-center place-content-center content-center mx-5 gap-x-6 gap-y-6 ">
         {content.map((singleItem) => (
           <motion.div
-            className={`py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg aspect-video dark:border-[#212425] dark:border-2`}
+            className={`py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg aspect-video bg-[${singleItem.bg}] dark:border-[#212425] dark:border-2`}
             key={singleItem.id}
-            style={{
-              backgroundColor: `${
-                theme === 'dark' ? 'transparent' : singleItem?.bg
-              }`,
-            }}
+            
           >
             <PortraitVideoPlayer
               className="rounded-lg 	"
@@ -69,5 +64,5 @@ const Section4 = ({ heading, content }: PortraitVideoContentGallery) => {
 };
 
 export default dynamic(() => Promise.resolve(Section4), {
-  ssr: false,
+  ssr: true,
 });

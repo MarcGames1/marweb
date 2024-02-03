@@ -3,7 +3,6 @@ import { SectionWithCards } from "@/date/types";
 import { ReactNode } from "react";
 import { H } from "..";
 import { TextAlignment, TextSize } from "../Typography/H";
-import dynamic from "next/dynamic";
 import SingleItem from "./SingleItem";
 
 interface Section2Props extends SectionWithCards {
