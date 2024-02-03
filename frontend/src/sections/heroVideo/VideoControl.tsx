@@ -7,7 +7,8 @@ import { FaVolumeOff, FaVolumeUp } from 'react-icons/fa';
 const VideoControl = ({isMuted, setIsMuted}:React.ComponentState) => {
   return (
     <button
-     
+    title='Sunet'
+     role='button'
       onClick={(e) => {
         setIsMuted(!isMuted);
       }}
