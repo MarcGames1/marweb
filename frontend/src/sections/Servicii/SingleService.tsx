@@ -10,6 +10,9 @@ import { useTheme } from 'next-themes';
 import dynamic from 'next/dynamic';
 const SingleService = ({content} :{content:CardDataWithPictureAndLink}) => {
    const { theme, setTheme } = useTheme();
+
+   
+
   return (
     <Link
       href={content.href}

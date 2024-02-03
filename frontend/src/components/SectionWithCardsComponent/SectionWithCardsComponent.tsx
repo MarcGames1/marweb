@@ -1,10 +1,10 @@
-'use client'
+
 import { SectionWithCards } from "@/date/types";
-import { useTheme } from "next-themes";
 import { ReactNode } from "react";
 import { H } from "..";
 import { TextAlignment, TextSize } from "../Typography/H";
 import dynamic from "next/dynamic";
+import SingleItem from "./SingleItem";
 
 interface Section2Props extends SectionWithCards {
   sectionHeading?: ReactNode | String;
@@ -12,8 +12,7 @@ interface Section2Props extends SectionWithCards {
 }
 
 const SectionWithCardsComponent = ({ heading, content }: Section2Props) => {
-  const { theme, setTheme } = useTheme();
-
+  
   return (
     <>
       <div className="flex items-center space-x-2 mb-4">
@@ -29,22 +28,11 @@ const SectionWithCardsComponent = ({ heading, content }: Section2Props) => {
       {/* end flex */}
       <div className="grid grid-cols-1 md:grid-cols-2 mx-5 gap-x-6 gap-y-6 ">
         {content.map((singleItem) => (
-          <div
-            className="py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg  dark:border-[#212425] dark:border-2"
-            style={{
-              background: `${
-                theme === 'dark' ? 'transparent' : singleItem?.bg
-              }`,
-            }}
-            key={singleItem.id}
-          >
-            <h3 className="text-xl dark:text-white"> {singleItem.heading} </h3>
-            <p className="dark:text-[#b7b7b7]">{singleItem.description}</p>
-          </div>
+          <SingleItem key={singleItem.id} singleItem={singleItem} />
         ))}
       </div>
     </>
   );
 };
 
-export default dynamic(() => Promise.resolve(SectionWithCardsComponent), { ssr: false });
+export default SectionWithCardsComponent
