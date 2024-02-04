@@ -1,7 +1,3 @@
-import React from 'react';
-import HeroSection, { IHeroSectionProps } from '@/components/HeroSection';
-const Section1 = ({ heading, content, src }: IHeroSectionProps) => {
-  return <HeroSection heading={heading} content={content} src={src}  />
-};
-
+import HeroSection from '@/components/HeroSection';
+const Section1 = HeroSection
 export default Section1;

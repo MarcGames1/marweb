@@ -1,6 +1,5 @@
 import { H } from "@/components";
 import Section2Col from "@/components/Layout/Section2Col";
-import { TextColor } from "@/components/Typography/H";
 import { SectionWithCards } from "@/date/types";
 
 export const Section2 = ({heading, content }:SectionWithCards) => {
