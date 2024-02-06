@@ -67,7 +67,7 @@ const Brand = () => {
             className=" overflow-hidden  p-2 rounded-lg bg-white"
           >
             <Image
-              className=" overflow-hidden "
+              className=" overflow-hidden m-auto block "
               src={item.img}
               width={148}
               height={106}
