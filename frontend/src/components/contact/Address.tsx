@@ -1,21 +1,18 @@
-'use client'
-import { useTheme } from 'next-themes';
+
 import Image from 'next/image';
 import AdressData from '@/date/AdressData';
 import dynamic from 'next/dynamic';
 
 const Address = () => {
-  const { theme, setTheme } = useTheme();
+
 
   return (
     <>
       {AdressData.map((item, i) => (
         <div
           key={i}
-          style={{
-            background: `${theme === 'dark' ? '#212425' : item?.bg}`,
-          }}
-          className="flex flex-wrap p-[30px]  border-[#A6A6A6] gap-2 rounded-xl "
+        
+          className={`flex flex-wrap p-[30px]  border-[#A6A6A6] gap-2 rounded-xl dark:bg-['#212425'] bg-[${item?.bg}]`}
         >
           <span className="w-8 mt-2">
             <Image
@@ -39,5 +36,5 @@ const Address = () => {
 };
 
 export default dynamic(() => Promise.resolve(Address), {
-  ssr: false,
+  ssr: true,
 });
