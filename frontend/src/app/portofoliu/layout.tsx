@@ -1,4 +1,5 @@
 import { SEOInfo } from '@/classes/SeoInfo';
+import Container from '@/components/Container';
 import { Metadata } from 'next';
 import React, { ReactNode } from 'react'
 
@@ -9,7 +10,7 @@ export const metadata: Metadata = new SEOInfo(
 );
 
 const PortofoliuLayout = ({ children }: { children: ReactNode }) => {
-  return <>{children}</>;
+  return <Container>{children}</Container>;
 };
 
 export default PortofoliuLayout

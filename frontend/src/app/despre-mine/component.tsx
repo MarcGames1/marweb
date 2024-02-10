@@ -1,5 +1,5 @@
 import About1 from '@/components/About/about1';
-import ClientSlider from '@/components/ClientSlidet/ClientSlider';
+import ClientSlider from '@/components/ClientSlider/ClientSlider';
 import Container from '@/components/Container';
 import Service from '@/components/service/Service';
 

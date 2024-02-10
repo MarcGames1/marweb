@@ -1,10 +1,9 @@
 import Link from 'next/link';
 import React from 'react'
-import Container from './Container';
 
 const NotAvailable = () => {
   return (
-    <Container>
+    <>
       <div className="h-screen w-full flex flex-col justify-center items-center  d">
         <h1 className="text-7xl leading-none dark:text-white font-extrabold md:text-8xl">
           Disponibil Incurand
@@ -20,7 +19,7 @@ const NotAvailable = () => {
           Inapoi la Pagina Principala
         </Link>
       </div>
-    </Container>
+    </>
   );
 }
 

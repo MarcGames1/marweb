@@ -12,7 +12,7 @@ import BrandBenefits from '@/components/BrandBenefits';
 import SectionWithCardsComponent from '@/components/SectionWithCardsComponent/SectionWithCardsComponent';
 import Container from '@/components/Container';
 import Header from '@/components/Header';
-import ClientSlider from '@/components/ClientSlidet/ClientSlider';
+import ClientSlider from '@/components/ClientSlider/ClientSlider';
 import ContactForm from '@/components/ContactForm/ContactForm';
 export default function Home() {
   return (
