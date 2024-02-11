@@ -1,6 +1,7 @@
 'use client'
 import { ThemeProvider } from 'next-themes';
 import dynamic from 'next/dynamic';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { ToastContainer } from 'react-toastify';
 

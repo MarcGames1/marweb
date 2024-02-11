@@ -9,7 +9,7 @@ const ContactForm = () => {
 
   // use Email js for recive message
 
-  const sendEmail = (e: { preventDefault: () => void; }) => {
+  const handleLeadForm = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
   };
 
@@ -28,7 +28,7 @@ const ContactForm = () => {
       </h3>
 
       {/* Form Start */}
-      <form id="myForm" onSubmit={sendEmail}>
+      <form id="contactForm" onSubmit={handleLeadForm}>
         <div className="relative z-0 w-full mt-[40px] mb-8 group">
           <input
             type="text"
