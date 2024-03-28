@@ -19,7 +19,7 @@ const HeaderMenu = () => {
             {/* <Logo /> */}
             <Image
               className="max-h-fit h-[50px] lg:h-[75px]"
-              width={153}
+              width={80}
               height={26}
               priority
               src="/marwebLogo/Logo-Mare-100.svg"

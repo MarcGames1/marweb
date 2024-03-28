@@ -1,0 +1,153 @@
+---
+title: 'Ce sunt cuvintele cheie? 9 tipuri de cuvinte cheie'
+date: '2023-09-30T09:49:41+00:00'
+status: publish
+permalink: /blog/ce-sunt-cuvintele-cheie-9-tipuri-de-cuvinte-cheie
+author: Alexandru
+excerpt: ''
+type: post
+id: 315
+thumbnail: ../../uploads/2023/09/Ce-sunt-cuvintele-Chieie.webp
+category:
+    - SEO
+tag: []
+post_format: []
+---
+Neil Patel spune despre cuvintele cheie că sunt precum „*semințele unui copac. Dacă le plantezi și le îngrijești cu atenție, acestea îți vor aduce roade bogate în trafic și conversii*„. Și bine spune pentru că este cât se poate de adevărat.
+
+Un cuvânt cheie te-a redirecționat astăzi către acest articol de blog. Acest lucru este valabil și pentru potențialii tăi clienți care folosesc în fiecare zi motoarele de căutare pentru a găsi o anumită informație sau un anumit tip de conținut.
+
+Practic, dacă te întrebi ce înseamnă [cuvintele cheie](https://support.google.com/google-ads/answer/6323?hl=ro), ei bine: acestea reprezintă puntea de legătură între un potențial client și site-ul tău web. Cu cât identifici și utilizezi corect cuvintele cheie, cu atât poziția site-ului sau blogului tău se va îmbunătăți în rezultatele de căutare, ceea ce înseamnă pentru tine: creșterea traficului, a vizibilității sau a vânzărilor (în funcție de specificul fiecărei afaceri).
+
+![](https://lh6.googleusercontent.com/ZkOO6ZiOT91AZlcpcUd1mip0qpiAX0R26ATXNs7A3WRE3LQQP6cjj6YlkYG8p6UYNY5wy6ye16gT7fPtLLKvnrszxR6DMB8rfa63jxq7j5w6BsiQg_LfWRIAOtiaxN_A3PDZC-_OPzejQeZhGI0a2OA)
+
+În acest articol vei afla concret ce sunt cuvintele cheie din punct de vedere SEO și SEM, precum și de câte tipuri sunt, pentru a ști cum să te poziționezi în funcție de intenția/nevoia utilizatorilor, astfel încât să atragi trafic relevant pe website-ul tău și să te poziționezi printre primele rezultate în Google.
+
+**Cuvintele cheie în campaniile SEO și SEM**
+--------------------------------------------
+
+Orice termen folosit într-un motor de căutare (un singur cuvânt sau o frază întreagă), este considerat un cuvânt cheie. Prin urmare, acestea sunt deosebit de importante în campaniile SEO (Search Engine Optimization) și SEM (Search Engine Marketing sau PPC – Pay Per Click). Care este diferența între cele două?
+
+În ceea ce privește optimizarea pentru motoarele de căutare (SEO), cuvintele cheie sunt integrate în conținutul text al paginii tale web pentru a te ajuta să te clasezi în topul rezultatelor Google. Adevărata provocare este să identifici cuvintele cheie relevante pentru afacerea ta dar care au suficiente interogări în Google. De ce? Site-urile concurente licitează și ele pe aceleași cuvinte cheie, prin urmare trebuie să găsești varianta cea mai potrivită pentru tine în funcție de gama de produse și de oportunitățile pe care le poți fructifica.
+
+O optimizare SEO făcută ca la carte îți aduce trafic relevant pe site și te poziționează în topul rezultatelor, organic – fără să investești bani în reclame și pe o perioadă lungă de timp.
+
+Pe de altă parte, atunci când vine vorba de SEM sau PPC, trebuie să ai un buget de publicitate. Adică, să investești bani în reclame. Cum funcționează? De fiecare dată când un utilizator face o interogare în Google pe un cuvânt cheie setat în reclama ta, i se afișează un anunț personalizat în partea superioară (sau inferioară) a paginii, deasupra rezultatelor organice. În acest caz, vei plăti de fiecare dată când cineva dă click pe anunțul tău. Cu cât reclamele tale de pe Google Ads conțin cuvinte cheie relevante pentru publicul tău țintă, cu atât anunțul tău va fi poziționat în partea de sus a rezultatelor din Google. Așadar, nu este suficient să ai un buget imens de publicitate, ci trebuie să îți cunoști foarte bine publicul țintă și să faci un research amănunțit privind cuvintele cheie, mai ales dacă nu ai la dispoziție un buget mare pentru promovare. Concurenții tăi licitează și ei, de cele mai multe ori, pe aceleași cuvinte cheie și uneori investesc sume mult mai mari de bani (dacă ne referim la companiile mari).
+
+**Dacă ai buget pentru reclame, se merită să mai investești în SEO?**
+---------------------------------------------------------------------
+
+Da, da și iar da. SEO îți va aduce trafic relevant pe site, neplătit și constant. Dacă rulezi reclame prin Google ADS și anunțul tău este primul în rezultatele de căutare, în momentul în care vei opri reclamele, îți poți lua la revedere de la prima poziție. Mai mult decât atât, atunci când ai un site optimizat SEO și rulezi reclame, costul per click va scădea semnificativ. Indiferent de strategia ta de marketing, SEO ar trebui să reprezinte o prioritate.
+
+ **Tipuri de cuvinte Cheie cu Exemple**
+---------------------------------------
+
+În momentul în care un utilizator intră pe Google și tastează în bara de search un cuvânt cheie, a luat deja decizia că are nevoie de un anumit produs sau o anumită informație. Este pregătit să cumpere sau să citească, depinde de la caz la caz. Practic, în acest moment, site-ul tău poate fi la un click distanță de nevoia potențialului tău client dacă este optimizat din punct de vedere SEO.
+
+Tocmai de aceea, cuvintele cheie sunt parte din fundația site-ului tău pentru că ele îl conduc pe utilizator către paginile tale. Nu înseamnă că dacă a ajuns acolo vei înregistra și o conversie. Acest lucru depinde de alți mulți factori (relevanța și valoarea informației, design-ul paginii, viteza de încărcare, etc.) dar cel puțin prin intermediul cuvintelor cheie reușești să fii “văzut” în online. Altfel, poți avea cele mai bune produse, cele mai bune prețuri și cel mai atrăgător design… dacă nu te găsește nimeni, e ca și cum nu ai exista.
+
+Acum că ai înțeles ce înseamnă cuvintele cheie și cât de importante sunt pentru a atrage trafic organic și relevant către site-ul tău, probabil te întrebi cum alegi sau găsești cuvintele cheie potrivite pentru afacerea ta.
+
+Ei bine, pentru a reuși să le identifici corect astfel încât să îți aducă un plus valoare în optimizarea site-ului tău pentru motoarele de căutare, trebuie să știi că există 9 tipuri de keywords, în funcție de intenția cu care un utilizator face o interogare în Google.
+
+Este foarte important să înțelegi fiecare tip de cuvânt cheie, pentru că astfel vei ști ce și cum să cauți dar cum și să le integrezi corect în strategia ta SEO.
+
+Hai să le luăm pe fiecare în parte:
+
+**1.** **Short-Tail**
+
+Cuvintele cheie tip short-tail sunt cuvinte scurte, cunoscute și sub numele de „termen principal” (head-term). Mai concret, un termen de căutare general care conține de obicei 1-3 cuvinte și acoperă un subiect larg. De obicei, acest tip de cuvinte au un volum de căutare mare, ceea ce înseamnă că atrag mai mulți vizitatori pe site dar și un nivel mare de competitivitate. Pentru a fi considerat relevant pentru Google sau pentru a face față competiției atunci când folosești acest tip de cuvinte scurte, ai nevoie de o gamă cât mai variată de produse. Nu sunt potrivite pentru afacerea ta atunci când vinzi doar câteva produse, când nu ai autoritate în Google sau un profil puternic de backlink. Cu toate acestea, sunt esențiale în procesul de research, deoarece te ajută să descoperi, plecând de la termenul general, o mulțime de alte oportunități de cuvinte cheie pe care le poți folosi pentru afacerea ta.
+
+Uite câteva exemple de cuvinte cheie scurte: încălțăminte damă, încălțăminte sport, pantofi damă, haine damă, rochii de ocazie, îmbrăcăminte bărbați, paltoane damă, ulei de măsline.
+
+**2.** **Long-Tail**
+
+Cuvintele cheie de tip long-tail (lungi) sunt practic o frază formată din mai mult de 3 cuvinte. Acestea sunt de obicei mult mai specifice decât termenii de căutare generali și reflectă mult mai bine modul în care oamenii fac interogări. Din punct de vedere SEO, trebuie să fructifici la maxim cuvintele cheie de tip long-tail, deoarece sunt mai puțin competitive și dacă îți cunoști bine publicul țintă (cui te adresezi și ce interese au) și realizezi conținut util pentru acesta, vei urca mult mai ușor în poziții superioare în Google. Deși primesc mai puțin trafic de căutare comparativ cu cele de tip short-tail, fiind mai specifice în targetare, acestea **cresc rata de conversie**.
+
+Uite câteva exemple de cuvinte cheie lungi: încălțăminte de damă mărimea 35, încălțăminte sport impermeabilă pentru alergare, pantofi damă eleganți cu toc gros, haine damă mărimi mari Bulgaria, rochii ocazie mărimi mari ieftine, îmbrăcăminte casual bărbați vară, paltoane damă negre elegante, ulei de măsline extravirgin presat la rece Grecia.
+
+Și pentru că vreau să mă asigur cât de mult te pot ajuta cuvintele cheie de tip long-tail, hai să luăm un exemplu și mai concret:
+
+![](https://lh3.googleusercontent.com/AIanDoXPE9fQ4lE1qmvzXjIzaNsAk05jbUfJTYQPsC437FQDEcb1yFA-Z24uVKTXzfTcDeQtrKAjZjv8ztoTHX-n1OLGOR_vhf7Dpkd_geOu_5m_6sgXb02PlQk8r673NUu7kNpB_uL42Kp_hyEFjm8)
+
+Dacă, de exemplu, ai un magazin online unde comercializezi și încălțăminte de damă, o oportunitate foarte bună pentru tine ar putea fi să targetezi pe cuvântul cheie: **pantofi mărimea 35 ieftini**.
+
+De ce? Este foarte simplu! Câte site-uri crezi că fac SEO pe acest cuvânt cheie? Destul de puține, pentru că acestea prefera să targeteze cuvinte care au un număr mult mai mare de căutări. Acum probabil vei spune, ei bine, nu asta e ideea? Nu, pentru că trebuie să identifici acele cuvinte cheie specifice care îți pot aduce vizite relevante pe site, care pot converti mult mai ușor și pe care competiția nu este mare. În caz contrar, te vei “bate” cu marile lanțuri de magazine (eMag, ePantofi, Dasha, etc.) care au bugete mult mai mari de marketing și o gamă diversă de produse.
+
+În schimb, dacă tu faci SEO pe un cuvânt atât de specific cum este “pantofi mărimea 35 ieftini”, Google va afișa site-ul tău unei potențiale cliente care caută mărimea 35 la un preț accesibil, deoarece vei fi relevant, adică vei răspunde la nevoia utilizatorului și Google fix asta își dorește. Mai mult decât atât, cresc șansele și să înregistrezi o vânzare.
+
+Imaginează-ți câte femei poartă 35 și ajung pe site-uri cu încălțăminte care nici măcar nu au mărimea 35 disponibilă… O mulțime. Cum ar fi să ajungă pe site-ul tău și să le oferi fix ce au nevoie? Ar fi punct ochit, punct lovit. Cam așa stau lucrurile.
+
+![](https://lh5.googleusercontent.com/X9pWD_0pKCFmbC4hCNpvnogeIA0hbDVYfuuvT3OwVZt_dGQTSZMCSf3jxdRIulmmD-qgZN5mY5-kHC16ckrN9oE0eeUEaNVG1TO1OXjZHBpVqua_AfJacy3bX9YjzNVjtjaeC6B63L9sp8wLxg3xQm4)
+
+Dacă vei continua să faci SEO pe un cuvânt cheie general (short-tail), motorul de căutare nu va ști ce să îi arate potențialului tău client și rezultatele vor fi în funcție de istoricul de căutare, locație, comportament, etc. Ce faci tu de fapt în acest caz, este că îl lași pe Google să decidă în locul tău și nu asta îți dorești. Îți dorești să redirectionezi către site-ul tău trafic relevant care să și convertească și care din nou (tot repet pentru că este extrem de important) să răspundă la nevoia clientului tău. Nu mai spun că dacă este competiția mare pe un cuvânt cheie general, sunt șanse ca nici măcar să nu apari în rezultatele de căutare.
+
+Așa că, identifică acele oportunități neexplorate, pentru că se pot dovedi extrem de utile pentru afacerea ta și îți pot aduce rezultate reale.
+
+**![](https://lh3.googleusercontent.com/cTjWr_WCoUihI02fE1Zx6NYj0a_rykr5FWZk0ejQCW1I2GdJjlv71TPKwuckVBU6PgkrZcqm640csdD4af9dcGtbkwpuelJrJ5QQFDK1zwmW1XYRZPJvoONPH3TspMZoskMF53prvdeyxiFkWfTZrOg)**
+
+**3.** **Short-Term Fresh**
+
+Cuvintele cheie de tip short-term fresh sunt cuvinte scurte sau lungi care se referă la ceva ce s-a întâmplat recent și este în trend în online (evenimente majore, știri virale despre anumite persoane sau subiecte) sau care prezintă un spike viral semnificativ într-o perioadă bine definită anului. Prin urmare, cunoașterea cuvintelor cheie care sunt în tendințe într-o anumită perioadă, nu numai că îți va aduce un volum imens de trafic dar te va ajuta și să menții un conținut proaspăt pe website-ul tău. Acestea au o competitivitate moderată și un volum de căutare exploziv cât sunt virale/de interes/de sezon, însă apoi totul revine la normal.
+
+Uite câteva exemple de cuvinte cheie short-term fresh: alegeri prezidențiale, chatGPT, inteligența artificială (AI), Black Friday 2023, Halloween, Avatar, Valentine’s Day, 8 Martie.
+
+**4.** **Long-Term Evergreen**
+
+Cuvintele cheie de tip long-term evergreen sunt topicuri relevante, mereu actuale și de interes pentru audiența pe care tu o targetezi. Pe baza acestor cuvinte, poți realiza articole de blog și ghiduri complexe care îți vor aduce constant trafic de calitate pe site. Conținutul evergreen (“veșnic verde”) nu are nicio dată de expirare și își va păstra valoarea pe termen lung. Câteva exemple excelente de conținut pe care le poți aborda: întrebări frecvente (FAQ), ghiduri (“Cum să”), tutorial, testimonial, resurse utile din industria în care activezi, glosare de termeni și expresii, etc.
+
+Uite și câteva exemple concrete de cuvinte cheie long-term evergreen: cum să faci bani online sau offline, cum să slăbești rapid, cum să te lași de fumat, cum se face o pagina de youtube business, cum să faci reclame pe facebook pas cu pas, cum să îți crești traficul pe site.
+
+**5.** **Product Defining**
+
+Cuvintele cheie de tip product defining sunt acele cuvinte care descriu cel mai bine produsul pe care îl comercializezi sau serviciul pe care îl prestezi. Sunt extrem de specifice și cu o rată mare de conversie, chiar dacă volumul de căutări nu este semnificativ. De ce? În momentul în care o persoană face o interogare specifică pe Google pentru un produs, serviciu sau o informație de care are nevoie, intenția de cumpărare sau cel puțin, nevoia, este extrem de mare. Acel client știe clar ce își dorește și nu este interesat de nimic altceva. Din punct de vedere SEO este o oportunitate mare nu doar pentru a atrage trafic pe site ci și pentru a crește rata de conversie.
+
+Uite câteva exemple de cuvinte cheie product defining: Laptop Gaming Lenovo Legion 5 Pro 16ACH6H, pantofi damă negri eleganți cu toc gros paiete și fermoar, bilet avion dus-întors București-Roma în perioada 5-10 februarie 2023, pal melaminat Alb Creta Perlat W908 ST2- 18 mm, Serum Hidratant Ochi Și Gene Advanced Genifique Light Pearl, robot de bucătărie Bosch MUM54251 900 W, anvelopă iarnă GOODYEAR UG8 FP 205/55R16 91T.
+
+**6.** **Customer Defining**
+
+Cuvintele cheie de tip customer defining sunt acei termeni de căutare utilizați de clienții care caută articole specifice unei nișe anume. Pentru a le identifica, trebuie să înțelegi foarte bine tipologia clientului tău: interesele, comportamentul de cumpărare, pasiunile, hobby-urile. Cu toate acestea însă, ar trebui să știi că volumul de căutare pentru aceste cuvinte este destul de scăzut.
+
+Uite câteva exemple de cuvinte cheie customer defining pe care le poți folosi dacă afacerea ta are legătură, să spunem, cu fotografia: pasionat de fotografie, ce branduri preferă fotografii profesioniști, tablouri după fotografii, puzzle photo.
+
+**7.** **Geo-Targeting**
+
+Cuvintele cheie de tip geo-targeting sau cu orientare geografică, sunt cuvinte locale pentru targetarea unei zone specifice (județ, sector, oraș, țară) în care se află afacerea ta sau clienții din baza de date. Folosirea acestor tipuri de cuvinte cheie este una dintre cele mai bune strategii de marketing pentru afacerile care se bazează pe clienți locali (salon de înfrumusețare, restaurant, magazine, cabinet stomatologic, atelier reparații auto, etc.) și aduce trafic relevant pe site și o rată mare de conversie.
+
+Uite câteva exemple de cuvinte cheie geo-targeting: avocat brașov, stomatolog sector 3, cafenea Brașov, servicii de contabilitate bucurești sector 3, spălătorie auto Iași, magazin mobilă Bacău, restaurant cu specific libanez sector 1, coafor Galați.
+
+**8.** **LSI (latent semantic indexing)**
+
+Cuvintele cheie de tip LSI (latent semantic indexing) sunt acele cuvinte sau acei termeni care sunt strâns legate conceptual și relevante din punct de vedere semantic de cuvântul cheie țintă. Google le percepe fiind același lucru și va afișa același conținut pentru cuvinte cheie diferite. Optimizarea conținutului text de pe website-ul tău folosind cuvinte cheie LSI, îl ajută pe Google să înțeleagă mai bine specificul paginii tale, deoarece indexarea semantică identifică modele în relațiile dintre termeni și concepte. Cu cât ești mai relevant, cu atât vei fi răsplătit cu afișarea site-ului tău în poziții superioare, deoarece relevanța este unul dintre cei mai importanți factori de clasare în rezultatele motoarelor de căutare. Evident, acest lucru înseamnă pentru tine trafic relevant și șanse mult mai mari de conversie.
+
+Uite câteva exemple de cuvinte cheie LSI dacă principalul cuvânt cheie al paginii tale este, să spunem, cărți de credit: bani, scor de credit, limită de credit, rata dobânzii.
+
+**9.** **Intent Targeting**
+
+Cuvintele cheie de tip Intent Targeting (intenția de căutare) sunt acele cuvinte, interogări sau termeni utilizați de potențialii tăi clienți în motoarele de căutare atunci când au un obiectiv sau un motiv concret pentru care fac acest lucru (satisfacerea unei nevoi).
+
+Nevoia pentru un serviciu, produs sau aflarea unei informații, se traduce de cele mai multe ori printr-o acțiune, respectiv, tranzacție. Ceea ce ne dorim cu toții, nu-i așa? Acesta este și obiectivul numărul 1 al lui Google: satisfacerea intenției de căutare, adică returnarea unui rezultat care să răspundă la nevoia utilizatorului. Nu satisfaci nevoia utilizatorului, nu vei crește în clasamentele Google. Atât de simplu e.
+
+Cele mai întâlnite intenții de căutare, includ:
+
+– **Cuvinte cheie informaționale**, folosite atunci când un utilizator online caută mai multe informații despre un produs, un serviciu, ghid cu intenția de a învăța sau afla mai multe. Acestea reprezintă un număr semnificativ de căutări în Google, prin urmare dacă vrei vizibilitate, cu siguranță nu ar trebuie să le ignori. Uite și câteva exemple: contestare proces verbal, mâini uscate și crăpate, ce este SEO, de ce bâzâie laptopul, PFA sau SRL, tunsori bărbați 2023;
+
+– **Cuvinte cheie tranzacționale**, folosite atunci când un utilizator online caută anumite produse cu scopul de a le cumpăra. Cuvintele cheie tranzacționale te ajută să îți crești rata de conversie, prin urmare, nu le ignora. De exemplu: avocat contestație proces verbal, cremă mâini uscate și crăpate, agenție SEO preț, laptopuri ieftine, servicii contabilitate, hair stylist;
+
+– **Cuvinte cheie cu intenție locală (local intent)**, folosite atunci când un utilizator online caută conținut relevant dintr-o anumită arie geografică, cum ar fi: avocat contestație proces verbal Brașov, agenție SEO Brașov, reparații laptop Brașov, contabilitate București, hair stylist București;
+
+– **Cuvinte cheie cu intenție navigațională**, folosite atunci când un utilizator online face o interogare în motoarele de căutare cu intenția de a naviga către o anumită pagină. Uite câteva exemple relevante și aici: avocat Doru Boțea, cremă mâini Notino (sau eMag), agenție SEO Marweb, laptop Emag, blog Roxintel, hair stylist Stailer.
+
+![](https://lh4.googleusercontent.com/oqzqII2vM158I-JRqqkj0aeEwj6mQSkt7UkGh9WyScvLRQLo9j53wDimaDBbifOfGmQvSSWOdXIRJ8n-T_4Vh0uES3GJBWvrSRBkkXbnCvyXUtNYFvdbjlrrhZBRdZ9bmazFyIDkttIMI6MzfwjCT-w)
+
+Prin urmare, dacă vrei să te clasezi în poziții superioare, cuvintele cheie de tip intent targeting trebuie să fie obiectivul tău principal în strategia de marketing și aici mă refer cu precădere la strategia de conținut. De ce? **Acest tip de cuvinte cheie sunt de fapt etapele (călătoria) prin care trece un client până ajunge să cumpere de la tine**.
+
+Conținutul tău trebuie să fie adaptat în funcție de etapa în care se află clientul tău și să răspundă nevoilor pe care le are. Când este în stadiul de research despre un anumit subiect, produs sau serviciu, trebuie să te asiguri că ai conținut relevant și valoros pentru acesta. Când este pregătit să cumpere, paginile tale trebuie să fie optimizate și targetate pe cuvinte cheie relevante dacă vrei să fii cu un pas mai aproape de înregistrarea unei noi vânzări. Apoi, dacă afacerea ta este locală, neapărat să te asiguri că ești în permanență “în drumul” clientului tău, la propriu și la figurat. În final, atunci când brandul tău este deja în mintea clientului tău, ajută-l să ajungă cât mai rapid pe paginile tale și să fie doar la un click distanță de satisfacerea nevoii pe care o are.
+
+Indiferent de tipul de interogare pe care îl face potențialul tău clientul, tu trebuie să fii răspunsul și soluția la ceea ce el caută în acel moment, chiar dacă este sau nu pregătit să cumpere.
+
+**Focusează-te să oferi valoare și vânzările vor fi doar o consecință.**
+
+În concluzie, cuvintele cheie sunt un element esențial atât în SEO cât și în SEM, dacă vrei să-ți optimizezi site-ul pentru motoarele de căutare și să ai o campanie de marketing eficientă. Ține cont de cele 9 tipuri de cuvinte cheie și alege-le pe acelea care sunt relevante pentru afacerea ta, în funcție de obiectivele pe care le ai în strategia de marketing și bineînțeles, în funcție de ce anume caută clienții tăi pe motoarele de căutare. Cu cât obții claritate privind ce înseamnă cuvintele cheie, de câte tipuri sunt și cum le poți folosi în avantajul tău, cu atât vei reuși să atragi trafic relevant pe site și să îți crești vânzările.
+
+Sper că acest articol ți-a fost util și că vei continua cu identificarea acelor cuvinte cheie care într-adevăr te pot clasa în poziții superioare în motoarele de căutare. Spor!

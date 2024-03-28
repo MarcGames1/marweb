@@ -40,7 +40,7 @@ const Service = () => {
             
         }
         
-    },[theme])
+    },[theme, componentTheme, setTheme])
 
   return (
     <>

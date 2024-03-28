@@ -16,10 +16,7 @@ export default function RootLayout({
     <html lang="ro">
       <body className={`  ${inter.className}`}>
         <Providers>
-          <div className=" min-h-screen bg-homeBg dark:bg-homeBg-dark bg-center bg-repeat bg-cover bg-fixed   w-full">
-           
-            {children}
-          </div>
+          {children}
         </Providers>
       </body>
     </html>

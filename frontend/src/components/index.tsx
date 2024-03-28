@@ -7,14 +7,14 @@ import SocialMediaIcons from "./SocialMediaIcons";
 
 
 
-
 export {
     HeroVideo,
     Loader,
    HeroSection,
     Buttons,
     H,
-    SocialMediaIcons
+    SocialMediaIcons,
+
    
 }
     

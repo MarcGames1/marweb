@@ -4,7 +4,7 @@ const useIsScrolled = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    console.log(isScrolled)
+   
     
     const handleScroll = () => {
       const currentScroll = window.scrollY;
@@ -20,7 +20,7 @@ const useIsScrolled = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [isScrolled, setIsScrolled]);
   return isScrolled;
 };
 

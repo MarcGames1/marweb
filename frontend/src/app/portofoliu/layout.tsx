@@ -2,6 +2,7 @@ import { SEOInfo } from '@/classes/SeoInfo';
 import Container from '@/components/Container';
 import { Metadata } from 'next';
 import React, { ReactNode } from 'react'
+import Header from "@/components/Header";
 
 export const metadata: Metadata = new SEOInfo(
   'Portofoliu - MarWeb',
@@ -10,7 +11,10 @@ export const metadata: Metadata = new SEOInfo(
 );
 
 const PortofoliuLayout = ({ children }: { children: ReactNode }) => {
-  return <Container>{children}</Container>;
+  return <>
+    <Header />
+    <Container>{children}</Container>
+  </>
 };
 
 export default PortofoliuLayout

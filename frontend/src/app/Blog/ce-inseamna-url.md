@@ -1,0 +1,191 @@
+---
+title: 'Ce înseamnă URL și la ce să fii atent din punct de vedere SEO'
+date: '2023-09-30T09:36:42+00:00'
+status: publish
+permalink: /blog/ce-inseamna-url
+author: Alexandru
+excerpt: ''
+type: post
+id: 309
+thumbnail: ../../uploads/2023/09/ce-inseamna-url-si-la-ce-sa-fii-atent-dpdvd-seo.webp
+category:
+    - SEO
+tag: []
+post_format: []
+footnotes:
+    - ''
+---
+Toate resursele de pe internet pe care le accesezi zi de zi în browser-ul tău, sunt asociate unui URL unic. Abrevierea vine de la “Uniform Resource Locator” ([localizator uniform de resurse](https://ro.wikipedia.org/wiki/Localizator_uniform_de_resurse)) și este o secvență de caractere standardizată, folosită pentru denumirea, localizarea și identificarea unor resurse de pe Internet.
+
+Pentru a-ți fi mai ușor să înțelegi ce înseamnă URL, gândește-te că și ție ca individ, îți este alocat un Cod Numeric Personal (CNP) unic, care conține date relevante despre gen, ziua, luna, județul sau anul nașterii. Cam așa stă treaba și cu tot ce accesezi tu când navighezi online. Și aici ne referim nu doar la documentele HTML (textul propriu-zis din pagină + elementele speciale denumite etichete/marcaje), ci și la alte resurse, precum: imaginile pe care le vezi în tag-urile HTML, audio și video (standardul în prezent este furnizarea conținutului printr-o aplicație externă ), scripturi (logica site-ului), fișiere CSS (stilizarea documentului HTML), etc.
+
+La ce te ajută adresa URL? Să spunem că acest articol ți s-a părut extrem de interesant și vrei să te asiguri că îl poți accesa/găsi oricând pentru a-l reciti sau pentru a-l trimite, de ce nu, unui prieten căruia crezi că i-ar fi extrem de util. Tot ce trebuie să faci este să-ți salvezi adresa URL care ulterior poate fi introdusă în bara de adrese a browseruluI pentru ca pagina asociată (resursa) să se încarce.
+
+Dar asta nu e tot. Dacă parcurgi acest articol până la capăt, o să afli din ce este formată [adresa URL](https://support.google.com/google-ads/answer/14095?hl=ro), cum te ajută în ceea ce privește optimizarea site-ului tău pentru motoarele de căutare (SEO), la ce trebuie să fii atent, care este formatul optim al unui link sau exemple relevante de adrese URL (absolute vs. relative).
+
+**Din ce este formată o adresă URL** 
+-------------------------------------
+
+După cum îți spuneam și mai sus, adresa URL nu te ajută doar în accesarea unei resurse de pe internet. Este un factor important de care trebuie să ții cont atunci când vrei ca paginile website-ului tău să fie relevante pentru Google și, implicit, afișate unui număr cât mai mare de utilizatori. Și o să vorbim pe larg în acest articol despre rolul URL-ului din punct de vedere SEO.
+
+Însă, până acolo, este important să înțelegi din ce este formată o adresă URL.
+
+Pentru a te ajuta să înțelegi într-un mod cât mai logic, hai să le luăm pe fiecare în parte:
+
+![](https://lh3.googleusercontent.com/cI_QDPJgM63jKbOPguplkaYuDi-PvADEGOyKApOF9W4J9ANNk_AHibOwiibLB0ieOP52Syp5lwmo5pP3LsuRJR1VsMnwKsETeOHwowerpEHCJrkR-Xqxoj-xhbK7Z4rHd1Ifwdke4b4gg6L_pcY3IbQ)
+
+1\. Schema
+
+Schema este prima parte a URL-ului și îți arată protocolul (metoda prin care se face schimbul de date) pe care browserul trebuie să-l folosească pentru a solicita resursa: HTTPS (versiunea securizată) sau HTTP (versiunea nesecurizată).
+
+2\. Subdomeniul
+
+Imediat după schema, urmează “://” – unde “:” separă schema de următoarea parte a adresei URL, iar “//” îți arată că următoarea parte a adresei este autoritatea, formată din numele de domeniu. Un subdomeniu este un prefix adăugat la un nume de domeniu pentru a separa o secțiune a site-ului tău web. Proprietarii de site-uri utilizează subdomeniile pentru a gestiona secțiuni extinse care necesită o ierarhie proprie a conținutului (magazine online, bloguri). Acestea funcționează ca un site web separat.
+
+3\. Numele de Domeniu
+
+Numele de domeniu este o adresă unică de internet care face referire la o resursă de pe internet, într-un mod prietenos și mult mai ușor decât IP-ul (locația serverului și conținutul acestuia). La unele adrese URL, poți întâlni imediat după numele de domeniu și portul, care îți arată care este tehnica folosită pentru a accesa resursele de pe serverul web și este obligatoriu pentru serverele web care nu folosesc porturile standard pentru protocolul HTTP (HTTP:80, HTTPS: 443), lucru care nu se aplică în cazul exemplului de mai sus.
+
+4\. Domeniul de Nivel Superior: TLD (top level domain)
+
+Domeniul de nivel superior (TLD) este cunoscut și sub numele de extensie de domeniu. Este vorba despre exemple ca: “ro” (specifică site-urilor locale din România), „com” (specifică site-urilor comerciale), “org” (specifică organizațiilor non-profit și instituțiilor nonguvernamentale), “net” (specifică site-urilor care oferă servicii de rețea: găzduire, servicii de e-mail, etc.). Această parte specifică ce fel de conținut va fi pe site-ul web.
+
+5\. Calea către resursă
+
+Calea către o resursă este acea parte din URL care vine după numele de domeniu și specifică locația unui anumit fișier sau a unei pagini pe server, sau mai bine spus, categoria sau subcategoria din care face parte/se află un fișier. Calea de acces include deseori bare (/) pentru a indica diferite niveluri ale unui director de fișiere. Directorul cu un singur nivel este cea mai simplă structură de directoare. Ce înseamnă mai exact acest lucru? Toate fișierele sunt conținute în același director. Cu toate acestea, un director cu un singur nivel are o limitare semnificativă atunci când numărul de fișiere crește sau când sistemul are mai mulți utilizatori.
+
+6\. Link permanent (Permalink)
+
+Permalink este un alt nume pentru adresa URL a unei postări individuale de blog sau a unei pagini web. Este ceea ce scrii efectiv pe bara de adrese a unui browser web dacă vrei să vizualizezi un anumit articol sau pagină și este o adresă web care ar trebui să rămână neschimbată pentru mulți ani în viitor. Este extrem de important ca permalink-ul să fie lizibil și ușor de înțeles nu numai pentru publicul țintă, ci și pentru motoarele de căutare. Tocmai de aceea aici vei introduce și cuvântul cheie pe care vrei să indexezi pagina respectivă, deoarece în modul acesta îl ajuți pe Google să înțeleagă conținutul paginii tale.
+
+H2 Ce trebuie să știi despre Adresele URL în SEO
+
+Acum că ai înțeles ce este adresa URL și din ce este formată, hai să vedem ce trebuie să știi despre acestea din prisma optimizării siteurilor pentru motoarele de căutare. Sunt o serie de bune practicI de care ar trebui să ții cont, mai ales că majoritatea celor care dețin site-uri, de cele mai multe ori, consideră adresele URL lipsite de importanță. Deși acestea pot părea mai puțin importante comparativ cu elemetele de titlu și subtitlu, modul în care le structurezi este important pentru SEO. De asemenea, ca regulă generală, ține cont că structura URL a unui site ar trebui să fie cât mai simplă posibil: construită într-o manieră logică și cât mai inteligibilă pentru utilizatorul final.
+
+Uite care sunt aspectele importante de care să ții cont în ceea ce privește structura URL-urilor:
+
+• Folosește numele produsului și nu ID-ul pentru a-l ajuta pe utilizator să înțeleagă despre ce este vorba în pagina pe care o accesează;
+
+• Folosește cuvintele cheie în adresa URL, deoarece în modul acesta îl determini pe utilizator să îți acceseze pagina pentru că știe că acolo va găsi fix ce are nevoie să afle în acel moment. Mai mult decât atât, ajuți și motorul de căutare să înțeleagă despre ce este vorba în pagina ta;
+
+• Ai grijă și la lungimea URL-ului. Oamenii s-ar putea să nu dea click pe un URL kilometric unde văd liniuță după liniuță la nesfârșit. Deși Google nu are nicio problemă cu accesarea URL-urilor foarte lungi, ține cont că experiența utilizatorului și accesibilitatea trebuie să fie principala ta preocupare. Cu cât o adresă URL este mai scurtă, ușor de reținut, analizat, copiat și inserat, cu atât cresc șansele ca pagina ta să fie distribuită pe rețelele sociale, de exemplu. După ce au fost partajate, distribuite, cu cât un URL este mai scurt și sugestiv pentru nevoia utilizatorului, cu atât cresc și șansele de click sau redistribuire. Sună bine, nu-i așa? Dacă ai în acest moment adrese URL care depășesc 100 de caractere, poate ar trebui să le rescrii;
+
+• Cu diacritice sau fără în adresa URL? Clar fără diacritice. Este în regula ca textele din interiorul paginilor web să fie cu diacritice. Fără nicio discuție. Însă, atunci când vine vorba despre utilizarea lor în adresele URL, lucrurile stau cu totul diferit. Imaginează-ți cât de greu este pentru o persoană care vrea să îți acceseze site-ul să scrie cu diacritice (mai ales dacă nu are tastatura configurată pentru limba respectivă) în bara de adrese a browserului. Acest lucru înseamnă un efort în plus pentru utilizator. Cu cât îi îngreunezi călătoria către conținutul tău, cu atât există șanse să nu îți mai acceseze site-ul. Nu cred că îți dorești acest lucru, nu-i așa?
+
+• Îți recomand să nu folosești caractere non-ASCII în adresele URL. Ce sunt acestea de fapt? Caracterele non-ASCII sunt cele care nu sunt codificate în ASCII (American Standard Code for Information Interchange – cel mai răspândit format de codificare a caracterelor pentru datele text din computere și de pe internet), cum ar fi Unicode, EBCDIC, etc. Practic, fiecare caracter care nu face parte din alfabetul englezesc. În datele codificate ASCII standard, există valori unice pentru 128 de caractere alfabetice, numerice sau speciale suplimentare și coduri de control. De ce nu este recomandat? Este foarte simplu. Nu ai de unde să știi cum vor trata aceste caractere motoarele de căutare sau browserele și este posibil că pagina ta să nu se încarce, imaginile și URL-urile să fie greu de vizualizat/citit;
+
+• Sunt anumite caractere care sunt permise într-o adresă URL, caractere alfabetice, numerale și câteva caractere precum: , / / ? : @ &amp; = + $ – \_ . ! ~ \* ‘ ( ) # care pot avea semnificații speciale. De exemplu, caracterul “?” atașat la sfârșitul unei adrese URL este un șir de interogare (partea unui link). Șirul de interogare începe după semnul întrebării și poate include unul sau mai mulți parametri. Fiecare parametru este reprezentat de o pereche cheie – valoare unică sau de un set de două elemente de date legate între ele. Un semn egal (=) separă fiecare cheie și valoare;
+
+• Nu utiliza nici caractere precum “\_” sau majuscule, deoarece acestea pot fi considerate spam de către Google. În ceea ce privește URL-urile scrise cu majusculele, acestea ar putea crea probleme cu conținutul duplicat dacă nu le gestionezi cum trebuie. Plus că și vizual, sunt deranjante și nu în ultimul rând, utilizatorul tastează aproape în 90% din cazuri adresa cu litere minuscule în bara de search. O adresă de internet este sensibilă la majuscule și minuscule doar pentru tot ceea ce urmează după numele de domeniu.
+
+**Regulile de care trebuie să ții cont când optimizezi adresa URL**
+-------------------------------------------------------------------
+
+URL-urile sunt legătura dintre conținutul care se află pe site-ul tău și utilizatorul final. De aceea, structura, modul în care arată și este optimizat un URL, contează. Principalul tău obiectiv atunci când îți optimizezi adresele URL este să ajuți roboții motoarelor de căutare să acceseze cu crawlere și să indexeze site-ul tău. Google vrea să ofere conținut relevant utilizatorilor și tu, de asemenea, vrei și trebuie să fii relevant. Cu cât informațiile de pe website-ul tău răspund la nevoile oamenilor și Google înțelege acest lucru, cu atât vei atrage mai mult trafic și site-ul tău va fi mai bine clasat.
+
+Până la urmă, investiția în SEO este o investiție pe termen lung care îți aduce rezultate și adresele URL ale site-ul tău au o influență semnificativă aici. Hai să vedem regulile de care trebuie să ții cont când optimizezi adresa URL:
+
+• Folosește cuvinte simple, descriptive și ușor de ținut minte. Cu cât un URL este mai ușor de citit si mai sugestiv pentru utilizatorul final, cu atât îți crești rata de click sau de distribuire a conținutului. Acest lucru înseamnă pentru Google că website-ul tău este relevant și că merita să fie clasat în poziții superioare;
+
+• Nu folosi numere de identificare lungi și ilizibile în adresa URL. Nici motorul de căutare nu va înțelege ce se află pe pagina respectivă și nici un potențial utilizator;
+
+• Evită să pui conjuncții (“și”, “sau”, “dar”, “ale”, “a”, etc.) în adresa URL atunci când este posibil. Nu trebuie să le omiți de fiecare dată, însă nici să abuzezi de ele dacă vrei să ai o structură lizibilă, ușor de reținut și partajat;
+
+• Evită atunci când este posibil folosirea parametrilor dinamici. Aceștia creează adrese URL inestetice și ciudat de lungi (mai multe moduri de sortare a acelorași articole, ceea ce duce la un număr mult mai mare de adrese URL). Cu cât o adresă URL este mai scurtă, cu atât cresc șansele ca pagina ta să fie redistribuită pe rețelele sociale. O alegerea mult mai bună este să te reorientezi către parametrii statici care transmit întotdeauna același nume și aceeași valoare către pagina de destinație sau către serviciul de urmărire. Mai mult decât atât, o adresă URL care se schimbă în mod constant, deci dinamică, mai mult ca sigur că nu este indexată în Google. Dacă paginile web nu sunt indexate, acestea nu vor fi găsite și, în consecință, nu vor fi clasificate;
+
+• Folosește cratimele (-) pentru a separa cuvintele din adresele URL. Acest lucru ajută atât utilizatorii cât și motoarele de căutare să identifice mai ușor cuvintele din URL și să-și dea seama despre ce este conținutul paginii tale. De preferat, încearcă să eviți literele de subliniere ( \_) deoarece Google va citi cuvintele separate cu “\_” fără spatiu și nu va înțelege ce ai vrut să spui de fapt, deoarece roboții Google sunt configurați să citească cratime;
+
+• Nu folosi caractere speciale pentru că acestea vor fi greu de vizualizat/citit și nu știi nici cum le vor afișa motoarele de căutare;
+
+• Cuvinte cheie folosite în exces? Evită pe cât posibil deoarece sunt inutile și fac site-ul tău să pară spam ceea ce îți poate afecta clasamentul în motoarele de căutare. O singură dată este suficient;
+
+• Folosește întotdeauna adrese URL perfect funcționale care să încarce același conținut, indiferent de cine sau unde/când accesează siteul. Dacă, de exemplu, trebuie să schimbi adresa URL a unei pagini din orice motiv, nu uita să informezi și motoarele de căutare despre această schimbare (redirecționare 301);
+
+• Nu uita de favicon – pictograma de lângă adresa URL. Chiar dacă nu are un impact SEO direct în ceea ce privește clasarea site-ului tău în motoarele de căutare, acest lucru ajută utilizatorul să îți recunoască mult mai ușor brandul în bara de marcaje.
+
+**Care este formatul optim al unui LINK (adresa URL)?**
+-------------------------------------------------------
+
+Acum că știi deja ce este un URL și de ce trebuie să ții cont pentru a te asigura că este prietenos din punct de vedere SEO, probabil te întrebi și care este formatul optim al unui Link. Ei bine, răspunsul este că depinde. Depinde în funcție de specificul site-ului tău, de paginile pe care vrei să le prioritizezi sau de modul în care vrei să-ți structurezi conținutul astfel încât atât Google cât și utilizatorul final să înțeleagă concret despre ce este vorba pe site-ul tău.
+
+Optimizarea URL-ului este cam printre primii pași de care trebuie să ții cont în ceea ce privește organizarea conținutului și a modului în care îl livrezi către utilizatorul final. Google urmărește “din umbră” toate aceste lucruri, prin urmare să discutam un pic și despre cum ar trebui să arate un format optim de link.
+
+Acest lucru trebuie gândit și analizat, de preferat, chiar din primele etape ale lansării site-ului tău. Dacă ai deja un site, nu este târziu nici acum, doar că necesită un pic de muncă. Și mai este un aspect de care trebuie să ții cont. Dacă site-ul tău este de ceva timp online și destul de bine poziționat în clasamentul Google pe un URL care nu este optimizat SEO, o variantă bună ar fi să îl lași așa și să ții cont pe viitor de aceste sfaturi. Schimbarea structurii de URL când site-ul are vechime poate face mai mult rău decât bine dacă nu este făcută cu grijă de cineva avizat în domeniu.
+
+Să revenim la formatul optim de link.
+
+În mediul online, și nu numai, totul se rezumă la încredere și aici o să mă refer cu precădere la securitatea site-ului tău. Prin urmare, protocolul, adică metoda prin care se face schimbul de date pe site-ul tău pentru a solicita conținutul, ar trebui (de fapt, trebuie) să fie HTTPS, unde “S” vinde de la: SIGUR, adică o comunicare criptată și securizată. Google ține cont de acest lucru și o dată cu accesul mult mai facil la informație, și cei care navighează pe internet. Aceștia vor ezita să își introducă date sensibile (adresă, nume, telefon, date card) pe un site care folosește un protocol HTTP (nesecurizat) care nu garantează, evident, protecția și criptarea datelor.
+
+Mai departe, în structura oricărui link, urmează numele domeniului tău. Totul clar până aici. Adevărata provocare începe după numele de domeniu, unde trebuie să stabilești modul în care vor fi organizate paginile individuale, practic întreaga arhitectură a site-ului tău.
+
+Obiectivul tău este să îl ajuți atât pe utilizator cât și pe Google, să înțeleagă ce este de fapt pe pagina pe care tocmai ce urmează să o acceseze și unde este localizată sau din ce categorie face parte.
+
+De exemplu, adresa URL pentru o postare de pe blogul tău, ar trebui să arate în felul următor:
+
+nume-site.ro/blog/nume-articol. Orice vizitator care a ajuns pe site-ul tău dintr-un link extern, înțelege instant unde se află și care este topicul articolului de blog.
+
+Un alt exemplu relevant, să spunem pentru un magazin online, este: nume-site/categorie/subcategorie/produs. Vizitatorul înțelege rapid din ce categorie și subcategorie face parte produsul vizualizat și poate naviga pe site în funcție de nevoile pe care le are.
+
+Nu este greșit nici nume-site/produs, atunci când ai, să spunem, un singur produs pe site sau câteva distincte ce nu pot fi sau nu este neapărat necesar să fie încadrate într-o categorie. Totuși, cu cât numărul de produse/servicii afișate pe site crește, cu atât ar trebui să le organizezi pentru o experiență cât mai ușoară de navigare a utilizatorului. Dacă ești chiar la început cu site-ul tău și ai un singur produs (sau doar câteva), poate ar trebui să te gândești pe termen lung și dacă intenționezi să-ți crești gama de produse, deja să faci o structură optimă încă de pe acum.
+
+Indiferent de modul în care alegi să-ți organizezi conținutul de pe site, consecvența este extrem de importantă, adică să te asiguri că ai o structură de URL unitară.
+
+ **Adrese URL Absolute vs Relative cu Exemple**
+-----------------------------------------------
+
+Și pentru că vreau să mă asigur că acest articol îți este cu adevărat util și până la final înțelegi pe deplin ce este URL-ul, trebuie să vorbim și despre adresele URL absolute vs. adresele URL relative.
+
+De ce se face această distincție? Părțile necesare ale unei adrese URL depind în mare măsură de contextul în care este utilizată adresa URL.
+
+Un URL absolut include toate informațiile necesare pentru a ajunge la o anumită pagină sau resursă de pe website-ul tău: protocolul (http sau https), numele domeniului și calea către resursă (categorie sau subcategorie). De exemplu, „https://www.nume-site.ro/servicii” este un URL absolut.
+
+Pe de alta parte, un URL relativ, include doar calea către resursă în raport cu pagina curentă. De exemplu, dacă pagina curentă este ” https://www.nume-site.ro/acasa „, iar URL-ul relativ este „/servicii”, URL-ul final absolut va fi „https://www.nume-site.ro/servicii”. Acest lucru este util atunci când se creează legături către resurse de pe același domeniu, deoarece permite ca legăturile să funcționeze corect și în cazul în care numele domeniului se schimbă.
+
+Poți diferenția adresele URL
+
+Deși aceste două concepte sunt utilizate cu precădere de către programatori, este bine să ai și tu câteva noțiuni de bază. Îți sunt utile atunci când vrei să partajezi sau să accesezi anumite link-uri (ancorele), deoarece te poate ajuta să eviți problemele de securitate, cum ar fi phishing-ul sau navigarea pe site-uri nesigure.
+
+### **Exemple de adrese URL Absolute**
+
+Hai să luăm două exemple de adrese URL absolute pentru a înțelege mai concret despre ce este vorba:
+
+<https://www.exemplu.ro/despre-noi>
+
+• „**https**” este protocolul, care indică faptul că resursa este solicitată prin intermediul Protocolului de transfer hypertext;
+
+• „**www.exemplu.ro**” este numele de domeniu, indicând site-ul web sau serverul specific care găzduiește resursa.
+
+• „**/despre-noi**” este calea de acces la resursă, indicând că resursa solicitată este pagina „despre-noi” de pe site-ul www.exemplu.ro;
+
+<https://subdomeniu.exemplu.ro/haine/rochii>
+
+• „https” este protocolul, indicând faptul că resursa este solicitată printr-o conexiune securizată care utilizează protocolul HTTPS.
+
+• „subdomeniu.exemplu.ro” este numele domeniului, indicând subdomeniul specific al site-ului web exemplu.ro care găzduiește resursa.• „/haine/rochii/ ” este calea către resursă, indicând că resursa solicitată se află în subfolderul „rochii” al folderului „haine” de pe site-ul web „subdomeniu.exemplu.ro”.
+
+### **Exemple de adrese URL Relative**
+
+Iată și două exemple de adrese URL relative:
+
+• „despre”
+
+Acesta este un URL relativ care se referă la o pagină denumită „despre” care se afla pe același domeniu ca și pagina curentă. De exemplu, dacă pagina curentă este „http://www.exemplu.ro/acasa”, URL-ul absolut rezultat va fi „http://www.exemplu.ro/despre”
+
+• „../imagini/imagine1.jpg”
+
+Acesta este un URL relativ care se referă la un fișier de imagine denumit „imagine.jpg” care se află într-un folder denumit „imagini” care se află un nivel mai sus față de folder-ul curent. De exemplu, dacă pagina curentă este „http://www.exemplu.ro/pagini/despre”, URL-ul absolut rezultat va fi „http://www.exemplu.ro/imagini/imagine1.jpg”
+
+Ce ar trebuie să mai știi este că URL-urile relative sunt utilizate în codul HTML, atunci când se creează un link sau un tag “imagine”, pentru a evita scrierea întregului URL.
+
+**Doar URL-urile sunt importante în SEO**?
+------------------------------------------
+
+URL-urile sunt elemente importante ce țin de structura și modul în care organizezi conținutul site-ului tău. Din punct de vedere SEO, este necesar să te asiguri că este structurat într-un mod logic, să fie scurt și ușor de citit de către utilizatori și că ai inserat cuvinte cheie relevante. URL-urile absolute și relative au diferențe importante, iar utilizarea lor corectă poate contribui la îmbunătățirea poziționării în motoarele de căutare. De asemenea, nu uita să eviți pe cât posibil utilizarea caracterelor speciale și a parametrilor dinamici care pot face ca URL-ul să devină mai greu de înțeles și de indexat de către motoarele de căutare.
+
+Cu toate acestea atunci când vine vorba de SEO, relevanța și o experiență de utilizare prietenoasă sunt cuvintele de pe ordinea de zi. Ce înseamnă acest lucru? Nu este suficient să ai o structură corectă a unui URL și să te aștepți că dacă ții cont de toate sfaturile de mai sus, site-ul tău va fi preferat de motoarele de căutare.
+
+Optimizarea URL-ului este doar o mică parte din tot ceea ce înseamnă SEO și este foarte bine să știm despre ele și să avem o structură unitară pe termen lung. Nu pierde din vedere imaginea de ansamblu și asigură-te că o dată ce utilizatorul a dat click pe link-ul tău ajunge pe o pagină care se încarcă rapid, are elemente de design echilibrate sau informații cu adevărat valoroase și relevante.
+
+Lui Google îi pasă de conținutul pe care tu îl oferi oamenilor. Ține cont de acest lucru și astfel vei reuși să te diferențiezi de concurență și să fii bine clasat cu website-ul tău în motoarele de căutare.
+
+Sper că toate aceste informații ți-au fost de ajutor!

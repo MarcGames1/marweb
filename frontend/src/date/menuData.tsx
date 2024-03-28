@@ -5,6 +5,8 @@ import { FaCode } from 'react-icons/fa6';
 import { LuScrollText } from 'react-icons/lu';
 import { RiContactsBookLine } from 'react-icons/ri';
 import { SiGoogleads } from 'react-icons/si';
+import { BsPostcardHeart } from "react-icons/bs";
+
 export interface IMenuData {
   routePath: string;
   name: string | ReactNode;
@@ -55,15 +57,24 @@ export const HeaderMenuData: IMenuData[] = [
     name: 'Portofoliu',
     icon: <LuScrollText />,
   },
+  {
+    id: '5',
+    routePath: '/blog/',
+    name: 'Blog',
+    icon: <BsPostcardHeart />,
+  },
 
   {
-    id: '05',
+    id: '06',
     name: 'Contact',
     routePath: '/contact',
     icon: <RiContactsBookLine />,
   },
   // { href: '/servicii/mentorat', text: 'Mentorat' },
 ];
+
+
+  // { href: '/servicii/mentorat', text: 'Mentorat' },
 // {href:'/servicii/seo', text: 'Servicii SEO'},
 // {href:'/servicii/google-ads', text: 'Promovare Google Ads'},
 // {href:'/servicii/creare-website', text: 'Creare Website'},

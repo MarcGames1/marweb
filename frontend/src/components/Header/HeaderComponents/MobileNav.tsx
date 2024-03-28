@@ -22,7 +22,7 @@ const MobileNav = ({ menuOpen, setMenuOpen }: {
         className={`${
           menuOpen
             ? 'block lg:hidden  absolute left-0 rounded-b-[20px] top-20 z-[22222222222222] w-full bg-white dark:bg-[#212425] drop-shadow-lg py-4 '
-            : 'flex my-12 '
+            : 'flex my-12 items-center justify-items-center'
         }`}
       >
         {HeaderMenuData.map((item) => (
@@ -49,4 +49,4 @@ const MobileNav = ({ menuOpen, setMenuOpen }: {
   );
 };
 
-export default MobileNav
+export default MobileNav 

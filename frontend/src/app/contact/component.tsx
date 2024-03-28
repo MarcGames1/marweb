@@ -1,6 +1,7 @@
 import ContactForm from '@/components/ContactForm/ContactForm';
 import Container from '@/components/Container';
 import Address from '@/components/contact/Address';
+import { twMerge } from 'tailwind-merge';
 
 
 const ContactComponent = () => {
@@ -8,7 +9,7 @@ const ContactComponent = () => {
     <Container>
       {/* Start top about info */}
       <div className="py-12 px-5">
-        <h2 className="after-effect after:left-60 mt-12 lg:mt-0 ">Contact</h2>
+        <h2 className={twMerge('after-effect after:left-60 mt-12 lg:mt-0')}>Contact</h2>
       </div>
       <div className="lg:flex gap-x-20">
         {/* End contact address block */}

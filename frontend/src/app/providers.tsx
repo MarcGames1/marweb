@@ -5,10 +5,13 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import { ToastContainer } from 'react-toastify';
 
+
  function Providers({ children }: { children: React.ReactNode }) {
 
   return (
-    <div>
+    
+    
+    <>
       <ToastContainer
         position="top-right"
         autoClose={2000}
@@ -19,9 +22,10 @@ import { ToastContainer } from 'react-toastify';
         pauseOnFocusLoss
         draggable
         pauseOnHover
-      />
+        />
       <ThemeProvider attribute="class">{children}</ThemeProvider>
-    </div>
+    
+        </>
   );
 }
 

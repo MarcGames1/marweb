@@ -1,0 +1,71 @@
+---
+title: 'Ce înseamnă SEO si cum funcționează motoarele de căutare'
+date: '2023-09-30T09:58:20+00:00'
+status: publish
+permalink: /blog/ce-inseamna-seo-si-cum-functioneaza-motoarele-de-cautare
+author: Alexandru
+excerpt: ''
+type: post
+id: 318
+thumbnail: ../../uploads/2023/09/image.png
+category:
+    - SEO
+tag: []
+post_format: []
+---
+Cu siguranță ai auzit de SEO până acum și te-ai întrebat cu ce se mănâncă. Însă, înainte de a îți da o definiție mega stufoasă pe care probabil nu o vei pricepe din prima, lasă-mă să îți spun că SEO a început încă din anii 90. Exact, nu e de ieri și nici de acum două zile ci de 26 de ani. În 1997 termenul de high ranking era un termen complet nou și foarte la început. Așa că dacă aveai îndoieli că SEO este doar o “copilărie” atunci țin să te anunț că astăzi este unul dintre cele mai căutate skill-uri din online.
+
+SEO vine de la Search Engine Optimization și conform [Wikipedia ](https://ro.wikipedia.org/wiki/Optimizare_pentru_motoare_de_c%C4%83utare)reprezintă “ un proces de perfecționare (favorizare) a vizibilității [site-urilor web](https://ro.wikipedia.org/wiki/Web_site) sau [paginilor web](https://ro.wikipedia.org/wiki/Pagin%C4%83_web) în cadrul ordonării rezultatelor căutării în lista făcută de [motorul de căutare](https://ro.wikipedia.org/wiki/Motor_de_c%C4%83utare)”. Mai pe scurt și mai simplu, SEO este atunci când intri pe Google și cauți de exemplu ceva ce te interesează ( poate fi un produs pe care vrei să îl cumperi sa un serviciu de care ai nevoie) și ți se afișează ( sub link-urile care sunt plătite) câteva opțiuni de la diverse brand-uri/companii/persoane. Întrebarea este, cum a ajuns prima opțiune…prima și cum s-a întamplat asta? Ai spune că e nepoliticos să îți răspund la întrebare cu..o altă întrebare, însă crede-mă pe cuvânt că până la finalul articolului vei înțelege mai bine ce este SEO.
+
+**Cine are nevoie de SEO?**
+---------------------------
+
+![](../../uploads/2023/09/image.png)Invoc aici toate afacerile și toți antreprenorii care au produse sau servicii în care cred cu ardoare și care nu reușesc să ajungă la consumatorii lor. Vă înțeleg perfect! Acum că ne-am strâns toți aici, să răspundem la întrebarea anterioară. Să ajungi prima opțiune presupune multă muncă și expertiză pentru un specialist SEO, însă nu este nimic imposibil. Cu ajutorul unor tactici, specialistul reușește monotorizând constant website-ul tău să îți optimizeze website-ul astfel încât afacerea ta să ajungă pe prima pagină. Deci, presupune o muncă și un efort constant pentru ca tu să te poți bucura de trafic pe website-ul tău care în cele din urmă să se transforme din potențiali clienți în iubitori de brand. Cine nu și-ar dori să aibă câți mai mulți cumpărători? Cine nu are nevoie de SEO!
+
+Așa că, nu există cineva anume care are nevoie de SEO, ci mai degrabă cine vrea să își scaleze afacerea și să crească în online.
+
+**Cum ajută optimizarea SEO să atragi potențiali clienți pe site-ul tău**
+-------------------------------------------------------------------------
+
+Dacă cineva intră pe website-ul tău și face o achiziție sau ajunge să te sune pentru acel serviciu, înseamnă automat că a devenit conștient de afacerea ta. Dacă este mulțumit, probabilitatea ca acel serviciu să ajungă pe la urechile altor persoane este foarte mare. Prin urmare, SEO nu numai că îți promite prima poziție de pe Google, dar te și ajută să fii acolo când oamenii au cea mai mare nevoie de tine. Iar când oamenii au nevoie de tine, s-ar transforma în potențiali clienți, nu ? Prin urmare, optimizarea website-ului tău îți poate aduce cât mai multe lead-uri.
+
+Iar dacă tot am menționat de optimizare, marele mister din SEO, îmi doresc cu adevărat să te lămuresc și să îți explic ce este optimizarea SEO și de ce este atât de ambiguu pentru toată lumea. Ei bine, marele secret este format de fapt din următoarele:
+
+**SEO ON-Site si SEO Off-site**
+-------------------------------
+
+Te invit să aruncăm o privire asupra website-ului tău sau oricărui alt site ( în cazul în care nu ai) și să analiăm câteva aspecte. Cu siguranță sunt incluse următoarele, nu-i așa?
+
+1.conținut ( aici intră texte, imagini, media)
+
+2.elemente de HTML
+
+3.design-ul websiteului sau arhitectura lui
+
+Tot ceea ce am menționat mai sus reprezintă SEO On-Site. Atunci când vrem să optimizăm website-ul ne uităm la aspectele menționate mai sus având grijă ca ele să fie mereu puse la punct.
+
+Când vine vorba de externalizare, apelăm la SEO Off-Page. Aici, intră strategii precum link building, de content marketing, recenzii pe diverse website-uri și nelipsita prezență pe social media. Este ca atunci când ai terminat de aranjat interiorul unei case și acum trebuie să te ocupi de înfrumusețarea exteriorului. Cu siguranță atunci când vrei să îți aranjezi curtea, ai nevoie de meseriași, nu?
+
+**Ce practici exista in optimizarea SEO?**
+------------------------------------------
+
+![](../../uploads/2023/09/image-1.png)Probabil că știi filmul Alice în țara minunilor. Îți mai aduci aminte de Pălărierul nebun? Cel interpretat de marele actor Johnny Depp. Imaginează-ți că există doi Johnny Depp care interpretează același plărier. Un personaj are o pălărie albă și celalălalt are o pălărie neagră. Diferența dintre ei este că unul este bine intenționat și tot ceea ce face nu încalcă nici o regulă, iar celălalt cu pălărie neagră, este rău intenționat și încalcă toate regulile posibile. Totuși, cum ai putea să îi diferențiezi? Ai spune că, simplu, prin culor, nu? Doar am detaliat mai sus.
+
+Acum că ai această poveste în minte, vreau să îți vorbesc despre White Hat SEO și Black Hat SEO. Exact ca în exemplul de mai sus, White Hat SEO reprezintă o practică prin care un specialist reușește să ajungă în prima poziție respectând regulile Google pentru a satisfice nevoile utilizatorilor. În schimb, probabil că ai intuit deja, Black Hat SEO reprezintă modalitatea prin care anumiți specialiști nu respectă nici o regulă și ajung să fure date pentru a putea să le oferteze mai departe.
+
+Ai zice că povestea s-a încheiat aici, nu ? Ei bine, ca în orice poveste, există un personaj surpriză. Acel personaj apare să te surprindă și să te învețe ceva. Am să te rog să apelezi din nou la imaginație și să vezi în minte următoarea imagine: între cei doi pălărieri, care sunt clar la extreme apare acest nou personaj care poartă o pălărie…gri! Rolul lui? Ei bine, el nu joacă contra regulilor, dar nici nu le respectă în totalitate. Este fix la mijloc! Mai degrabă, noul pălărier gândește puțin în afara poveștii. Astfel, având în minte această analogie, îți prezint Grey Hat SEO. Această practică se bazează foarte mult pe backlinks sănătoase și pe faptul că autotritatea ( în acest caz Google) consideră că dacă un alt website face referire la website-ul tău, atunci site-ul devine mult mai credibil. Astfel, si tu te poziționezi mai sus. Destul de ingenios, nu?
+
+ **Ce KPI-uri trebuie sa urmaresti la o campanie SEO** 
+-------------------------------------------------------
+
+![](../../uploads/2023/09/image-2.png)Când faci un lucru, indiferent de natura lui ai nevoie să îți iei niște puncte de repere pentru a te asigura că evoluția procesului dă roade sau nu. Exact așa se întâmplă și în SEO. Ca un specialist să își dea seama ca lucrurile merg bine, ia în considerare următoarele aspecte:
+
+1.Proveniența utilizatorului ( aici vine în ajutor Google Analytics care ne arată de unde vine utilizatorul)
+
+2.De câte ori apari în Google (aici intră în scenă Google Search Console care arată rata de click și câte click-uri ai)
+
+Sunt foarte multe lucruri la care se uită un specialist SEO atunci când se ocupă de un website, însă cea mai importantă activitate este perseverența. Creșterea în poziție nu este un proces care să dureze două zile, ci este ca un cal de cursă lungă. Odată ce ai ales să pleci în această călătorie, trebuie să ai ambiție nu să duci o cursă la capăt ci cât mai multe.
+
+Am vorbit despre anii 90, despre definiții, potențiali clienți, optimizare on și off, pălpării albe, negre și gri, dar și despre diferiți indici care te ajută să îți evaluezi munca, însă nu am vorbit despre un singur lucru: dacă am reușit să te fac mai familiar cu lumea SEO. Mi-ar plăcea foarte mult să aflu părerea ta referitoare la acest articol.
+
+Te invit sa-mi spui daca ti-a placut articolul mă poți găsi atât aici cât și pe rețelele de socializare unde putem interacționa mai mult. Iar dacă te simți prâslea cel voinic și ai întrebări, atunci aștept un mail sau de ce nu, putem să ne și auzim. Pe curând, prietene!
