@@ -10,16 +10,16 @@ const getPageContent = async (slug: string) => {
     const {meta, content}: { meta: IPortfolioMetaData | IBlogPostMetaData; content: any; } = await getPostBySlug(slug, mdDir)
     return {meta, content}
 }
-export async function generateStaticParams() {
-    const posts = await getAllPostsMeta(mdDir)
-
-    return posts.map((post) => {
-        console.log(post.permalink)
-        return {
-            item: post.permalink,
-        }
-    })
-}
+// export async function generateStaticParams() {
+//     const posts = await getAllPostsMeta(mdDir)
+//
+//     return posts.map((post) => {
+//         console.log(post.permalink)
+//         return {
+//             item: post.permalink,
+//         }
+//     })
+// }
 
 // @ts-ignore
 export async function generateMetadata({params}) {
