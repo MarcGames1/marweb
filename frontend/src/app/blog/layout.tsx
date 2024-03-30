@@ -10,11 +10,11 @@ export const metadata: Metadata = new SEOInfo(
   '/blog/'
 );
 
-const PortofoliuLayout = ({ children }: { children: ReactNode }) => {
+const PostLayout = ({ children }: { children: ReactNode }) => {
   return <>
     <Header />
     <Container>{children}</Container>
   </>
 };
 
-export default PortofoliuLayout
+export default PostLayout

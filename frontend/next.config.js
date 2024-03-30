@@ -1,4 +1,10 @@
 /** @type {import('next').NextConfig} */
+const withPWA = require('next-pwa')({
+  disable: process.env.NODE_ENV === 'development',
+  dest: 'public',
+  scope: '/',
+});
+
 const withMDX = require('@next/mdx')();
 const nextConfig = {
   images: { formats: ['image/avif', 'image/webp'] },
@@ -23,4 +29,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withMDX(nextConfig);
+module.exports =withPWA( withMDX(nextConfig));

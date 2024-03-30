@@ -1,4 +1,4 @@
-import {getPostBySlug} from "@/lib/mdx";
+import {getAllPostsMeta, getPostBySlug} from "@/lib/mdx";
 import path from "path";
 import {IBlogPostMetaData, IPortfolioMetaData} from "@/interfaces/postMetaData";
 import {H} from "@/components";
@@ -9,6 +9,16 @@ const getPageContent = async (slug: string) => {
     // @ts-ignore
     const {meta, content}: { meta: IPortfolioMetaData | IBlogPostMetaData; content: any; } = await getPostBySlug(slug, mdDir)
     return {meta, content}
+}
+export async function generateStaticParams() {
+    const posts = await getAllPostsMeta(mdDir)
+
+    return posts.map((post) => {
+        console.log(post.permalink)
+        return {
+            item: post.permalink,
+        }
+    })
 }
 
 // @ts-ignore
@@ -21,8 +31,8 @@ export async function generateMetadata({params}) {
 }
 
 
-const PortfolioItem = async ({params}: { params: { item: string } }) => {
-    // @ts-ignore
+const SingleBlogPostPage = async ({params}: { params: { item: string } }) => {
+
     const {meta, content} = await getPostBySlug(params.item, mdDir)
     return (
         <main>
@@ -44,5 +54,5 @@ const PortfolioItem = async ({params}: { params: { item: string } }) => {
         </main>
     )
 }
-export default PortfolioItem
+export default SingleBlogPostPage
 //TODO TYPE FOR META DATA IN MDX FILES

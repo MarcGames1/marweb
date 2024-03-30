@@ -4,7 +4,6 @@ import H, { TextAlignment, TextColor, TextSize } from '../Typography/H';
 import Link from 'next/link';
 import { HeaderMenuData } from '@/date/menuData';
 import Image from 'next/image';
-
 import { SocialMediaIcons } from '..';
 const Footer = () => {
   const navClasses =
@@ -21,9 +20,9 @@ const Footer = () => {
             <Link href={'/'}>
               <Image
                 alt="logo Marweb"
-                height={100}
-                width={100}
-                src={'/marwebLogo/Logo-Mare-100.svg'}
+                height={823}
+                width={176}
+                src="/marwebBrandAssets/Logo-Mare-100.svg"
               />
             </Link>
           </aside>

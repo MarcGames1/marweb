@@ -44,7 +44,6 @@ const config = {
     
     extend: {
       backgroundImage: {
-        homeBg: "url('/images/background/bg.jpg')",
         'homeBg-dark': "url('/images/background/bg-dark.jpg')",
         'homeTwoBg-dark': "url('/images/background/bgtwo.jpg')",
         previewBg: "url('/images/preview/previewbg.png')",

@@ -1,7 +1,7 @@
 import {
   // ColaborareSection,
   HeroSection,
-  HeroVideo,
+  HeroVideo, Loader,
 
   // DeCeNoi
 } from '@/components';

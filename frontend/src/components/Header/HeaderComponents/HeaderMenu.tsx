@@ -22,7 +22,7 @@ const HeaderMenu = () => {
               width={80}
               height={26}
               priority
-              src="/marwebLogo/Logo-Mare-100.svg"
+              src="/marwebBrandAssets/Logo-Mare-100.svg"
               alt="logo"
             />
           </Link>
