@@ -29,7 +29,7 @@ export async function generateStaticParams() {
 // @ts-ignore
 export async function generateMetadata({params}) {
     const {meta}: {meta: IPortfolioMetaData | IBlogPostMetaData; } = await getPageContent(params.item)
-   let metadata = new SEOInfo(meta.title, meta.description, `/blog/${params.item}`)
+   let metadata:any  = new SEOInfo(meta.title, meta.description, `/blog/${params.item}`)
     return {
         ...metadata
     }
