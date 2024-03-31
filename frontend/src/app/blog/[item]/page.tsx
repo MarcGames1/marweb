@@ -2,6 +2,7 @@ import {getAllPostsMeta, getPostBySlug} from "@/lib/mdx";
 import path from "path";
 import {IBlogPostMetaData, IPortfolioMetaData} from "@/interfaces/postMetaData";
 import {H} from "@/components";
+import {SEOInfo} from "@/classes/SeoInfo";
 
 const mdDir = path.join(process.cwd(), 'src', 'app', 'blog', 'posts')
 
@@ -28,9 +29,9 @@ export async function generateStaticParams() {
 // @ts-ignore
 export async function generateMetadata({params}) {
     const {meta}: {meta: IPortfolioMetaData | IBlogPostMetaData; } = await getPageContent(params.item)
+   let metadata = new SEOInfo(meta.title, meta.description, `/blog/${meta.permalink}`)
     return {
-        title: meta.title,
-        description: meta.description
+        ...metadata
     }
 }
 

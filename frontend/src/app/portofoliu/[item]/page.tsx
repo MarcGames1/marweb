@@ -4,6 +4,8 @@ import {IPortfolioMetaData} from "@/interfaces/postMetaData";
 import {H} from "@/components";
 import {MDXRemote} from "next-mdx-remote";
 import {useMDXComponents} from "@/mdx-components";
+import {Metadata} from "next";
+import {SEOInfo} from "@/classes/SeoInfo";
 const mdDir = path.join(process.cwd(), 'src', 'app', 'portofoliu', 'items')
 
 const getPageContent = async (slug: string) => {
@@ -21,7 +23,12 @@ export async function generateMetadata({params}) {
     }
 }
 
-
+export const metadata: Metadata = new SEOInfo(
+    'Portofoliu - MarWeb',
+    'Portofoliu - MarWeb',
+    '/portofoliu/',
+    false
+);
 const PortfolioItem = async ({params}: { params: { item: string } }) => {
     // @ts-ignore
     const {meta, content} = await getPostBySlug(params.item, mdDir)

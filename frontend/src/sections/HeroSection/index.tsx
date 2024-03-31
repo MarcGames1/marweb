@@ -13,7 +13,7 @@ const HeroSection = () => {
         <H size={TextSize.xl} level={'div'}>
           {HomepageData.S1.content}
         </H>
-        <div className="flex flex-row justify-around gap-10 lg:gap-20">
+        <div className="flex flex-col lg:flex-row justify-around gap-10 lg:gap-20">
           <Buttons.Calendly />
           <Buttons.Whatsapp />
         </div>

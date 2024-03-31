@@ -6,6 +6,8 @@ import {H} from "@/components";
 import styles from "@/sections/Servicii/Servicii.module.css";
 import {TextAlignment, TextSize} from "@/components/Typography/H";
 import React from "react";
+import {Metadata} from "next";
+import {SEOInfo} from "@/classes/SeoInfo";
 
 const mdDir = path.join(process.cwd(), 'src', 'app', 'blog', 'posts')
 
@@ -14,7 +16,8 @@ const mdDir = path.join(process.cwd(), 'src', 'app', 'blog', 'posts')
 
 
 
-const PortofoliuPage = async () => {
+
+const BlogPage = async () => {
     const posts = await getAllPostsMeta(mdDir)
 
     return (
@@ -66,4 +69,4 @@ const PortofoliuPage = async () => {
 }
 
 
-export default PortofoliuPage
+export default BlogPage
