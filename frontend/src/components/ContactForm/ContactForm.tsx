@@ -19,7 +19,7 @@ const ContactForm = () => {
     >
       <h3 className="text-4xl  ">
         <span className="text-gray-lite dark:text-[#A6A6A6] ">
-          Sunt Deschis la discutii despre
+          Contacteaza-ma pentru
         </span>
         <br />
         <span className="font-semibold dark:text-white">
@@ -71,7 +71,6 @@ const ContactForm = () => {
             placeholder=" "
             id="user_phone"
             required
-            pattern="^[1-9]\d{9}$"
           />
           <label
             htmlFor="user_phone"
