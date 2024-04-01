@@ -1,16 +1,52 @@
 'use client'
-import React from 'react';
+import React, {SyntheticEvent} from 'react';
 
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import axios from "axios";
+import {NEXT_PUBLIC_SLACK_URL} from "@/utils/globals";
 
 const ContactForm = () => {
   
 
   // use Email js for recive message
 
-  const handleLeadForm = (e: { preventDefault: () => void; }) => {
-    e.preventDefault();
+  const handleLeadForm = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault(); // Prevenim comportamentul implicit de trimitere a formularului
+
+    // Accesăm valorile introduse de utilizator în câmpurile formularului
+    const formData = new FormData(e.target as HTMLFormElement);
+    const name = formData.get('name');
+    const email = formData.get('user_email');
+    const phone = formData.get('user_phone');
+    const message = formData.get('message');
+
+    // TODO de trimis catre slack stilizat frumos ca JSON
+    // Construim obiectul de date pentru trimiterea către Slack
+    const data = {
+      text: `
+            *Nume:* ${name}
+            *Email:* ${email}
+            *Telefon:* ${phone}
+            *Mesaj:* ${message}
+        `
+    };
+    try {
+      // Trimiterea datelor către webhook-ul Slack
+      await axios.post(process.env.NEXT_PUBLIC_SLACK_URL as string, JSON.stringify(data));
+
+      // Curățăm formularul după trimitere
+      (e.target as HTMLFormElement).reset();
+
+      // Afișăm un mesaj de succes cu ajutorul React Toastify
+      toast.success('Formular trimis cu succes!');
+    } catch (error) {
+      console.error('Eroare la trimiterea datelor către Slack:', error);
+      toast.error('Eroare la trimiterea formularului!');
+    }
+//TODO clear Form
+    // Afișăm un mesaj de succes cu ajutorul React Toastify
+
   };
 
   return (
