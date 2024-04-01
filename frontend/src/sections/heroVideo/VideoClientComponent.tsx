@@ -10,7 +10,7 @@ const VideoControl = dynamic(() => import('./VideoControl'));
 const VideoClientComponent = () => {
   const [isMuted, setIsMuted] = useState(true);
   return (
-    <div className=" relative  ">
+    <div className=" relative h-full w-auto  ">
       <Video isMuted={isMuted} />
       <VideoControl isMuted={isMuted} setIsMuted={setIsMuted} />
     </div>

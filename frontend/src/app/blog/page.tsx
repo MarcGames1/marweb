@@ -35,7 +35,7 @@ const BlogPage = async () => {
 
                     >
 
-                        <Link  href={`/blog${post.permalink}`}><Image className=" " src={post.thumbnail} width={300} height={300}  alt={post.title}/></Link>
+                        <Link  href={`/blog/${post.permalink}`}><Image className=" " src={post.thumbnail} width={300} height={300}  alt={post.title}/></Link>
                         <div className="space-y-2 ">
                             <H
                                 className={

@@ -6,7 +6,7 @@ const S1: HeroSectionData = {
     <>
       {' '}
       Transformă Viziunea în Realitate Online: Creăm Website-uri{' '}
-      <span className=" text-accent">Unice și Eficiente</span>
+      <span className="block text-oriange font-bold">Unice și Eficiente</span>
     </>
   ),
   content: (
@@ -21,13 +21,13 @@ const S2: HeroSectionData = {
   content: (
     <>
       Creaza un prim impact puternic și diferențiază-ți afacerea cu un //
-      website <span className="text-accent">custom</span>, adaptat complet //
+      website <span className="block text-oriange font-bold">custom</span>, adaptat complet
       identității și obiectivelor brandului tău.
     </>
   ),
   heading: (
     <>
-      Design Personalizat pentru <span className="text-accent">Brand</span>-ul
+    <span className="block text-oriange font-bold"> Design Personalizat pentru</span> Brand-ul
       Tău
     </>
   ),
