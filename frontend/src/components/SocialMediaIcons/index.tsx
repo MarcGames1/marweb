@@ -3,7 +3,7 @@
 import React from 'react'
 import Link from 'next/link';
 import H, { TextAlignment, TextColor, TextSize } from '../Typography/H';
-
+import { SocialMedia } from '@/classes/AppConstants';
 import { ReactElement } from 'react';
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 
@@ -18,19 +18,19 @@ export interface ISocialMediaData {
 }
 export const SocialMediaData: ISocialMediaData = {
   Facebook: {
-    link: 'https://www.facebook.com/profile.php?id=100070084327195',
+    link: SocialMedia.facebook,
     icon: <FaFacebook size={'1.5rem'} />,
   },
   Instagram: {
-    link: 'https://www.instagram.com/george.marcu2/',
+    link: SocialMedia.instagram,
     icon: <FaInstagram size={'1.5rem'} />,
   },
   Linkedin: {
-    link: 'https://www.linkedin.com/in/marcualexgeorge/',
+    link: SocialMedia.linkedin,
     icon: <FaLinkedin size={'1.5rem'} />,
   },
   Youtube: {
-    link: 'https://www.youtube.com/@alexandru_SEO',
+    link: SocialMedia.youtube,
     icon: <FaYoutube size={'1.5rem'} />,
   },
 };
