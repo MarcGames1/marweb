@@ -1,4 +1,3 @@
-import {ReactNode} from "react";
 import {PoliticaCookieComponent} from "@/app/politica-cookie/PoliticaCookie";
 import {Metadata} from "next";
 import {SEOInfo} from "@/classes/SeoInfo";
@@ -12,7 +11,7 @@ export const metadata:Metadata = new SEOInfo(
     false
 );
 
-const PoliticaCookiePage = ({children}:{children:ReactNode}) =>{
+const PoliticaCookiePage = () =>{
     return (
         <>
         <PageTemplate>
