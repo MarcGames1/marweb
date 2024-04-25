@@ -53,7 +53,7 @@ const Footer = () => {
               Legal
             </H>
             <Link
-              href={'/termene-conditii'}
+              href={'/termeni-conditii'}
               className="hover:text-[#FA5252] duration-300 transition"
             >
               Termeni si Conditii
