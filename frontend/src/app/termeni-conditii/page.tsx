@@ -13,7 +13,7 @@ export const metadata:Metadata = new SEOInfo(
     false
 );
 
-const PoliticaCookiePage = ({children}:{children:ReactNode}) =>{
+const TermeniConditiiPage = ({children}:{children:ReactNode}) =>{
     return (
         <>
             <PageTemplate>
@@ -23,4 +23,4 @@ const PoliticaCookiePage = ({children}:{children:ReactNode}) =>{
     )
 }
 
-export default PoliticaCookiePage
+export default TermeniConditiiPage
