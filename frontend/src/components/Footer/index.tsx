@@ -64,6 +64,12 @@ const Footer = () => {
             >
               Politica Cookie
             </Link>
+            <Link
+                href={'/gdpr'}
+                className="hover:text-[#FA5252] duration-300 transition"
+            >
+              GDPR
+            </Link>
             <a
               className="hover:text-[#FA5252] duration-300 transitionr"
               href={'mailto:alexandru@marweb.ro'}
