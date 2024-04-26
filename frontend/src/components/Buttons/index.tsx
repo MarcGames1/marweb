@@ -19,7 +19,7 @@ const Calendly = () => {
     return (
       <Link
         role="button"
-        title="Programeaza un call gratuit"
+        title="Programeaza un call de consultanta"
         href={ContactInfo.calendly}
         className=" flex items-center justify-items-center bg-gradient-to-r from-[#FA5252] to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l px-4 py-3 lg:text-lg text-white rounded-[35px] mt-6 max-h-[3rem]  w-auto break-keep	"
       >
