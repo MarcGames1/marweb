@@ -1,5 +1,5 @@
 export const ContactInfo = {
-    calendly: 'https://checkout.revolut.com/payment-link/434d5149-17c7-452f-9e9e-739139b7f9ee',
+    calendly: 'https://checkout.revolut.com/pay/87671885-ef87-43d1-8568-a3a7054a9edc',
     whatsapp:"https://wa.me/+40750472447"
 }
 
