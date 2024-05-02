@@ -23,7 +23,7 @@ import { ToastContainer } from 'react-toastify';
         draggable
         pauseOnHover
         />
-      <ThemeProvider attribute="class">{children}</ThemeProvider>
+      <ThemeProvider forcedTheme='dark' attribute="class">{children}</ThemeProvider>
     
         </>
   );

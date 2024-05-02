@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ro">
+    <html  lang="ro">
     <head>
       <link rel="icon" href="/favicon.ico" sizes="any"/>
     </head>

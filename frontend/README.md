@@ -34,5 +34,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-TODO: Implement Tools like QR Code Generator using this https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example
+ - TODO: email confirm frontend page GET :userId http://localhost:5000/users/confirm-email/ce8baf3c-e80a-4874-a715-ad13583e2058
+ - TODO: Implement Tools like QR Code Generator using this https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example
