@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { CardBGColor, HeroSectionData, SectionWithCards, SectionWithCardsLinkAndPic } from './types';
-import { SEOInfo } from '@/classes/SeoInfo';
+import { SEOInfo } from '@/utils/SeoInfo';
 import { generateRandomId } from '@/utils/Helpers';
 
 

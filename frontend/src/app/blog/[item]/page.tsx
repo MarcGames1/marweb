@@ -2,7 +2,7 @@ import {getAllPostsMeta, getPostBySlug} from "@/lib/mdx";
 import path from "path";
 import {IBlogPostMetaData, IPortfolioMetaData} from "@/interfaces/postMetaData";
 import {H} from "@/components";
-import {SEOInfo} from "@/classes/SeoInfo";
+import {SEOInfo} from "@/utils/SeoInfo";
 import {SITE_URL} from "@/utils/globals";
 
 const mdDir = path.join(process.cwd(), 'src', 'app', 'blog', 'posts')

@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { FaRegCalendarAlt, FaWhatsapp } from 'react-icons/fa';
-import { ContactInfo } from '@/classes/AppConstants';
+import Constants from '@/utils/globals'
+const { ContactInfo } = Constants;
 const Whatsapp = () => {
   return (
     <Link
@@ -34,6 +35,3 @@ const Buttons = {
 }
 
 export default Buttons
-
-
-'https://calendly.com/alexandru-marcu/consultanta-gratuita';

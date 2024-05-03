@@ -2,7 +2,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import React from 'react'
-import { SEOInfo } from '../classes/SeoInfo';
+import { SEOInfo } from '../utils/SeoInfo';
 import Container from '@/components/Container';
 import { useRouter } from 'next/navigation';
 import { usePathname } from 'next/navigation';

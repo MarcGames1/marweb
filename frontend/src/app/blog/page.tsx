@@ -7,7 +7,7 @@ import styles from "@/sections/Servicii/Servicii.module.css";
 import {TextAlignment, TextSize} from "@/components/Typography/H";
 import React from "react";
 import {Metadata} from "next";
-import {SEOInfo} from "@/classes/SeoInfo";
+import {SEOInfo} from "@/utils/SeoInfo";
 
 const mdDir = path.join(process.cwd(), 'src', 'app', 'blog', 'posts')
 

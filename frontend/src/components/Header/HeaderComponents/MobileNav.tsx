@@ -1,7 +1,7 @@
 import DarkMode from '@/components/mode/DarkMode';
 import { HeaderMenuData } from '@/date/menuData';
 import { generateRandomId } from '@/utils/Helpers';
-import { isActiveLink } from '@/utils/LinkActiveChecker';
+import { isActiveLink } from '@/utils/Helpers'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation';
 import React from 'react'

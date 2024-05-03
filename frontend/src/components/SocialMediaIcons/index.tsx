@@ -3,11 +3,14 @@
 import React from 'react'
 import Link from 'next/link';
 import H, { TextAlignment, TextColor, TextSize } from '../Typography/H';
-import { SocialMedia } from '@/classes/AppConstants';
 import { ReactElement } from 'react';
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 
 import { generateRandomId } from '@/utils/Helpers';
+import globals from '@/utils/globals';
+
+const {SocialMedia} = globals
+
 export interface ISocialMediaLink {
   link: string;
   icon: ReactElement;

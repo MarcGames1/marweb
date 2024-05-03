@@ -1,4 +1,4 @@
-import { SEOInfo } from '@/classes/SeoInfo';
+import { SEOInfo } from '@/utils/SeoInfo';
 import Container from '@/components/Container';
 import { Metadata } from 'next';
 import React, { ReactNode } from 'react'

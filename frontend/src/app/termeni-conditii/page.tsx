@@ -1,5 +1,5 @@
 import {Metadata} from "next";
-import {SEOInfo} from "@/classes/SeoInfo";
+import {SEOInfo} from "@/utils/SeoInfo";
 import PageTemplate from "@/components/PageTemplate/PageTemplate";
 import TermeniConditiiComponent from "@/app/termeni-conditii/TermeniConditii";
 

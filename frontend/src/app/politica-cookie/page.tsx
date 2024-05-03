@@ -1,6 +1,6 @@
 import {PoliticaCookieComponent} from "@/app/politica-cookie/PoliticaCookie";
 import {Metadata} from "next";
-import {SEOInfo} from "@/classes/SeoInfo";
+import {SEOInfo} from "@/utils/SeoInfo";
 import PageTemplate from "@/components/PageTemplate/PageTemplate";
 
 

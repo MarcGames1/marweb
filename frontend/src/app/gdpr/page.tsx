@@ -1,5 +1,5 @@
 import {Metadata} from "next";
-import {SEOInfo} from "@/classes/SeoInfo";
+import {SEOInfo} from "@/utils/SeoInfo";
 import PageTemplate from "@/components/PageTemplate/PageTemplate";
 import GDPRComponent from "@/app/gdpr/GDPRComponent";
 

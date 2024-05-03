@@ -1,7 +1,7 @@
 
 
 import { Metadata } from 'next/types';
-import { SEOInfo } from '@/classes/SeoInfo';
+import { SEOInfo } from '@/utils/SeoInfo';
 import PageTemplate from '@/components/PageTemplate/PageTemplate';
 
 export const metadata: Metadata = new SEOInfo(

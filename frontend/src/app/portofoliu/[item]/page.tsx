@@ -5,7 +5,7 @@ import {H} from "@/components";
 import {MDXRemote} from "next-mdx-remote";
 import {useMDXComponents} from "@/mdx-components";
 import {Metadata} from "next";
-import {SEOInfo} from "@/classes/SeoInfo";
+import {SEOInfo} from "@/utils/SeoInfo";
 import {SITE_URL} from "@/utils/globals";
 const mdDir = path.join(process.cwd(), 'src', 'app', 'portofoliu', 'items')
 

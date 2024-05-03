@@ -1,6 +1,6 @@
 
 import { Metadata } from 'next'
-import { SEOInfo } from '../../classes/SeoInfo';
+import { SEOInfo } from '../../utils/SeoInfo';
 import DespreComponent from './component';
 
 export const metadata: Metadata = new SEOInfo(

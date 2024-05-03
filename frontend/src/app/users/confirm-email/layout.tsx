@@ -5,9 +5,10 @@ import React, { ReactNode } from 'react'
 import Header from "@/components/Header";
 
 export const metadata: Metadata = new SEOInfo(
-  'Portofoliu - MarWeb',
-  'Portofoliu - MarWeb',
-  '/portofoliu/'
+  'Confirmare Email',
+  'Confirmare Email',
+  '/users/confirm-email/',
+  false
 );
 
 const PortofoliuLayout = ({ children }: { children: ReactNode }) => {
