@@ -22,7 +22,7 @@ const Footer = () => {
                 alt="logo Marweb"
                 height={823}
                 width={176}
-                src="/marwebBrandAssets/Logo-Mare-100.svg"
+                src="/marwebBrandAssets/Marweb-logo.png"
               />
             </Link>
           </aside>
