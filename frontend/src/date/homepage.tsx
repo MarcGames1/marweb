@@ -1,8 +1,7 @@
-import { Metadata } from 'next';
-import { CardBGColor, HeroSectionData, SectionWithCards, SectionWithCardsLinkAndPic } from './types';
-import { SEOInfo } from '@/utils/SeoInfo';
-import { generateRandomId } from '@/utils/Helpers';
-
+import {Metadata} from 'next';
+import {CardBGColor, HeroSectionData, SectionWithCards, SectionWithCardsLinkAndPic} from './types';
+import {SEOInfo} from '@/utils/SeoInfo';
+import {generateRandomId} from '@/utils/Helpers';
 
 
 export const metadata: Metadata = new SEOInfo(
@@ -16,16 +15,13 @@ export const metadata: Metadata = new SEOInfo(
 const S1: HeroSectionData = {
   heading: <>AGENTIE MARKETING ONLINE</>,
   content: (
-    <>
-      <p>
-        Te ajutăm să-ți crești veniturile și să obții notorietate în mediul
-        online prin optimizarea site-ului pentru motoarele de căutare.
-      </p>
-      <p>
-        Vrei să-ți crești numărul vizitelor pe site fără să investești bugete
-        enorme în reclame?
-      </p>
-    </>
+      <>
+        <p>
+          Transformăm viziunea ta în succes online. Oferim soluții personalizate pentru{' '}
+          <span className={'text-oriange-lite'}>creșterea veniturilor</span> și{' '}
+          <span className={'text-oriange-lite'}>si a notorietatii online</span>, prin dezvoltarea de site-uri și aplicații web.
+        </p>
+      </>
   ),
 
   decoration: '',
@@ -38,7 +34,7 @@ const S2: SectionWithCardsLinkAndPic = {
       id: generateRandomId(),
       heading: 'CREARE SITE WEB',
       description:
-        'Asigurăm servicii complete de creare site-uri web performante, ușor de administrat, complet funcționale, pregătite să vândă și să te poziționeze drept autoritate în piață. Integrăm misiunea și viziunea afacerii tale într-un design responsive cu ajutorul celor mai noi tehnologii.',
+          'Asigurăm servicii complete de creare site-uri web performante, ușor de administrat, complet funcționale, pregătite să vândă și să te poziționeze drept autoritate în piață. Integrăm misiunea și viziunea afacerii tale într-un design responsive cu ajutorul celor mai noi tehnologii.',
       image: {
         width: 100,
         height: 100,
@@ -78,9 +74,9 @@ const S2: SectionWithCardsLinkAndPic = {
     },
     {
       id: generateRandomId(),
-      heading: 'Mentorat'.toUpperCase(),
+      heading: 'Elearning si Mentorat'.toUpperCase(),
       description:
-        'Descoperă mentoratul personalizat în SEO și web development! Îți ofer soluții practice pentru creșterea afacerii tale online. Conectează-te acum pentru ghidare expertă!',
+        'Descoperă platforma Marweb ELEARNING unde vei avea parte de cursuri premium sau gratuite si programele de mentorat 1 la 1 sau mentorat corporate',
       image: {
         width: 100,
         height: 100,
@@ -98,10 +94,17 @@ const S3: SectionWithCards = {
   content: [
     {
       id: generateRandomId(),
-      heading: ' FACEM CUNOȘTINȚĂ',
+      heading: 'DISCUȚIE INTRODUCTIVĂ',
       description:
-        'Programezi o ședință 1 la 1 – complet gratuită, în care îți vom solicita câteva informații relevante pentru a reuși să identificăm nevoile tale de business.',
+          'Ne întâlnim pentru o discuție introductivă 1 la 1, în care vom explora nevoile și obiectivele tale de afaceri, și vom stabili pașii următori pentru colaborarea noastră.',
       bg: CardBGColor.c4,
+    },
+
+    {
+      id: generateRandomId(),
+      heading: 'IMPLEMENTĂM METODOLOGII AGILE',
+      description:
+          'La MarWeb, folosim metodologii Agile pentru a asigura o colaborare fluidă și eficientă în cadrul proiectelor noastre. Prin abordarea noastră Agile, ne adaptăm rapid la schimbările cerințelor și priorităților, iterând constant pentru a livra rezultate de calitate în timp util. Acest mod de lucru ne permite să fim flexibili, să răspundem prompt la feedback-ul tău și să ne concentrăm pe obiectivele principale ale proiectului în fiecare etapă a colaborării noastre.',
     },
 
     {
@@ -116,6 +119,7 @@ const S3: SectionWithCards = {
       heading: 'VEZI REZULTATELE ÎN TIMP REAL',
       description:
         'Vei fi în permanență în control și vei putea verifica rezultatele tuturor strategiilor implementate, precum și evoluția poziției site-ului tău în căutările Google, pe cuvintele cheie stabilite.',
+      bg:CardBGColor.c8
     },
     {
       id: generateRandomId(),
@@ -124,6 +128,14 @@ const S3: SectionWithCards = {
         'La finalul fiecărei luni, îți prezentăm un raport complet de activitate: ce acțiuni am întreprins, care sunt rezultatele și ce urmează să realizăm în luna următoare pentru a atinge obiectivele stabilite.',
       bg: CardBGColor.c6,
     },
+    {
+      id: generateRandomId(),
+      heading: 'SUPPORT ȘI COMUNICARE CONTINUĂ',
+      description:
+          'Oferim un suport și o comunicare continuă pe întreaga durată a proiectului. Echipa noastră este mereu disponibilă să răspundă întrebărilor tale și să te țină la curent cu progresul și evoluția proiectului. Astfel, poți avea încredere că vei fi mereu la curent cu tot ceea ce se întâmplă și că ne asigurăm că obiectivele tale sunt îndeplinite în mod eficient și profesional.',
+    bg:CardBGColor.c7
+    }
+
   ],
 };
 

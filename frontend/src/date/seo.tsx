@@ -14,13 +14,13 @@ export const metadata: Metadata = new SEOInfo(
 const S1: HeroSectionData = {
   heading: <span>Servicii Optimizare SEO Profesionale in Romania</span>,
   content: (
-    <>
+    <div className={'leading-8 lg:text-2xl'}>
+
       <p>
-        Servicii de optimizare SEO profesionale pentru afacerea ta din România.
-      </p>
-      <p>Iti crestem numarul de clienti si vizibilitatea in mediul online</p>
-      <p>GARANTAM exclusivitate pe Domeniu de Activitate!</p>
-    </>
+        Optimizare SEO Profesională în România </p>
+      <p><span className={'text-oriange-lite'}>Creștem vizibilitatea și atragem clienți pentru afacerea ta</span>. </p>
+      <p>Exclusivitate garantată pe domeniul tău de activitate!</p>
+    </div>
   ),
 
   decoration: '',

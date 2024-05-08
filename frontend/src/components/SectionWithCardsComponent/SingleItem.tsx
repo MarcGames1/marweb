@@ -12,7 +12,7 @@ const SingleItem = ({singleItem}:{singleItem:CardData}) => {
      
       
     >
-      <h3 className="text-xl dark:text-white"> {singleItem.heading} </h3>
+      <h3 className="text-xl dark:text-transparent bg-gradient-to-l from-[#FA5252] to-[#DD2476] bg-clip-text text-center font-semibold "> {singleItem.heading} </h3>
       <p className="dark:text-[#b7b7b7]">{singleItem.description}</p>
     </div>
   );

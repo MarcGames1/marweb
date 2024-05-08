@@ -22,7 +22,7 @@ const BrandBenefits = () => {
           image={styles.image2}
         />
         <BenefitsCard
-          beneficiu="Sesiuni de Mentorat Unu la Unu și Experiență Extinsă"
+          beneficiu="Mentorat si Training-uri Personalizate"
           image={styles.image3}
           Icon={<HiAcademicCap size={'3em'} color={'#FA5252'} />}
         />

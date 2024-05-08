@@ -14,7 +14,7 @@ const HeaderMenu = () => {
     <header className="flex justify-between items-center  top-0 left-0 w-full lg:static z-[1111111111]  ">
       <div className=" flex justify-between w-full px-4 lg:px-0 bg-[#F3F6F6] lg:bg-transparent lg:dark:bg-transparent dark:bg-black ">
         <div className="flex justify-between w-full items-center space-x-4 lg:my-8 my-5 ">
-          <Link className="text-5xl font-semibold" href="/">s
+          <Link className="text-5xl font-semibold" href="/">
             <Image
               className="max-h-fit w-auto h-[50px] lg:h-[75px]"
               width={75}
