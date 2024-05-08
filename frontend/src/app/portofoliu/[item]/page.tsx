@@ -2,13 +2,11 @@ import {getPostBySlug} from "@/lib/mdx";
 import path from "path";
 import {IPortfolioMetaData} from "@/interfaces/postMetaData";
 import {H} from "@/components";
-import {MDXRemote} from "next-mdx-remote";
-import {useMDXComponents} from "@/mdx-components";
-import {Metadata} from "next";
-import {SEOInfo} from "@/utils/SeoInfo";
-import {SITE_URL} from "@/utils/globals";
+
+import Constants from "@/utils/globals";
 const mdDir = path.join(process.cwd(), 'src', 'app', 'portofoliu', 'items')
 
+const {SITE_URL} = Constants
 const getPageContent = async (slug: string) => {
     // @ts-ignore
     const {meta, content}: { meta: IPortfolioMetaData; content: any; } = await getPostBySlug(slug, mdDir)

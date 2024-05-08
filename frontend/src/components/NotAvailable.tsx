@@ -34,7 +34,7 @@ const NotAvailable = () => {
       try {
         // Trimiterea datelor către webhook-ul Slack
         await axios.post(
-          process.env.NEXT_PUBLIC_SLACK_URL as string,
+          process.env.SLACK_URL as string,
           JSON.stringify(data)
         );
 

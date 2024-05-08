@@ -4,8 +4,9 @@ import React, {SyntheticEvent} from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios";
-import {NEXT_PUBLIC_SLACK_URL} from "@/utils/globals";
+import Constants from "@/utils/globals";
 
+const  {SLACK_URL} = Constants
 const ContactForm = () => {
   
 
@@ -33,7 +34,7 @@ const ContactForm = () => {
     };
     try {
       // Trimiterea datelor către webhook-ul Slack
-      await axios.post(process.env.NEXT_PUBLIC_SLACK_URL as string, JSON.stringify(data));
+      await axios.post(SLACK_URL as string, JSON.stringify(data));
 
       // Curățăm formularul după trimitere
       (e.target as HTMLFormElement).reset();

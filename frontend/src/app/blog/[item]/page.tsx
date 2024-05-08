@@ -2,9 +2,9 @@ import {getAllPostsMeta, getPostBySlug} from "@/lib/mdx";
 import path from "path";
 import {IBlogPostMetaData, IPortfolioMetaData} from "@/interfaces/postMetaData";
 import {H} from "@/components";
-import {SEOInfo} from "@/utils/SeoInfo";
-import {SITE_URL} from "@/utils/globals";
+import Constants from '@/utils/globals'
 
+const {SITE_URL} = Constants
 const mdDir = path.join(process.cwd(), 'src', 'app', 'blog', 'posts')
 
 const getPageContent = async (slug: string) => {
