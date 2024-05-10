@@ -1,0 +1,6 @@
+[submodule "marwebBlogNestJs"]
+	path = marwebBlogNestJs
+	url = git@github.com:MarcGames1/marwebBlogNestJs.git
+[submodule "marwebadmin"]
+	path = marwebadmin
+	url = git@github.com:MarcGames1/marwebadmin.git

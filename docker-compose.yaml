@@ -1,0 +1,50 @@
+version: '3'
+
+services:
+  frontend:
+    build: ./
+    ports:
+      - "3000:3000"  # Portul pe care rulează aplicația frontend
+    depends_on:
+      - database
+    networks:
+      - marweb
+
+  nestjs:
+    build: ./marwebBlogNestJs
+    ports:
+      - "5000:5000"  # Portul pe care rulează aplicația Nest.js
+    depends_on:
+      - database
+    environment:
+      - DB_NAME=${DB_NAME}
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+      - DB_USERNAME=${POSTGRES_USER}
+      - DB_PASSWORD=${POSTGRES_PASSWORD}
+    networks:
+      - marweb
+
+  admin:
+    build: ./marwebadmin
+    ports:
+      - "3100:3100"  # Portul pe care rulează aplicația de administrare (poți schimba portul după necesități)
+    depends_on:
+      - database
+      - nestjs
+
+  database:
+    image: postgres:16.3
+    restart: always
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+       - "5433:5432"  # Portul 5433 al gazdei asociat cu portul 5432 al containerului PostgreSQL
+    networks:
+      - marweb
+
+networks:
+  marweb:
+    driver: bridge
