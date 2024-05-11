@@ -3,7 +3,6 @@ import { TextSize } from '@/components/Typography/H';
 import { HeroSectionData } from '@/date/types';
 import React from 'react';
 import Image from 'next/image';
-
 export interface IHeroSectionProps extends HeroSectionData {
   src: string;
 }

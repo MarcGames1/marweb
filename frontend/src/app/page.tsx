@@ -8,7 +8,7 @@ import {
 import ServiciiSection from '@/sections/Servicii';
 
 import HomepageData from '@/date/homepage';
-import BrandBenefits from '@/components/BrandBenefits';
+import BrandBenefits from '@/components/BrandBenefits/BrandBenefits';
 import SectionWithCardsComponent from '@/components/SectionWithCardsComponent/SectionWithCardsComponent';
 import Container from '@/components/Container';
 import Header from '@/components/Header';
@@ -22,7 +22,7 @@ export default function Home() {
         <HeroVideo />
         <HeroSection />
         <BrandBenefits />
-        <ServiciiSection />
+        <ServiciiSection data={HomepageData.S2} />
         <SectionWithCardsComponent {...HomepageData.S3} />
         <ClientSlider />
         <div className='lg:w-1/2 block m-auto mt-5' >
