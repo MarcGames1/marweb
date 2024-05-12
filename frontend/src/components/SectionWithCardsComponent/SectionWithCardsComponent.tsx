@@ -16,7 +16,7 @@ const SectionWithCardsComponent = ({ heading, content }: Section2Props) => {
     <>
       <div className="flex items-center space-x-2 mb-4">
         <H
-          alignment={TextAlignment.left}
+          alignment={TextAlignment.center}
           size={TextSize.xl5}
           level={'div'}
           className=" w-full mt-12 mx-5  dark:text-white font-medium"
