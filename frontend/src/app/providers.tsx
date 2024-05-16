@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { ToastContainer } from 'react-toastify';
+import {ConsentForm} from "@/components/Consent/ConsentForm";
 
 
  function Providers({ children }: { children: React.ReactNode }) {
@@ -23,7 +24,9 @@ import { ToastContainer } from 'react-toastify';
         draggable
         pauseOnHover
         />
-      <ThemeProvider defaultTheme={'dark'}  attribute="class">{children}</ThemeProvider>
+      <ThemeProvider defaultTheme={'dark'}  attribute="class">{children}
+      <ConsentForm />
+      </ThemeProvider>
     
         </>
   );
