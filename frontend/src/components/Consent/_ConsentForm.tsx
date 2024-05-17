@@ -1,10 +1,11 @@
 import React, { useEffect, useState, useMemo, useCallback } from "react"
-import { FloatingConsentBanner } from "./FloatingConsentBanner"
+import { _FloatingConsentBanner } from "./_FloatingConsentBanner"
 import Cookies from "universal-cookie"
 import PropTypes from "prop-types"
 
+type ConsentDecision ="granted" | 'denied'
 // @ts-ignore
-export function ConsentForm({ color }) {
+export function _ConsentForm({ color }) {
     const [decisionMade, setDecisionMade] = useState(true) // start with true to avoid flashing
 
     const cookies = useMemo(() => new Cookies(), []);
@@ -27,12 +28,15 @@ export function ConsentForm({ color }) {
         }
     }, [cookies, setDecisionMade, sendConsent])
 
-    const handleDecision = (outcome: string) => {
+    const handleDecision = (outcome: ConsentDecision) => {
         const consent = {
             'ad_storage': outcome,
             'analytics_storage': outcome,
             'ad_user_data': outcome,
             'ad_personalization': outcome,
+            'personalization_storage':outcome,
+            'security_storage':outcome
+
         }
 
         cookies.set("cookies_consent", consent, {
@@ -49,7 +53,7 @@ export function ConsentForm({ color }) {
         decisionMade ? (
             <></>
         ) : (
-            <FloatingConsentBanner
+            <_FloatingConsentBanner
                 color={color}
                 header="Consent Header"
                 message="Consent message"
@@ -69,10 +73,10 @@ export function ConsentForm({ color }) {
     )
 }
 
-ConsentForm.propTypes = {
+_ConsentForm.propTypes = {
     color: PropTypes.string.isRequired,
 }
 
-ConsentForm.defaultProps = {
+_ConsentForm.defaultProps = {
     color: "blue",
 }

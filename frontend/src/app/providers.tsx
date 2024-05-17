@@ -4,7 +4,8 @@ import dynamic from 'next/dynamic';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { ToastContainer } from 'react-toastify';
-import {ConsentForm} from "@/components/Consent/ConsentForm";
+import {_ConsentForm} from "@/components/Consent/_ConsentForm";
+import {randomUUID} from "node:crypto";
 
 
  function Providers({ children }: { children: React.ReactNode }) {
@@ -25,7 +26,7 @@ import {ConsentForm} from "@/components/Consent/ConsentForm";
         pauseOnHover
         />
       <ThemeProvider defaultTheme={'dark'}  attribute="class">{children}
-      <ConsentForm />
+      <_ConsentForm color={'blue'}  />
       </ThemeProvider>
     
         </>
