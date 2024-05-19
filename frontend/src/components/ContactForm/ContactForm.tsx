@@ -140,7 +140,7 @@ const ContactForm = () => {
           <input
             type="submit"
             className=" transition ease-in duration-200 font-semibold cursor-pointer border-color-910   hover:border-transparent px-6  py-2 rounded-lg border-[2px]  hover:text-white   dark:text-white "
-            value="Submit"
+            value="Trimite"
           />
         </div>
         {/* End single block */}
