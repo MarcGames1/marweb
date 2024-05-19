@@ -5,14 +5,10 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import { ToastContainer } from 'react-toastify';
 import ConsentForm from "@/components/Consent/ConsentForm";
-import {randomUUID} from "node:crypto";
 
-
- function Providers({ children }: { children: React.ReactNode }) {
+function Providers({ children }: { children: React.ReactNode }) {
 
   return (
-    
-    
     <>
       <ToastContainer
         position="top-right"

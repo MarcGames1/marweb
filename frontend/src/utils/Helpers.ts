@@ -1,5 +1,9 @@
 import { v4 as uuid } from 'uuid';
 
+export function gtag() {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push(arguments);
+}
 
 export const generateRandomId = () => {
   return String(uuid());

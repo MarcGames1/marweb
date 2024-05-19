@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import Cookies from 'universal-cookie';
-import ToggleSwitch from '@/components/UI/ToggleSwitch/ToggleSwitch';
+import { useCookies } from 'next-client-cookies';
+import { gtag } from '@/utils/Helpers';
 import ToggleSection from '@/components/Consent/ToggleSection';
 type ConsentDecision ="granted" | 'denied'
 
@@ -16,16 +16,12 @@ const ConsentForm = () => {
   const [security_storage, set_security_storage] = useState<ConsentDecision>('granted')
 
 
-  const cookies = useMemo(() => new Cookies(), []);
+  const cookies = useCookies();
 
-  function gtag() {
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push(arguments);
-  }
 
   const sendConsent = useCallback((consent: any) => {
     // @ts-ignore
-    gtag('consent', 'default', consent);
+    gtag('consent', 'update', consent);
   }, []);
 
 
@@ -49,7 +45,7 @@ const ConsentForm = () => {
 
     }
 
-    cookies.set("cookies_consent", consent, {
+    cookies.set("cookies_consent", JSON.stringify(consent), {
       expires: new Date(new Date().setFullYear(new Date().getFullYear() + 1)),
       path: "/",
       domain: "marweb.ro"
