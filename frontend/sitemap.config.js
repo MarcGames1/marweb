@@ -1,5 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
-module.exports = {
+
+const config = {
     siteUrl: 'https://marweb.ro',
     generateRobotsTxt: true,
     sitemapSize: 5000,
@@ -17,12 +18,7 @@ module.exports = {
         policies: [
             {
                 userAgent: '*',
-                disallow: '/',
-                disallow: '/politica-cookie',
-                disallow: '/termeni-conditii',
-                dissallow: '/gdpr',
-                dissallow: '/politica-cookie',
-
+                disallow: ['/politica-cookie','/termeni-conditii', '/gdpr', '/politica-cookie',]
             },
 
             {
@@ -48,3 +44,4 @@ module.exports = {
         ],
     },
 };
+export default config
