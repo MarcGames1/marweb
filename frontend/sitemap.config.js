@@ -4,6 +4,11 @@ module.exports = {
     generateRobotsTxt: true,
     sitemapSize: 5000,
     exclude: [
+        '/icon.svg',
+        '/apple-icon.png',
+        '/manifest.webmanifest',
+        '/tags/*',
+        '/sw.js',
         '/termeni-conditii',
         '/politica-cookie',
         '/gdpr',
