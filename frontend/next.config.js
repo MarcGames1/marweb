@@ -7,7 +7,14 @@ const withPWA = require('next-pwa')({
 
 const withMDX = require('@next/mdx')();
 const nextConfig = {
-  images: { formats: ['image/avif', 'image/webp'] },
+  images: { formats: ['image/avif', 'image/webp'], remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+        port: '5000',
+        pathname: '/**',
+      },
+    ], },
   pageExtensions: ['mdx', 'ts', 'tsx'],
   async redirects() {
     return [

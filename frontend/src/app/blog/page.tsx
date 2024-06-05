@@ -1,33 +1,28 @@
 import {getAllPostsMeta} from '@/lib/mdx'
-import path from "path";
 import Link from "next/link";
 import Image from "next/image";
 import {H} from "@/components";
 import styles from "@/sections/Servicii/Servicii.module.css";
 import {TextAlignment, TextSize} from "@/components/Typography/H";
 import React from "react";
-import {Metadata} from "next";
 import {SEOInfo} from "@/utils/SeoInfo";
 
-const mdDir = path.join(process.cwd(), 'src', 'app', 'blog', 'posts')
-
-// C:\Users\Alexandru\Documents\GitHub\MarWebBlog\MarWebBlog\frontend\src\app\portofoliu\items
 
 
 
+export const metadata = new SEOInfo('Blog Marweb', "Blog Marweb", "/blog")
 
 
 const BlogPage = async () => {
-    const posts = await getAllPostsMeta(mdDir)
-
+    const blogPosts = await getAllPostsMeta()
     return (
 
             <div className="py-12 px-5">
-                <h2 className="after-effect after:left-80 mt-12 lg:mt-0">
+                <h1 className="after-effect after:left-80 mt-12 lg:mt-0">
                     Blog SEO si IT
-                </h2>
+                </h1>
 
-                {posts.map(post => (
+                {blogPosts.map(post => (
                     <section
 
                         key={post.id}
@@ -35,7 +30,7 @@ const BlogPage = async () => {
 
                     >
 
-                        <Link  href={`/blog/${post.permalink}`}><Image className=" " src={post.thumbnail} width={300} height={300}  alt={post.title}/></Link>
+                        <Link  href={`/blog/${post.slug}`}><Image className=" " src={post.thumbnail.url} width={300} height={300}  alt={post.thumbnail.alt}/></Link>
                         <div className="space-y-2 ">
                             <H
                                 className={
@@ -43,7 +38,7 @@ const BlogPage = async () => {
                                 }
                                 level={'span'}
                             >
-                                {post.title}
+                                {post.metaTitle}
                             </H>
                             <H
                                 size={TextSize.lg}
@@ -53,12 +48,13 @@ const BlogPage = async () => {
                                 }
                                 level={'span'}
                             >
-                                <span>{post.author}</span> {" "}
-                                <span>{new Date(post.date).toLocaleDateString()}</span>
+                              <Link className={'link-content'} href={"/despre-mine"}> <span>{post.author?.nume} {post.author?.preNume}</span></Link> {' '}
+                              <span>{new Date().toLocaleDateString()}</span>
 
                             </H>
+                          <p>{post.excerpt}</p>
                         </div>
-                        <Link href={`/blog/${post.permalink}`} className="rounded-md self-center cursor-pointer font-poppins bg-white text-gray-lite font-medium mx-2.5 flex text-xtiny py-2.5 px-2 md:px-4 xl:px-5 items-center transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425] hover:text-white hover:bg-gradient-to-l from-[#FA5252] to-[#DD2476] dark:text-[#A6A6A6] linked bg-gradient-to-r ">
+                        <Link href={`/blog/${post.slug}`} className="rounded-md self-center cursor-pointer font-poppins bg-white text-gray-lite font-medium mx-2.5 flex text-xtiny py-2.5 px-2 md:px-4 xl:px-5 items-center transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425] hover:text-white hover:bg-gradient-to-l from-[#FA5252] to-[#DD2476] dark:text-[#A6A6A6] linked bg-gradient-to-r ">
                             Citeste Mai Mult
                         </Link>
                     </section>

@@ -1,6 +1,10 @@
 import { v4 as uuid } from 'uuid';
 
 export function gtag() {
+  if(typeof window === 'undefined'){
+  console.log(arguments)
+    return
+  }
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push(arguments);
 }

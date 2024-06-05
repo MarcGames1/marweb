@@ -1,32 +1,26 @@
-import fs from 'fs'
-import path from 'path'
-import { compileMDX } from 'next-mdx-remote/rsc'
-import {IBlogPostMetaData, IPortfolioMetaData} from "@/interfaces/postMetaData";
+import Globals from '@/utils/globals';
+import { ApiClientError, ApiClientSuccess } from '@/utils/ApiClient';
+import {toast} from 'react-toastify'
+import { IBlogPost } from '@/declarations/blog';
+import BlogPost from '@/classes/BlogPost';
+const api = Globals.getApiClient()
+export const getPostBySlug = async (slug: string) => {
 
+  const res :ApiClientError | ApiClientSuccess<IBlogPost> = await api.get(`/blog-post/${slug}`)
+  if(res instanceof ApiClientError) {
+    toast.error("Eroare Server")
+    throw res
+  }
 
-export const getPostBySlug = async (slug: string, rootDirectory:string) => {
-    const realSlug = slug.replace(/\.mdx$/, '')
-    const filePath = path.join(rootDirectory, `${realSlug}.mdx`)
-
-    const fileContent = fs.readFileSync(filePath, { encoding: 'utf8' })
-
-    const { frontmatter, content }:{frontmatter:IBlogPostMetaData | IPortfolioMetaData; content:any;} = await compileMDX({
-        source: fileContent,
-        options: { parseFrontmatter: true }
-    })
-
-    return { meta: { ...frontmatter}, content }
+  return new BlogPost(res.data)
 }
 
-export const getAllPostsMeta = async (rootDirectory:string) => {
-    const files = fs.readdirSync(rootDirectory)
-
-    let posts = []
-
-    for (const file of files) {
-        const { meta } = await getPostBySlug(file, rootDirectory)
-        posts.push(meta)
+export const   getAllPostsMeta = async ():Promise<BlogPost[]> => {
+   const res :ApiClientError | ApiClientSuccess<IBlogPost[]> = await api.get("/blog-post/all")
+    if(res instanceof ApiClientError) {
+        console.log("NU exista articole de blog")
+      return []
     }
-
-    return posts
+    console.log(res.data)
+    return res.data.map(post => new BlogPost(post))
 }

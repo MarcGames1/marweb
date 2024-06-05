@@ -21,9 +21,9 @@ export class ApiClientError extends AxiosError {
 export class ApiClientSuccess<T> {
     status: number | undefined;
     message: string;
-    data:any;
+    data:T;
 // TODO FIND TYPE OF DATA
-    constructor(status: number | undefined, message: string, data: { [key: string]: T; }) {
+    constructor(status: number | undefined, message: string, data: T) {
         this.status = status;
         this.message = message;
         this.data = data;
