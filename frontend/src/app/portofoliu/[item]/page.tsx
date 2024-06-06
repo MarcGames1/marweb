@@ -1,9 +1,10 @@
 import {getPostBySlug} from "@/lib/mdx";
 import path from "path";
-import {IPortfolioMetaData} from "@/interfaces/postMetaData";
+
 import {H} from "@/components";
 
 import Constants from "@/utils/globals";
+import { IPortfolioMetaData } from '@/interfaces/postMetaData';
 const mdDir = path.join(process.cwd(), 'src', 'app', 'portofoliu', 'items')
 
 const {SITE_URL} = Constants
