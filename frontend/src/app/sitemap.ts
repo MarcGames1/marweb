@@ -9,7 +9,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const urls:string[] = [base_url]
   const posts:any = await getAllPostsMeta(mdDir)
-  posts.forEach((post:{slug:string})=> urls.push(`${base_url}/blog/${post.slug}`))
+  posts.forEach((post:{permalink:string})=> urls.push(`${base_url}/blog/${post.permalink}`))
   const pagesurl = HeaderMenuData.map(menuData =>{
     return `${base_url}${menuData.routePath}`
   })
