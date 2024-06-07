@@ -1,4 +1,4 @@
-import {getAllPostsMeta} from '@/lib/mdx'
+import { getAllPortfolioItems, getAllPostsMeta } from '@/lib/mdx';
 import path from "path";
 import Container from "@/components/Container";
 import Link from "next/link";
@@ -14,16 +14,16 @@ const mdDir = path.join(process.cwd(), 'src', 'app', 'portofoliu', 'items')
 
 
 export async function generateStaticParams() {
-    const posts = await getAllPostsMeta(mdDir)
+    const posts = await getAllPortfolioItems()
 
     return posts.map((post) => ({
-        item: post.permalink,
+        item: post.metadata.alternates.canonical,
     }))
 }
 
 
 const PortofoliuPage = async () => {
-    const posts = await getAllPostsMeta(mdDir)
+    const posts = await getAllPortfolioItems()
 
     return (
 
@@ -34,13 +34,11 @@ const PortofoliuPage = async () => {
 
                 {posts.map(post => (
                     <section
-
                         key={post.id}
                         className={` flex flex-col items-center gap-5 self-stretch rounded-xl  about-box dark:bg-transparent`}
-
                     >
 
-                        <Link  href={`/portofoliu${post.permalink}`}><Image className=" " src={post.thumbnail} width={300} height={300}  alt={post.title}/></Link>
+                        <Link  href={`${post.url}`}><Image className=" " src={post.thumbnail.url} width={300} height={300}  alt={post.title}/></Link>
                         <div className="space-y-2 ">
                             <H
                                 className={
@@ -58,12 +56,13 @@ const PortofoliuPage = async () => {
                                 }
                                 level={'span'}
                             >
-                                <span>{post.author}</span> {" "}
-                                <span>{new Date(post.date).toLocaleDateString()}</span>
+                                <span>{post.author.preNume}</span> {" "}
+                              <span>{post.author.nume}</span> {" "}
+
 
                             </H>
                         </div>
-                        <Link href={`/portofoliu${post.permalink}`} className="rounded-md self-center cursor-pointer font-poppins bg-white text-gray-lite font-medium mx-2.5 flex text-xtiny py-2.5 px-2 md:px-4 xl:px-5 items-center transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425] hover:text-white hover:bg-gradient-to-l from-[#FA5252] to-[#DD2476] dark:text-[#A6A6A6] linked bg-gradient-to-r ">
+                        <Link href={`/portofoliu${post.slug}`} className="rounded-md self-center cursor-pointer font-poppins bg-white text-gray-lite font-medium mx-2.5 flex text-xtiny py-2.5 px-2 md:px-4 xl:px-5 items-center transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425] hover:text-white hover:bg-gradient-to-l from-[#FA5252] to-[#DD2476] dark:text-[#A6A6A6] linked bg-gradient-to-r ">
                             Citeste Mai Mult
                         </Link>
                     </section>

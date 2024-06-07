@@ -2,10 +2,10 @@
 import { IUser } from '@/declarations/user';
 import { PicItem } from '@/declarations/mediaItems';
 
-export interface IBlogPost {
+export interface Iportfolio {
   id?:number,
-  excerpt: string,
   content:string,
+  title:string,
   metaTitle:string,
   metaDescription:string,
   slug:string,

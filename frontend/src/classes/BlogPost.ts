@@ -1,44 +1,15 @@
 import { IBlogPost } from '@/declarations/blog';
-import { PicItem } from '@/declarations/mediaItems';
 import Globals from '@/utils/globals';
 import { IUser } from '@/declarations/user';
 import PictureData from '@/classes/PicItem';
+import BasePost from '@/classes/BasePost';
+import { Ipost } from '@/declarations/Ipost';
 
- // TODO AD TITLE
-class BlogPost implements IBlogPost {
-  public readonly author:IUser;
-  public readonly content: string;
+class BlogPost extends BasePost implements IBlogPost {
   public readonly excerpt: string;
-  public readonly isPublished: boolean;
-  public readonly metaDescription: string;
-  public readonly metaTitle: string;
-  public readonly slug: string;
-  public thumbnail: PictureData;
-  public readonly title:string
-  public id?: number;
-  private readonly constants = Globals
-  constructor(
-   data:IBlogPost
-  ) {
-    const {  author,
-      content,
-      excerpt,
-      isPublished,
-      metaDescription,
-      metaTitle,
-      slug,
-      thumbnail,
-      id} = data
-    this.author = author
-    this.slug = slug
-    this.content = content
-    this.excerpt = excerpt
-    this.thumbnail = new PictureData({ ...thumbnail })
-    this.isPublished = isPublished
-    this.metaDescription = metaDescription
-    this.metaTitle = metaTitle
-    this.title = metaTitle
-    this.id = id
+  constructor(data:IBlogPost) {
+    super(data  as unknown as Ipost)
+    this.excerpt = data.excerpt
   }
 
 public get metadata () {

@@ -1,50 +1,44 @@
-import {getPostBySlug} from "@/lib/mdx";
-import path from "path";
-import {IPortfolioMetaData} from "@/interfaces/postMetaData";
+import { getAllPortfolioItems, getAllPostsMeta, getPortfolioDataBySlug } from '@/lib/mdx';
 import {H} from "@/components";
+import { IBlogPost } from '@/declarations/blog';
+import Portfolio from '@/classes/Portfolio';
+import BlogPost from '@/classes/BlogPost';
 
-import Constants from "@/utils/globals";
-const mdDir = path.join(process.cwd(), 'src', 'app', 'portofoliu', 'items')
 
-const {SITE_URL} = Constants
-const getPageContent = async (slug: string) => {
-    // @ts-ignore
-    const {meta, content}: { meta: IPortfolioMetaData; content: any; } = await getPostBySlug(slug, mdDir)
-    return {meta, content}
-}
+
 
 // @ts-ignore
 export async function generateMetadata({params}) {
-    const {meta}: { meta: IPortfolioMetaData } = await getPageContent(params.item)
-    return {
-        title: meta.title,
-        description: meta.description,
-        alternates: {
-            canonical: `${SITE_URL}/blog/${params.item}`,
-        },
-    }
+    const blogPost = await getPortfolioDataBySlug(params.item)
+    return blogPost.metadata
+}
+export async function generateStaticParams() {
+    const posts = await getAllPortfolioItems()
+
+    const staticParams =  posts.map((post) => {
+        console.log(post.slug)
+
+        return {
+            item: encodeURIComponent(post.slug),
+        }
+    })
+
+    return staticParams
 }
 
-
 const PortfolioItem = async ({params}: { params: { item: string } }) => {
-    // @ts-ignore
-    const {meta, content} = await getPostBySlug(params.item, mdDir)
+
+    const portfolio:Portfolio = await getPortfolioDataBySlug(params.item)
+
     return (
         <main>
-
             <div className={'content w-fit block m-auto'}>
                 <div className={'prose dark:prose-invert'}>
-                    <H level={1}>Studiu de caz {meta.title}</H>
-                    <div>
-                       {content}
-
-                        {/*{content}*/}
-                    </div>
-
+                    <H level={1}>Studiu de caz {portfolio.title}</H>
+                    <div>{portfolio.content}</div>
                 </div>
             </div>
         </main>
     )
 }
 export default PortfolioItem
-//TODO TYPE FOR META DATA IN MDX FILES
