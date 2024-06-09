@@ -1,41 +1,47 @@
 import {getAllPostsMeta, getPostBySlug} from "@/lib/mdx";
 import path from "path";
+const api = Globals.getApiClient()
+
+export const runtime = 'nodejs'
+export const fetchCache = 'force-no-store'
+// export const revalidate = 0
+// export const fetchCache = ""
+export const dynamicParams = false
 
 import {H} from "@/components";
-import Constants from '@/utils/globals'
 import Image from 'next/image';
+import { ApiClientError, ApiClientSuccess } from '@/utils/ApiClient';
+import Globals from '@/utils/globals';
 
-const {SITE_URL} = Constants
-const mdDir = path.join(process.cwd(), 'src', 'app', 'blog', 'posts')
 
 const getPageContent = async (slug: string) => {
     return await getPostBySlug(slug)
 
 }
 export async function generateStaticParams() {
-    const posts = await getAllPostsMeta()
+    const slugs :ApiClientSuccess<string[]> | ApiClientError = await api.get('/published/url')
+    if(slugs instanceof ApiClientError) {return []}
 
-    const staticParams =  posts.map((post) => {
-        console.log(post.slug)
-
-        return {
-            item: encodeURIComponent(post.slug),
-        }
-    })
-
-    return staticParams
+    return slugs.data.map((slug) => ({
+        slug
+    }))
 }
 
 // @ts-ignore
 export async function generateMetadata({params}) {
+
     const blog =  await getPageContent(params.item)
+    if(!blog){ return }
     return blog.metadata
 }
 
 
 const SingleBlogPostPage = async ({params}: { params: { item: string } }) => {
-
     const blog = await getPostBySlug(params.item)
+    if(!blog) {
+        return <h1>No Blog Post Added</h1>
+    }
+
     return (
         <main>
 

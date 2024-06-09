@@ -5,12 +5,11 @@ import {H} from "@/components";
 import styles from "@/sections/Servicii/Servicii.module.css";
 import {TextAlignment, TextSize} from "@/components/Typography/H";
 import React from "react";
-import {SEOInfo} from "@/utils/SeoInfo";
+import { ApiClientError, ApiClientSuccess } from '@/utils/ApiClient';
 
 
-
-
-export const metadata = new SEOInfo('Blog Marweb', "Blog Marweb", "/blog")
+export const dynamic = 'force-dynamic'
+export const dynamicParams = false
 
 
 const BlogPage = async () => {
@@ -38,7 +37,7 @@ const BlogPage = async () => {
                                 }
                                 level={'span'}
                             >
-                                {post.metaTitle}
+                                {post.title}
                             </H>
                             <H
                                 size={TextSize.lg}

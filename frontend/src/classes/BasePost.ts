@@ -24,6 +24,7 @@ class Post implements Ipost {
       metaTitle,
       slug,
       thumbnail,
+      title,
       id} = data
     this.author = author
     this.slug = slug
@@ -32,7 +33,7 @@ class Post implements Ipost {
     this.isPublished = isPublished
     this.metaDescription = metaDescription
     this.metaTitle = metaTitle
-    this.title = metaTitle
+    this.title = title
     this.id = id
   }
 }

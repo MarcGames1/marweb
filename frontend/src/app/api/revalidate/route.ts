@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { revalidatePath } from 'next/cache';
 
+export const revalidate = 3600
 export async function POST(req: NextRequest, res:NextResponse) {
   const secret = req.headers.get("Authorization")?.replace('Bearer ', '');
-  console.log(secret)
 
   // Verificați secretul (opțional)
   if (secret !==   process.env.REVALIDATE_SECRET) {

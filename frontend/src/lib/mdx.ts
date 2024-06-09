@@ -8,10 +8,10 @@ import { Iportfolio } from '@/declarations/Iportfolio';
 const api = Globals.getApiClient()
 export const getPostBySlug = async (slug: string) => {
 
-  const res :ApiClientError | ApiClientSuccess<IBlogPost> = await api.get(`/blog-post/${slug}`)
+  const res :ApiClientError | ApiClientSuccess<IBlogPost> = await api.get(`/blog-post/published/${slug}`)
   if(res instanceof ApiClientError) {
-    toast.error("Eroare Server")
-    throw res
+   console.log("Eroare Server")
+    return undefined;
   }
 
   return new BlogPost(res.data)
@@ -39,12 +39,27 @@ export const   getAllPortfolioItems = async ():Promise<Portfolio[]> => {
 }
 
 
+export const getAllPostsURL = async ():Promise<string[]> =>{
+  const res:ApiClientError | ApiClientSuccess<string[]> = await api.get("/blog-post/published/url")
+  if(res instanceof ApiClientError) {
+    console.log("NU exista articole de blog")
+    return []
+  }
+  return res.data
+}
 export const   getAllPostsMeta = async ():Promise<BlogPost[]> => {
-   const res :ApiClientError | ApiClientSuccess<IBlogPost[]> = await api.get("/blog-post/all")
+  'use server'
+   const res :ApiClientError | ApiClientSuccess<IBlogPost[]> = await api.get("/blog-post/published")
     if(res instanceof ApiClientError) {
         console.log("NU exista articole de blog")
       return []
     }
-    console.log(res.data)
-    return res.data.map(post => new BlogPost(post))
+    if(res && res.data && res.data.length !== 0 ){
+      return res.data.map(post => new BlogPost(post))
+    }
+
+    else {
+      console.log(res.data)
+    throw new Error("!")
+  }
 }
