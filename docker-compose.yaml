@@ -55,6 +55,9 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     ports:
        - "5433:5432"  # Portul 5433 al gazdei asociat cu portul 5432 al containerului PostgreSQL
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+      - ./postgres-backup:/docker-entrypoint-initdb.d
     networks:
       - marweb
 
