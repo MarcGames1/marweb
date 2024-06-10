@@ -2,6 +2,7 @@ version: '3'
 
 services:
   frontend:
+    container_name: frontend
     build: ./
     ports:
       - "3000:3000"  # Portul pe care rulează aplicația frontend
@@ -11,6 +12,7 @@ services:
       - marweb
 
   nestjs:
+    container_name: backend
     build: ./marwebBlogNestJs
     ports:
       - "5000:5000"  # Portul pe care rulează aplicația Nest.js
@@ -39,6 +41,7 @@ services:
       - marweb
 
   admin:
+    container_name: Admin
     build: ./marwebadmin
     ports:
       - "3100:3100"  # Portul pe care rulează aplicația de administrare (poți schimba portul după necesități)
@@ -48,6 +51,7 @@ services:
 
   database:
     image: postgres:16.3
+    container_name: marweb_database
     restart: always
     environment:
       POSTGRES_DB: ${POSTGRES_DB}
