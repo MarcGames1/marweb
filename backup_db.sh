@@ -15,6 +15,6 @@ BACKUP_FILE=$BACKUP_DIR/backup.sql
 mkdir -p $BACKUP_DIR
 
 # Efectuează backup-ul bazei de date folosind `docker exec`
-docker exec $CONTAINER_NAME pg_dump -U $DB_USER $DB_NAME > $BACKUP_FILE
+docker exec $CONTAINER_NAME pg_dump --U $DB_USER $DB_NAME > $BACKUP_FILE
 
 echo "Backup completed and saved to $BACKUP_FILE"
