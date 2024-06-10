@@ -4,8 +4,8 @@
 CONTAINER_NAME=marweb_database
 
 # Numele bazei de date și utilizatorului
-DB_NAME=${POSTGRES_DB:-mydatabase}
-DB_USER=${POSTGRES_USER:-postgres}
+DB_NAME=${DB_NAME}
+DB_USER=${DB_USERNAME}
 
 # Locația de backup pe mașina gazdă
 BACKUP_DIR=./postgres-backup
