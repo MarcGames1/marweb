@@ -1,14 +1,5 @@
 import ApiClient from "@/utils/ApiClient";
 
-
-
-
-
-
-
-
-
-
 class Constants {
     public readonly SITE_URL = process.env.FRONTEND_URL
     public readonly SLACK_URL= process.env.SLACK_URL
@@ -27,7 +18,7 @@ class Constants {
         }
     }
     public readonly ContactInfo = {
-        calendly: 'https://calendly.com/alexandru-marcu/consultanta-200-lei',
+        calendly: 'https://book.stripe.com/14k5lr6oS20Pbba5kk',
         whatsapp:"https://wa.me/+40750472447"
     }
     public readonly SocialMedia = {
@@ -38,7 +29,7 @@ class Constants {
     }
     private static instance: Constants;
     private readonly apiClient: ApiClient;
-    public API = process.env.NODE_ENV === 'production' ? 'https://api.marweb.ro' : 'http://localhost:5000';
+    public API = process.env.API_URL || "https://api.marweb.ro"
     private constructor() {
         this.apiClient = new ApiClient(this.API);
     }
