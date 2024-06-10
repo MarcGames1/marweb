@@ -1,11 +1,9 @@
-import {getAllPostsMeta, getPostBySlug} from "@/lib/mdx";
-import path from "path";
+import { getPostBySlug} from "@/lib/mdx";
 const api = Globals.getApiClient()
 
 export const runtime = 'nodejs'
 export const fetchCache = 'force-no-store'
-// export const revalidate = 0
-// export const fetchCache = ""
+
 export const dynamicParams = false
 
 import {H} from "@/components";
