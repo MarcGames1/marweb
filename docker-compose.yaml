@@ -19,11 +19,22 @@ services:
     depends_on:
       - database
     environment:
+      - JWT_SECRET=${JWT_SECRET}
       - DB_NAME=${DB_NAME}
       - DB_HOST=${DB_HOST}
       - DB_PORT=${DB_PORT}
       - DB_USERNAME=${POSTGRES_USER}
       - DB_PASSWORD=${POSTGRES_PASSWORD}
+      - FRONTEND_URL=${FRONTEND_URL}
+      - ADMIN_DASHBOARD_URL=${ADMIN_DASHBOARD_URL}
+      - MAILER_HOST=${MAILER_HOST}
+      - MAILER_PORT=${MAILER_PORT}
+      - MAILER_SECURE=${MAILER_SECURE}
+      - MAILER_USER=${MAILER_USER}
+      - MAILER_PASS={$MAILER_PASS}
+      - MAILER_DEFAULT_FROM=${MAILER_DEFAULT_FROM}
+      - REVALIDATE_SECRET=${REVALIDATE_SECRET}
+      - API_URL=${API_URL}
     networks:
       - marweb
 
