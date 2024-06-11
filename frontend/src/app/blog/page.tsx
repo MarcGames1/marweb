@@ -10,6 +10,7 @@ export const revalidate = 600;
 
 const BlogPage = async () => {
     const blogPosts = await getAllPostsMeta()
+  console.log("Blog Posts=> getAllPostsMeta =>",JSON.stringify(blogPosts))
     return (
 
             <div className="py-12 px-5">

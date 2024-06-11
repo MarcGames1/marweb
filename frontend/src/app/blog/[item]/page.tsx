@@ -10,15 +10,21 @@ import Globals from '@/utils/globals';
 
 
 const getPageContent = async (slug: string) => {
-    return await getPostBySlug(slug)
+    const post = await getPostBySlug(slug)
+    console.log("Blog Post sINGLE=> getPageContent getPostBySlug =>",JSON.stringify(post))
+
+    return post
 
 }
 export async function generateStaticParams() {
     try {
         const slugs :string[]  = await getAllPostsURL()
-        return slugs.map((slug) => ({
-            item: encodeURIComponent(slug),
-        }))
+        return slugs.map((slug) => {
+            console.log(slug)
+            return{
+                item: encodeURIComponent(slug),
+            }
+        })
     }
     catch (error) {
         console.error('Failed to generate static params:', error);
@@ -49,7 +55,7 @@ const SingleBlogPostPage = async ({params}: { params: { item: string } }) => {
     if(!blog) {
         return <h1>No Blog Post Added</h1>
     }
-
+    console.log("Blog Post sINGLE=> getPostBySlug =>",JSON.stringify(blog))
     return (
         <main>
             <div className={'content w-fit block m-auto'}>
