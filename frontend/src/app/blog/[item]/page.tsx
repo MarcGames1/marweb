@@ -1,4 +1,4 @@
-import { getPostBySlug} from "@/lib/mdx";
+import { getAllPostsURL, getPostBySlug } from '@/lib/mdx';
 const api = Globals.getApiClient()
 
 export const runtime = 'nodejs'
@@ -16,11 +16,11 @@ const getPageContent = async (slug: string) => {
 
 }
 export async function generateStaticParams() {
-    const slugs :ApiClientSuccess<string[]> | ApiClientError = await api.get('/published/url')
-    if(slugs instanceof ApiClientError) {return []}
+    const slugs :string[]  = await getAllPostsURL()
 
-    return slugs.data.map((slug) => ({
-        slug
+
+    return slugs.map((slug) => ({
+        item:slug
     }))
 }
 
