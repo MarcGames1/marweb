@@ -7,6 +7,7 @@ import {TextAlignment, TextSize} from "@/components/Typography/H";
 import React from "react";
 
 export const revalidate = 600;
+export const dynamicParams = false
 
 const BlogPage = async () => {
     const blogPosts = await getAllPostsMeta()

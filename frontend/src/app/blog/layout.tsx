@@ -2,6 +2,26 @@ import { SEOInfo } from '@/utils/SeoInfo';
 import Container from '@/components/Container';
 import { Metadata } from 'next';
 import React, { ReactNode } from 'react'
+import { getAllPostsURL } from '@/lib/mdx';
+
+export async function generateStaticParams() {
+  try {
+    const slugs :string[]  = await getAllPostsURL()
+    return slugs.map((slug) => {
+      console.log(slug)
+      return{
+        item: encodeURIComponent(slug),
+      }
+    })
+  }
+  catch (error) {
+    console.error('Failed to generate static params:', error);
+    return [];
+  }
+
+
+
+}
 
 export const metadata: Metadata = new SEOInfo(
   'Blog - MarWeb',
