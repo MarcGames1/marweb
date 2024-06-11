@@ -17,6 +17,7 @@ services:
       - database
     networks:
       - marweb
+      - nestjs
 
   nestjs:
     container_name: backend
