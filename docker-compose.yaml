@@ -15,9 +15,9 @@ services:
       - REVALIDATE_SECRET=${REVALIDATE_SECRET}
     depends_on:
       - database
+      - nestjs
     networks:
       - marweb
-      - nestjs
 
   nestjs:
     container_name: backend
