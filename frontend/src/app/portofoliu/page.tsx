@@ -1,5 +1,5 @@
-import { getAllPortfolioItems, getAllPostsMeta } from '@/lib/mdx';
-;
+import { getAllPortfolioItems } from '@/lib/mdx';
+
 import Link from "next/link";
 import Image from "next/image";
 import {H} from "@/components";
