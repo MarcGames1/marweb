@@ -6,8 +6,8 @@ export const revalidate = 360;
 export const dynamicParams = false
 // @ts-ignore
 export async function generateMetadata({params}) {
-    const blogPost = await getPortfolioDataBySlug(params.item)
-    return blogPost.metadata
+    const post = await getPortfolioDataBySlug(params.item)
+    return post.metadata
 }
 export async function generateStaticParams() {
     const posts = await getAllPortfolioItems()
@@ -30,7 +30,7 @@ const PortfolioItem = async ({params}: { params: { item: string } }) => {
             <div className={'content w-fit block m-auto'}>
                 <div className={'prose dark:prose-invert'}>
                     <H level={1}>Studiu de caz {portfolio.title}</H>
-                    <div>{portfolio.content}</div>
+                    <div dangerouslySetInnerHTML={{ __html: portfolio.content }} />
                 </div>
             </div>
         </main>

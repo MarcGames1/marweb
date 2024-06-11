@@ -17,9 +17,9 @@ export async function generateStaticParams() {
 }
 
 export const metadata: Metadata = new SEOInfo(
-  'Blog - MarWeb',
-  'Blog - MarWeb',
-  '/blog/'
+  'Portofoliu - MarWeb',
+  'portofoliu - MarWeb',
+  '/portofoliu/'
 );
 
 const PortofolioLayout = ({ children }: { children: ReactNode }) => {

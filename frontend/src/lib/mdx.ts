@@ -11,7 +11,7 @@ export const getPostBySlug = async (slug: string) => {
   const res :ApiClientError | ApiClientSuccess<IBlogPost> = await api.get(`/blog-post/published/${slug}`)
   if(res instanceof ApiClientError) {
    console.log("Eroare Server")
-    return undefined;
+    throw res
   }
 
   return new BlogPost(res.data)

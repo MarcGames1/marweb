@@ -1,12 +1,9 @@
 import { getAllPostsURL, getPostBySlug } from '@/lib/mdx';
-
-
-
-
 import {H} from "@/components";
 import Image from 'next/image';
 
-
+export const revalidate = 360;
+export const dynamicParams = false
 
 
 export async function generateStaticParams() {
@@ -33,7 +30,6 @@ export async function generateMetadata({params}) {
 
 try {
     const blog =  await getPostBySlug(params.item)
-    if(!blog){ return {} }
     return blog.metadata
 }
 catch (error) {
@@ -45,25 +41,19 @@ catch (error) {
 
 const SingleBlogPostPage = async ({params}: { params: { item: string } }) => {
     const blog = await getPostBySlug(params.item)
-    if(!blog) {
-        return <h1>No Blog Post Added</h1>
-    }
-    console.log("Blog Post sINGLE=> getPostBySlug =>",JSON.stringify(blog))
+
+
     return (
         <main>
             <div className={'content w-fit block m-auto'}>
                 <div className={'prose dark:prose-invert '}>
                     <div className={'relative'}>
-
                         <div className={`h-[30vh] flex  `}>
                             <Image className={'absolute mix-blend-difference bg-blend-darken opacity-30'} src={blog.thumbnail.url} alt={blog.thumbnail.alt} layout={'fill'} />
                             <H className={'z-20'} level={1}>{blog.title}</H>
                         </div>
                     </div>
-
-
-                    <div dangerouslySetInnerHTML={{ __html: blog.content }}>
-                    </div>
+                    <div dangerouslySetInnerHTML={{ __html: blog.content }}/>
                 </div>
             </div>
         </main>
