@@ -31,7 +31,10 @@ export const metadata: Metadata = new SEOInfo(
 );
 
 const PostLayout = ({ children }: { children: ReactNode }) => {
-  return <>{children}</>
+  return <>
+    <Header />
+    <Container>{children}</Container>
+  </>
 };
 
 export default PostLayout
