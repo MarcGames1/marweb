@@ -5,8 +5,7 @@ export const revalidate = 360;
 
 import {H} from "@/components";
 import Image from 'next/image';
-import { ApiClientError, ApiClientSuccess } from '@/utils/ApiClient';
-import Globals from '@/utils/globals';
+
 
 
 
