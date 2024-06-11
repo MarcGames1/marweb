@@ -18,11 +18,17 @@ export const metadata: Metadata = new SEOInfo(
 );
 export async function generateStaticParams() {
   const slugs :ApiClientSuccess<string[]> | ApiClientError = await api.get('/published/url')
-  if(slugs instanceof ApiClientError) {return []}
+  if(slugs instanceof ApiClientError) {
+    console.log("ERROR in generateStaticParams", slugs.stack)
+    return []}
 
-  return slugs.data.map((slug) => ({
-    slug
-  }))
+  return slugs.data.map((slug) =>
+    {
+      console.log(slug)
+    return { item: slug }
+  }
+
+  )
 }
 const PostLayout = ({ children }: { children: ReactNode }) => {
   return <Container>{children}</Container>
