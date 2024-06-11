@@ -40,15 +40,10 @@ export const   getAllPortfolioItems = async ():Promise<Portfolio[]> => {
 
 
 export const getAllPostsURL = async ():Promise<string[]> =>{
-  const res:ApiClientError | ApiClientSuccess<string[]> = await api.get("/blog-post/published/url")
-  if(res instanceof ApiClientError) {
-    console.log("NU exista articole de blog")
-    return []
-  }
-  return res.data
+  const posts = await getAllPostsMeta()
+  return posts.map(post =>{return post.slug})
 }
 export const   getAllPostsMeta = async ():Promise<BlogPost[]> => {
-  'use server'
    const res :ApiClientError | ApiClientSuccess<IBlogPost[]> = await api.get("/blog-post/published")
     if(res instanceof ApiClientError) {
         console.log("NU exista articole de blog")
