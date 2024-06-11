@@ -1,7 +1,7 @@
 import { getAllPostsURL, getPostBySlug } from '@/lib/mdx';
 
 
-export const revalidate = 360;
+
 
 import {H} from "@/components";
 import Image from 'next/image';
