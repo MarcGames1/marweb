@@ -3,6 +3,7 @@ import Container from '@/components/Container';
 import { Metadata } from 'next';
 import React, { ReactNode } from 'react'
 import { getAllPostsURL } from '@/lib/mdx';
+import Header from '@/components/Header';
 
 export async function generateStaticParams() {
   try {
@@ -30,7 +31,7 @@ export const metadata: Metadata = new SEOInfo(
 );
 
 const PostLayout = ({ children }: { children: ReactNode }) => {
-  return <Container>{children}</Container>
+  return <>{children}</>
 };
 
 export default PostLayout

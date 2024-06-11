@@ -35,7 +35,7 @@ class Portfolio implements Iportfolio {
     this.metaTitle = metaTitle
     this.title = metaTitle
     this.id = id
-    this._url = `${this.constants.SITE_URL}/portofoliu${this.slug}`
+    this._url = `${this.constants.SITE_URL}/portofoliu/${this.slug}`
   }
 
   public get url () {

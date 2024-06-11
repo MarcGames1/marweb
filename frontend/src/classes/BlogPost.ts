@@ -1,7 +1,4 @@
 import { IBlogPost } from '@/declarations/blog';
-import Globals from '@/utils/globals';
-import { IUser } from '@/declarations/user';
-import PictureData from '@/classes/PicItem';
 import BasePost from '@/classes/BasePost';
 import { Ipost } from '@/declarations/Ipost';
 
