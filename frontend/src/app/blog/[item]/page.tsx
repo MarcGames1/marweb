@@ -9,13 +9,7 @@ import { ApiClientError, ApiClientSuccess } from '@/utils/ApiClient';
 import Globals from '@/utils/globals';
 
 
-const getPageContent = async (slug: string) => {
-    const post = await getPostBySlug(slug)
-    console.log("Blog Post sINGLE=> getPageContent getPostBySlug =>",JSON.stringify(post))
 
-    return post
-
-}
 export async function generateStaticParams() {
     try {
         const slugs :string[]  = await getAllPostsURL()
@@ -39,7 +33,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({params}) {
 
 try {
-    const blog =  await getPageContent(params.item)
+    const blog =  await getPostBySlug(params.item)
     if(!blog){ return {} }
     return blog.metadata
 }
