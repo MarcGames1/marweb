@@ -5,6 +5,10 @@ import React, { ReactNode } from 'react'
 import Globals from '@/utils/globals';
 import { ApiClientError, ApiClientSuccess } from '@/utils/ApiClient';
 
+export const revalidate = 360
+export const fetchCache = "force-no-store"
+export const dynamicParams = false
+
 
 const api = Globals.getApiClient()
 export const metadata: Metadata = new SEOInfo(

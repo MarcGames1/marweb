@@ -13,3 +13,7 @@ frontend/public/sitemap.xml
 /frontend/.idea
 /frontend/.idea
 .env
+/postgres-data
+/postgres-data/*
+/postgres-backup/
+/postgres-data/

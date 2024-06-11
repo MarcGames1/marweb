@@ -3,6 +3,7 @@ const api = Globals.getApiClient()
 
 export const runtime = 'nodejs'
 export const fetchCache = 'force-no-store'
+export const revalidate = 360;
 
 export const dynamicParams = false
 
@@ -29,7 +30,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({params}) {
 
     const blog =  await getPageContent(params.item)
-    if(!blog){ return }
+    if(!blog){ return {} }
     return blog.metadata
 }
 

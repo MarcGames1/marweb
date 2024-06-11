@@ -8,7 +8,7 @@ import {TextAlignment, TextSize} from "@/components/Typography/H";
 import React from "react";
 
 
-export const revalidate = 360
+
 export const fetchCache = "force-no-store"
 
 export async function generateStaticParams() {

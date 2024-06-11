@@ -5,12 +5,7 @@ import {H} from "@/components";
 import styles from "@/sections/Servicii/Servicii.module.css";
 import {TextAlignment, TextSize} from "@/components/Typography/H";
 import React from "react";
-import { ApiClientError, ApiClientSuccess } from '@/utils/ApiClient';
 
-
-export const revalidate = 360
-export const fetchCache = "force-no-store"
-export const dynamicParams = false
 
 
 const BlogPage = async () => {
