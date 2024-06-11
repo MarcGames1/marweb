@@ -5,8 +5,6 @@ export const runtime = 'nodejs'
 export const fetchCache = 'force-no-store'
 export const revalidate = 360;
 
-export const dynamicParams = false
-
 import {H} from "@/components";
 import Image from 'next/image';
 import { ApiClientError, ApiClientSuccess } from '@/utils/ApiClient';
