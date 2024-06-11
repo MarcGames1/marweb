@@ -3,7 +3,7 @@ import {H} from "@/components";
 import Image from 'next/image';
 
 export const revalidate = 360;
-export const dynamicParams = false
+export const dynamicParams = true
 
 
 export async function generateStaticParams() {

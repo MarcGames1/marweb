@@ -3,7 +3,7 @@ import { H } from '@/components';
 import Portfolio from '@/classes/Portfolio';
 
 export const revalidate = 360;
-export const dynamicParams = false
+export const dynamicParams = true
 // @ts-ignore
 export async function generateMetadata({params}) {
     const post = await getPortfolioDataBySlug(params.item)
