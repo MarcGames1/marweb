@@ -14,20 +14,33 @@ const getPageContent = async (slug: string) => {
 
 }
 export async function generateStaticParams() {
-    const slugs :string[]  = await getAllPostsURL()
+    try {
+        const slugs :string[]  = await getAllPostsURL()
+        return slugs.map((slug) => ({
+            item: encodeURIComponent(slug),
+        }))
+    }
+    catch (error) {
+        console.error('Failed to generate static params:', error);
+        return [];
+    }
 
 
-    return slugs.map((slug) => ({
-        item: encodeURIComponent(slug),
-    }))
+
 }
 
 // @ts-ignore
 export async function generateMetadata({params}) {
 
+try {
     const blog =  await getPageContent(params.item)
     if(!blog){ return {} }
     return blog.metadata
+}
+catch (error) {
+    console.error('Failed to generate metadata:', error);
+    return {};
+}
 }
 
 
@@ -39,7 +52,6 @@ const SingleBlogPostPage = async ({params}: { params: { item: string } }) => {
 
     return (
         <main>
-
             <div className={'content w-fit block m-auto'}>
                 <div className={'prose dark:prose-invert '}>
                     <div className={'relative'}>
