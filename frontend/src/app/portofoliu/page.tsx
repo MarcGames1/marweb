@@ -1,6 +1,5 @@
 import { getAllPortfolioItems, getAllPostsMeta } from '@/lib/mdx';
-import path from "path";
-import Container from "@/components/Container";
+;
 import Link from "next/link";
 import Image from "next/image";
 import {H} from "@/components";
@@ -8,10 +7,9 @@ import styles from "@/sections/Servicii/Servicii.module.css";
 import {TextAlignment, TextSize} from "@/components/Typography/H";
 import React from "react";
 
-const mdDir = path.join(process.cwd(), 'src', 'app', 'portofoliu', 'items')
 
-// C:\Users\Alexandru\Documents\GitHub\MarWebBlog\MarWebBlog\frontend\src\app\portofoliu\items
-
+export const revalidate = 360
+export const fetchCache = "force-no-store"
 
 export async function generateStaticParams() {
     const posts = await getAllPortfolioItems()

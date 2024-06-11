@@ -8,7 +8,8 @@ import React from "react";
 import { ApiClientError, ApiClientSuccess } from '@/utils/ApiClient';
 
 
-export const dynamic = 'force-dynamic'
+export const revalidate = 360
+export const fetchCache = "force-no-store"
 export const dynamicParams = false
 
 

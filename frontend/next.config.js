@@ -9,9 +9,8 @@ const withMDX = require('@next/mdx')();
 const nextConfig = {
   images: { formats: ['image/avif', 'image/webp'], remotePatterns: [
       {
-        protocol: 'http',
-        hostname: 'localhost',
-        port: '5000',
+        protocol: 'https',
+        hostname: 'api.marweb.ro',
         pathname: '/**',
       },
     ], },
