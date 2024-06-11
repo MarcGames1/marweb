@@ -2,6 +2,7 @@ version: '3'
 
 services:
   frontend:
+    restart: always
     container_name: frontend
     build: ./
     ports:
@@ -20,6 +21,7 @@ services:
   nestjs:
     container_name: backend
     build: ./marwebBlogNestJs
+    restart: always
     ports:
       - "5000:5000"  # Portul pe care rulează aplicația Nest.js
     volumes:
@@ -49,6 +51,7 @@ services:
 
   admin:
     container_name: Admin
+    restart: always
     build: ./marwebadmin
     ports:
       - "3100:3100"  # Portul pe care rulează aplicația de administrare (poți schimba portul după necesități)
