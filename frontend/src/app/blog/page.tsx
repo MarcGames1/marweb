@@ -6,7 +6,7 @@ import styles from "@/sections/Servicii/Servicii.module.css";
 import {TextAlignment, TextSize} from "@/components/Typography/H";
 import React from "react";
 
-
+export const revalidate = 600;
 
 const BlogPage = async () => {
     const blogPosts = await getAllPostsMeta()

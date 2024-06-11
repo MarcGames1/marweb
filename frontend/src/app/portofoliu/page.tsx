@@ -7,17 +7,11 @@ import styles from "@/sections/Servicii/Servicii.module.css";
 import {TextAlignment, TextSize} from "@/components/Typography/H";
 import React from "react";
 
+export const revalidate = 600;
 
 
-export const fetchCache = "force-no-store"
 
-export async function generateStaticParams() {
-    const posts = await getAllPortfolioItems()
 
-    return posts.map((post) => ({
-        item: post.metadata.alternates.canonical,
-    }))
-}
 
 
 const PortofoliuPage = async () => {

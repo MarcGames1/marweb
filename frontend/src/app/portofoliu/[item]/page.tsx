@@ -1,11 +1,8 @@
-import { getAllPortfolioItems, getAllPostsMeta, getPortfolioDataBySlug } from '@/lib/mdx';
-import {H} from "@/components";
-import { IBlogPost } from '@/declarations/blog';
+import { getAllPortfolioItems, getPortfolioDataBySlug } from '@/lib/mdx';
+import { H } from '@/components';
 import Portfolio from '@/classes/Portfolio';
-import BlogPost from '@/classes/BlogPost';
 
-
-
+export const revalidate = 360;
 
 // @ts-ignore
 export async function generateMetadata({params}) {
@@ -15,15 +12,13 @@ export async function generateMetadata({params}) {
 export async function generateStaticParams() {
     const posts = await getAllPortfolioItems()
 
-    const staticParams =  posts.map((post) => {
+    return posts.map((post) => {
         console.log(post.slug)
 
         return {
             item: encodeURIComponent(post.slug),
         }
     })
-
-    return staticParams
 }
 
 const PortfolioItem = async ({params}: { params: { item: string } }) => {

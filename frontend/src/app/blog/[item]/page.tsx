@@ -1,8 +1,6 @@
 import { getAllPostsURL, getPostBySlug } from '@/lib/mdx';
-const api = Globals.getApiClient()
 
-export const runtime = 'nodejs'
-export const fetchCache = 'force-no-store'
+
 export const revalidate = 360;
 
 import {H} from "@/components";
@@ -20,7 +18,7 @@ export async function generateStaticParams() {
 
 
     return slugs.map((slug) => ({
-        item:slug
+        item: encodeURIComponent(slug),
     }))
 }
 

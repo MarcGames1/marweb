@@ -19,7 +19,7 @@ export const getPostBySlug = async (slug: string) => {
 
 export const getPortfolioDataBySlug = async (slug: string):Promise<Portfolio> => {
 
-  const res :ApiClientError | ApiClientSuccess<Iportfolio> = await api.get(`/portfolio/${slug}`)
+  const res :ApiClientError | ApiClientSuccess<Iportfolio> = await api.get(`/portfolio-item/${slug}`)
   if(res instanceof ApiClientError) {
     toast.error("Eroare Server")
     throw res
