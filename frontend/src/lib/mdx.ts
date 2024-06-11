@@ -29,9 +29,9 @@ export const getPortfolioDataBySlug = async (slug: string):Promise<Portfolio> =>
 }
 
 export const   getAllPortfolioItems = async ():Promise<Portfolio[]> => {
-  const res :ApiClientError | ApiClientSuccess<Iportfolio[]> = await api.get("/portfolio/all")
+  const res :ApiClientError | ApiClientSuccess<Iportfolio[]> = await api.get("/portfolio-item/")
   if(res instanceof ApiClientError) {
-    console.log("NU exista articole de blog")
+    console.log("NU exista Portofoliu")
     return []
   }
   console.log(res.data)
