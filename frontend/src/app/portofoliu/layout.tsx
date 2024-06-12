@@ -12,7 +12,6 @@ export const metadata: Metadata = new SEOInfo(
 
 const PortofoliuLayout = ({ children }: { children: ReactNode }) => {
   return <>
-    <Header />
     <Container>{children}</Container>
   </>
 };
