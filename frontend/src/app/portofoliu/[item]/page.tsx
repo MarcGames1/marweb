@@ -1,6 +1,7 @@
 import { getAllPortfolioItems, getPortfolioDataBySlug } from '@/lib/mdx';
 import { H } from '@/components';
 import Portfolio from '@/classes/Portfolio';
+import Header from '@/components/Header';
 
 
 export const dynamicParams = false;
@@ -13,6 +14,8 @@ const PortfolioItem = async ({params}:Props) => {
     const portfolio:Portfolio = await getPortfolioDataBySlug(params.item)
 
     return (
+      <>
+      <Header />
         <main>
             <div className={'content w-fit block m-auto'}>
                 <div className={'prose dark:prose-invert'}>
@@ -21,6 +24,7 @@ const PortfolioItem = async ({params}:Props) => {
                 </div>
             </div>
         </main>
+      </>
     )
 }
 

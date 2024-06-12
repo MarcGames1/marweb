@@ -2,61 +2,61 @@
 import { getAllPostsURL, getPostBySlug } from '@/lib/mdx';
 import {H} from "@/components";
 import Image from 'next/image';
+import Header from '@/components/Header';
 
-export const dynamicParams = false;
+export const dynamicParams = true;
 type Props = {
     params: { item: string }
 }
 
 
 const SingleBlogPostPage = async ({params}: Props) => {
-
+    console.log("SingleBlogPostPage GETTING POST BY " + params.item + " ...")
     const blog = await getPostBySlug(params.item)
-
+    console.log(JSON.stringify(blog))
     return (
-        <main>
-            <div className={'content w-fit block m-auto'}>
-                <div className={'prose dark:prose-invert '}>
-                    <div className={'relative'}>
-                        <div className={`h-[30vh] flex  `}>
-                            <Image className={'absolute mix-blend-difference bg-blend-darken opacity-30'} src={blog.thumbnail.url} alt={blog.thumbnail.alt} layout={'fill'} />
-                            <H className={'z-20'} level={1}>{blog.title}</H>
-                        </div>
-                    </div>
-                    <div dangerouslySetInnerHTML={{ __html: blog.content }}/>
-                </div>
-            </div>
-        </main>
+      <>
+          <Header/>
+          <main>
+              <div className={'content w-fit block m-auto'}>
+                  <div className={'prose dark:prose-invert '}>
+                      <div className={'relative'}>
+                          <div className={`h-[30vh] flex  `}>
+                              <Image className={'absolute mix-blend-difference bg-blend-darken opacity-30'}
+                                     src={blog.thumbnail.url} alt={blog.thumbnail.alt} layout={'fill'} />
+                              <H className={'z-20'} level={1}>{blog.title}</H>
+                          </div>
+                      </div>
+                      <div dangerouslySetInnerHTML={{ __html: blog.content }} />
+                  </div>
+              </div>
+          </main>
+      </>
     )
 }
 
 export async function generateStaticParams() {
     try {
-        const slugs :string[]  = await getAllPostsURL()
+        const slugs: string[] = await getAllPostsURL();
         return slugs.map((slug) => {
-            console.log(slug)
-            return{
+            console.log(slug);
+            return {
                 item: encodeURIComponent(slug),
-            }
-        })
-    }
-    catch (error) {
+            };
+        });
+    } catch (error) {
         console.error('Failed to generate static params:', error);
         return [];
     }
-
-
-
 }
 
 // @ts-ignore
-export async function generateMetadata({params}) {
+export async function generateMetadata({ params }) {
 
     try {
-        const blog =  await getPostBySlug(params.item)
-        return blog.metadata
-    }
-    catch (error) {
+        const blog = await getPostBySlug(params.item);
+        return blog.metadata;
+    } catch (error) {
         console.error('Failed to generate metadata:', error);
         return {};
     }
