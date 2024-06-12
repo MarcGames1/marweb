@@ -8,6 +8,7 @@ RUN cd /app/frontend
 RUN rm -rf node_modules .idea .next
 
 RUN npm install --loglevel verbose
-RUN npm run build --loglevel verbose
-
+RUN npm run build --loglevel verbose > ./npm-build.log
+RUN cat ./npm-build.log
+RUN pwd
 CMD ["npm", "start"]
