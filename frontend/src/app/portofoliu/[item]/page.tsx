@@ -1,4 +1,4 @@
-import {  getPortfolioDataBySlug } from '@/lib/mdx';
+import { getAllPortfolioItems, getPortfolioDataBySlug } from '@/lib/mdx';
 import { H } from '@/components';
 import Portfolio from '@/classes/Portfolio';
 
@@ -19,4 +19,22 @@ const PortfolioItem = async ({params}: { params: { item: string } }) => {
         </main>
     )
 }
+
+export async function generateMetadata({params}) {
+  const post = await getPortfolioDataBySlug(params.item)
+  return post.metadata
+}
+export async function generateStaticParams() {
+  const posts = await getAllPortfolioItems()
+
+  return posts.map((post) => {
+    console.log(post.slug)
+
+    return {
+      item: encodeURIComponent(post.slug),
+    }
+  })
+}
+
+
 export default PortfolioItem
