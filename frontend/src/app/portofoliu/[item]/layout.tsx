@@ -2,10 +2,11 @@
 import React, { ReactNode } from 'react'
 import { getAllPortfolioItems } from '@/lib/mdx';
 
-export const runtime = 'nodejs'
-
-export const dynamicParams = true
-
+// @ts-ignore
+export async function generateMetadata({params}) {
+  const post = await getPortfolioDataBySlug(params.item)
+  return post.metadata
+}
 export async function generateStaticParams() {
   const posts = await getAllPortfolioItems()
 
