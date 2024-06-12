@@ -29,7 +29,7 @@ class Constants {
     }
     private static instance: Constants;
     private readonly apiClient: ApiClient;
-    public API = process.env.API || "https://api.marweb.ro"
+    public API = String(process.env.API)
     private constructor() {
         this.apiClient = new ApiClient(this.API);
     }
