@@ -1,6 +1,6 @@
 
 import React, { ReactNode } from 'react'
-import { getAllPortfolioItems } from '@/lib/mdx';
+import { getAllPortfolioItems, getPortfolioDataBySlug } from '@/lib/mdx';
 
 // @ts-ignore
 export async function generateMetadata({params}) {

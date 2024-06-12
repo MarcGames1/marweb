@@ -1,4 +1,4 @@
-import { getAllPortfolioItems, getPortfolioDataBySlug } from '@/lib/mdx';
+import {  getPortfolioDataBySlug } from '@/lib/mdx';
 import { H } from '@/components';
 import Portfolio from '@/classes/Portfolio';
 
