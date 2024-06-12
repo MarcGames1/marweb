@@ -1,13 +1,17 @@
+
 import { getAllPostsURL, getPostBySlug } from '@/lib/mdx';
 import {H} from "@/components";
 import Image from 'next/image';
 
+export const dynamicParams = false;
+type Props = {
+    params: { item: string }
+}
 
 
+const SingleBlogPostPage = async ({params}: Props) => {
 
-const SingleBlogPostPage = async ({params}: { params: { item: string } }) => {
     const blog = await getPostBySlug(params.item)
-
 
     return (
         <main>

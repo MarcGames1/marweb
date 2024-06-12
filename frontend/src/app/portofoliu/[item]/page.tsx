@@ -2,6 +2,8 @@ import { getAllPortfolioItems, getPortfolioDataBySlug } from '@/lib/mdx';
 import { H } from '@/components';
 import Portfolio from '@/classes/Portfolio';
 
+
+export const dynamicParams = false;
 type Props = {
   params: { item: string }
 }
