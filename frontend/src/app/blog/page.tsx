@@ -6,23 +6,7 @@ import styles from "@/sections/Servicii/Servicii.module.css";
 import {TextAlignment, TextSize} from "@/components/Typography/H";
 import React from "react";
 
-export const revalidate = 600;
-export const dynamicParams = true
-export async function generateStaticParams() {
-  try {
-    const slugs :string[]  = await getAllPostsURL()
-    return slugs.map((slug) => {
-      console.log(slug)
-      return{
-        item: encodeURIComponent(slug),
-      }
-    })
-  }
-  catch (error) {
-    console.error('Failed to generate static params:', error);
-    return [];
-  }
-}
+
 const BlogPage = async () => {
     const blogPosts = await getAllPostsMeta()
   console.log("Blog Posts=> getAllPostsMeta =>",JSON.stringify(blogPosts))
