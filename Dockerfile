@@ -7,7 +7,7 @@ WORKDIR /app/frontend/
 RUN cd /app/frontend
 RUN rm -rf node_modules .idea .next
 
-RUN npm install
-RUN npm run build
+RUN npm install --loglevel verbose
+RUN npm run build --loglevel verbose
 
 CMD ["npm", "start"]
