@@ -16,7 +16,6 @@ const SingleBlogPostPage = async ({params}: Props) => {
     console.log(JSON.stringify(blog))
     return (
       <>
-          <Header/>
           <main>
               <div className={'content w-fit block m-auto'}>
                   <div className={'prose dark:prose-invert '}>
