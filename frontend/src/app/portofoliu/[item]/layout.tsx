@@ -1,7 +1,10 @@
-import { SEOInfo } from '@/utils/SeoInfo';
-import { Metadata } from 'next';
+
 import React, { ReactNode } from 'react'
-import { getAllPortfolioItems, getAllPostsURL } from '@/lib/mdx';
+import { getAllPortfolioItems } from '@/lib/mdx';
+
+export const runtime = 'nodejs'
+
+export const dynamicParams = true
 
 export async function generateStaticParams() {
   const posts = await getAllPortfolioItems()
@@ -15,11 +18,7 @@ export async function generateStaticParams() {
   })
 }
 
-export const metadata: Metadata = new SEOInfo(
-  'Portofoliu - MarWeb',
-  'portofoliu - MarWeb',
-  '/portofoliu/'
-);
+
 
 const PortofolioLayout = ({ children }: { children: ReactNode }) => {
   return <>{children}</>

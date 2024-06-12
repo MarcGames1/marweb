@@ -2,10 +2,7 @@ import { getAllPortfolioItems, getPortfolioDataBySlug } from '@/lib/mdx';
 import { H } from '@/components';
 import Portfolio from '@/classes/Portfolio';
 
-export const runtime = 'nodejs'
 
-export const revalidate = 360;
-export const dynamicParams = true
 // @ts-ignore
 export async function generateMetadata({params}) {
     const post = await getPortfolioDataBySlug(params.item)
