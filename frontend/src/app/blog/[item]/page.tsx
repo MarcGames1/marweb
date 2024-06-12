@@ -6,37 +6,6 @@ export const revalidate = 360;
 export const dynamicParams = true
 
 
-export async function generateStaticParams() {
-    try {
-        const slugs :string[]  = await getAllPostsURL()
-        return slugs.map((slug) => {
-            console.log(slug)
-            return{
-                item: encodeURIComponent(slug),
-            }
-        })
-    }
-    catch (error) {
-        console.error('Failed to generate static params:', error);
-        return [];
-    }
-
-
-
-}
-
-// @ts-ignore
-export async function generateMetadata({params}) {
-
-try {
-    const blog =  await getPostBySlug(params.item)
-    return blog.metadata
-}
-catch (error) {
-    console.error('Failed to generate metadata:', error);
-    return {};
-}
-}
 
 
 const SingleBlogPostPage = async ({params}: { params: { item: string } }) => {
@@ -59,4 +28,37 @@ const SingleBlogPostPage = async ({params}: { params: { item: string } }) => {
         </main>
     )
 }
+
+export async function generateStaticParams() {
+    try {
+        const slugs :string[]  = await getAllPostsURL()
+        return slugs.map((slug) => {
+            console.log(slug)
+            return{
+                item: encodeURIComponent(slug),
+            }
+        })
+    }
+    catch (error) {
+        console.error('Failed to generate static params:', error);
+        return [];
+    }
+
+
+
+}
+
+// @ts-ignore
+export async function generateMetadata({params}) {
+
+    try {
+        const blog =  await getPostBySlug(params.item)
+        return blog.metadata
+    }
+    catch (error) {
+        console.error('Failed to generate metadata:', error);
+        return {};
+    }
+}
+
 export default SingleBlogPostPage
