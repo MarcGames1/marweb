@@ -2,9 +2,11 @@ import { getAllPortfolioItems, getPortfolioDataBySlug } from '@/lib/mdx';
 import { H } from '@/components';
 import Portfolio from '@/classes/Portfolio';
 
+type Props = {
+  params: { item: string }
+}
 
-
-const PortfolioItem = async ({params}: { params: { item: string } }) => {
+const PortfolioItem = async ({params}:Props) => {
 
     const portfolio:Portfolio = await getPortfolioDataBySlug(params.item)
 
@@ -20,7 +22,7 @@ const PortfolioItem = async ({params}: { params: { item: string } }) => {
     )
 }
 
-export async function generateMetadata({params}) {
+export async function generateMetadata({params}:Props) {
   const post = await getPortfolioDataBySlug(params.item)
   return post.metadata
 }
