@@ -2,9 +2,6 @@ import { getAllPostsURL, getPostBySlug } from '@/lib/mdx';
 import {H} from "@/components";
 import Image from 'next/image';
 
-export const revalidate = 360;
-export const dynamicParams = true
-
 
 
 
