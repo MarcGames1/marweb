@@ -5,10 +5,8 @@ import { IBlogPost } from '@/declarations/blog';
 import BlogPost from '@/classes/BlogPost';
 import Portfolio from '@/classes/Portfolio';
 import { Iportfolio } from '@/declarations/Iportfolio';
-import { unstable_noStore as noStore } from 'next/cache';
 const api = Globals.getApiClient()
 export const getPostBySlug = async (slug: string) => {
-  noStore();
   const res :ApiClientError | ApiClientSuccess<IBlogPost> = await api.get(`/blog-post/published/${slug}`)
   if(res instanceof ApiClientError) {
    console.log("Eroare Server")
@@ -19,7 +17,7 @@ export const getPostBySlug = async (slug: string) => {
 }
 
 export const getPortfolioDataBySlug = async (slug: string):Promise<Portfolio> => {
-  noStore();
+
   const res :ApiClientError | ApiClientSuccess<Iportfolio> = await api.get(`/portfolio-item/${slug}`)
   if(res instanceof ApiClientError) {
     toast.error("Eroare Server")
@@ -31,7 +29,7 @@ export const getPortfolioDataBySlug = async (slug: string):Promise<Portfolio> =>
 
 export const   getAllPortfolioItems = async ():Promise<Portfolio[]> => {
  try {
-   noStore();
+
    const res :ApiClientError | ApiClientSuccess<Iportfolio[]> = await api.get("/portfolio-item")
    if(res instanceof ApiClientError) {
     throw res
@@ -51,7 +49,7 @@ export const getAllPostsURL = async ():Promise<string[]> =>{
   return posts.map(post =>{return post.slug})
 }
 export const   getAllPostsMeta = async ():Promise<BlogPost[]> => {
-  noStore();
+
    const res :ApiClientError | ApiClientSuccess<IBlogPost[]> = await api.get("/blog-post/published")
     if(res instanceof ApiClientError) {
         console.log("NU exista articole de blog")
