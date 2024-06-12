@@ -9,16 +9,17 @@ echo "Updating submodules..."
 git submodule update --init --recursive
 
 # Oprește containerul Docker pentru frontend
-echo "Stopping Docker container 'frontend'..."
-docker stop frontend
+echo "Stopping Docker container 'admin'..."
+cd ..
+docker stop Admin
 
 # Elimină containerul Docker pentru frontend
 echo "Removing Docker container 'frontend'..."
-docker rm frontend
+docker rm Admin
 
 # Elimină imaginea Docker pentru frontend
 echo "Removing Docker image 'marweb-frontend'..."
-docker rmi marweb-frontend
+docker rmi marweb-admin
 
 docker system prune
 

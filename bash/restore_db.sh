@@ -1,5 +1,5 @@
 #!/bin/bash
-
+cd ..
 # Numele containerului PostgreSQL
 CONTAINER_NAME=marweb_database
 
@@ -8,7 +8,7 @@ DB_NAME=${DB_NAME}
 DB_USER=${DB_USERNAME}
 
 # Locația de backup pe mașina gazdă
-BACKUP_DIR=./postgres-backup
+BACKUP_DIR=./backup/postgres-backup
 BACKUP_FILE=$BACKUP_DIR/backup.sql
 
 # Verifică dacă fișierul de backup există

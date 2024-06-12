@@ -8,7 +8,7 @@ DB_NAME=${POSTGRES_DB}
 DB_USER=${POSTGRES_USER}
 
 # Locația de backup pe mașina gazdă
-BACKUP_DIR=./postgres-backup
+BACKUP_DIR=./backup/postgres-backup
 BACKUP_FILE=$BACKUP_DIR/backup.sql
 
 # Asigură-te că directorul de backup există

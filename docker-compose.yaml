@@ -26,8 +26,7 @@ services:
     ports:
       - "5000:5000"  # Portul pe care rulează aplicația Nest.js
     volumes:
-      - ./postgres-data:/var/lib/postgresql/data
-      - ./public_files_backup:/backup  # acesta este volumul pentru backup
+      - ./public:/app/src/public  # montează directorul public de pe gazdă în dist/public în container
     depends_on:
       - database
     environment:
@@ -47,6 +46,7 @@ services:
       - MAILER_DEFAULT_FROM=${MAILER_DEFAULT_FROM}
       - REVALIDATE_SECRET=${REVALIDATE_SECRET}
       - API_URL=${API_URL}
+      - ADMIN_FRONTEND=${ADMIN_FRONTEND}
     networks:
       - marweb
 
@@ -71,8 +71,8 @@ services:
     ports:
        - "5433:5432"  # Portul 5433 al gazdei asociat cu portul 5432 al containerului PostgreSQL
     volumes:
-      - ./postgres-data:/var/lib/postgresql/data
-      - ./postgres-backup:/docker-entrypoint-initdb.d
+      - ./database/postgres-data:/var/lib/postgresql/data
+      - ./backup/postgres-backup:/docker-entrypoint-initdb.d
     networks:
       - marweb
 

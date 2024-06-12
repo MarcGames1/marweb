@@ -1,5 +1,5 @@
 #!/bin/bash
-
+cd ..
 # Execută un `git pull` pentru a actualiza repository-ul
 echo "Pulling latest changes from Git repository..."
 git pull origin main
@@ -9,16 +9,16 @@ echo "Updating submodules..."
 git submodule update --init --recursive
 
 # Oprește containerul Docker pentru frontend
-echo "Stopping Docker container 'admin'..."
-docker stop backend
+echo "Stopping Docker container 'frontend'..."
+docker stop frontend
 
 # Elimină containerul Docker pentru frontend
 echo "Removing Docker container 'frontend'..."
-docker rm backend
+docker rm frontend
 
 # Elimină imaginea Docker pentru frontend
 echo "Removing Docker image 'marweb-frontend'..."
-docker rmi marweb-nestjs
+docker rmi marweb-frontend
 
 docker system prune
 
