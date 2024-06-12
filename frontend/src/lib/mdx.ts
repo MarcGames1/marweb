@@ -29,13 +29,18 @@ export const getPortfolioDataBySlug = async (slug: string):Promise<Portfolio> =>
 }
 
 export const   getAllPortfolioItems = async ():Promise<Portfolio[]> => {
-  const res :ApiClientError | ApiClientSuccess<Iportfolio[]> = await api.get("/portfolio-item/")
-  if(res instanceof ApiClientError) {
-    console.log("NU exista Portofoliu")
-    return []
-  }
-  console.log(res.data)
-  return res.data.map((post:Iportfolio) => new Portfolio(post))
+ try {
+   const res :ApiClientError | ApiClientSuccess<Iportfolio[]> = await api.get("/portfolio-item")
+   if(res instanceof ApiClientError) {
+    throw res
+   }
+
+   return res.data.map((post:Iportfolio) => new Portfolio(post))
+ }
+ catch (e) {
+   console.log(JSON.stringify(e))
+   return []
+ }
 }
 
 

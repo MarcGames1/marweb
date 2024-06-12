@@ -49,6 +49,7 @@ class ApiClient {
     }
 
     get(url: string, config = {}) {
+        console.log("Get ",this.baseUrl + url,)
         return this.request({
             ...config,
             method: 'get',

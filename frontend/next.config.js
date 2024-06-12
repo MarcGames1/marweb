@@ -13,6 +13,11 @@ const nextConfig = {
         hostname: 'api.marweb.ro',
         pathname: '/**',
       },
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+        pathname: '/**',
+      },
     ], },
   pageExtensions: ['mdx', 'ts', 'tsx'],
   async redirects() {

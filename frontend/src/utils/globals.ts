@@ -29,7 +29,7 @@ class Constants {
     }
     private static instance: Constants;
     private readonly apiClient: ApiClient;
-    public API = String(process.env.API)
+    public API = String(process.env.NEXT_PUBLIC_API)
     private constructor() {
         this.apiClient = new ApiClient(this.API);
     }
