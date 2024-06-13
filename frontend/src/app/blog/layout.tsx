@@ -8,9 +8,9 @@ import Header from '@/components/Header';
 
 
 export const metadata: Metadata = new SEOInfo(
-  'Portofoliu - MarWeb',
-  'Portofoliu - MarWeb',
-  '/portofoliu/'
+  'Blog - MarWeb',
+  'Blog - MarWeb',
+  '/blog/'
 );
 
 const PostLayout = ({ children }: { children: ReactNode }) => {
