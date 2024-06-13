@@ -20,7 +20,7 @@ const SingleBlogPostPage = async ({params}: Props) => {
               <div className={'content w-fit block m-auto'}>
                   <div className={''}>
                       <div className={'relative'}>
-                          <div className={`h-[30vh] flex  `}>
+                          <div className={`h-[30vh] max-w-full flex relative  `}>
                               <Image className={'absolute dark:mix-blend-difference bg-blend-darken opacity-30'}
                                      src={blog.thumbnail.url} alt={blog.thumbnail.alt} objectFit={'cover'} layout={'fill'} />
                               <H className={'z-20'} level={1}>{blog.title}</H>
