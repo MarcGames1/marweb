@@ -1,6 +1,7 @@
 import ApiClient from "@/utils/ApiClient";
 
 class Constants {
+    public readonly isProduction = process.env.NODE_ENV === "production";
     public readonly SITE_URL = process.env.FRONTEND_URL
     public readonly SLACK_URL= process.env.SLACK_URL
     public readonly dateLegale = {
@@ -29,7 +30,7 @@ class Constants {
     }
     private static instance: Constants;
     private readonly apiClient: ApiClient;
-    public API = String(process.env.NEXT_PUBLIC_API)
+    public API = String(this.isProduction ? "https://api.marweb.ro" : 'http://localhost:5000')
     private constructor() {
         this.apiClient = new ApiClient(this.API);
     }

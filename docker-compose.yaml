@@ -9,6 +9,7 @@ services:
       - "3000:3000"  # Portul pe care rulează aplicația frontend
     environment:
       - NEXT_PUBLIC_API=${NEXT_PUBLIC_API}
+      - API=${NEXT_PUBLIC_API}
       - NEXT_PUBLIC_SLACK_URL=${NEXT_PUBLIC_SLACK_URL}
       - NEXT_PUBLIC_BRAND=${NEXT_PUBLIC_BRAND}
       - NEXT_PUBLIC_FRONTEND_URL=${FRONTEND_URL}
