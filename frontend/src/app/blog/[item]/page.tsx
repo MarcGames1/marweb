@@ -18,15 +18,15 @@ const SingleBlogPostPage = async ({params}: Props) => {
       <>
           <main>
               <div className={'content w-fit block m-auto'}>
-                  <div className={'prose dark:prose-invert '}>
+                  <div className={''}>
                       <div className={'relative'}>
                           <div className={`h-[30vh] flex  `}>
-                              <Image className={'absolute mix-blend-difference bg-blend-darken opacity-30'}
-                                     src={blog.thumbnail.url} alt={blog.thumbnail.alt} layout={'fill'} />
+                              <Image className={'absolute dark:mix-blend-difference bg-blend-darken opacity-30'}
+                                     src={blog.thumbnail.url} alt={blog.thumbnail.alt} objectFit={'cover'} layout={'fill'} />
                               <H className={'z-20'} level={1}>{blog.title}</H>
                           </div>
                       </div>
-                      <div dangerouslySetInnerHTML={{ __html: blog.content }} />
+                      <div className={'prose dark:prose-invert '} dangerouslySetInnerHTML={{ __html: blog.content }} />
                   </div>
               </div>
           </main>
