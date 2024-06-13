@@ -8,7 +8,7 @@ import BenefitsCard from "@/components/BrandBenefits/BenefitsCard";
 
 const BrandBenefits = () => {
   return (
-    <section className="   ">
+    <section className=" my-20 ">
       <div className="container flex lg:flex-row m-auto  flex-col items-center justify-evenly gap-5  p-5  h-fit">
         <BenefitsCard
           beneficiu="Expertiză Remarcabilă în SEO și Google Ads"

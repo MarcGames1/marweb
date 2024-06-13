@@ -16,7 +16,7 @@ const ServiciiSection = ({data}:{data: SectionWithCardsLinkAndPic | SectionWithC
             {data.heading}
           </H>
         </div>
-        <div className={`grid lg:grid-cols-2   p-10 items-start gap-20`}>
+        <div className={`grid lg:grid-cols-2  py-5  lg:px-10 items-start gap-20`}>
           {data.content.map((content) => {
             return (
               <SingleService  key={content.id} content={content} />
