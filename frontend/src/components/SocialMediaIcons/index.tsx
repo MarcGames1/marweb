@@ -42,7 +42,7 @@ export const SocialMediaData: ISocialMediaData = {
 
 const V2 = () => {
   return (
-    <div className="inline-flex gap-5  w-fit  place-items-center">
+    <div className="flex flex-wrap gap-5 justify-items-center items-center self-center  w-fit  place-items-center justify-center">
       {Object.keys(SocialMediaData).map((key: keyof ISocialMediaData) => (
         <Link
           key={String(generateRandomId() + SocialMediaData[key])}
