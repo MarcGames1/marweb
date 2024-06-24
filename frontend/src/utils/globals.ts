@@ -3,7 +3,7 @@ import ApiClient from "@/utils/ApiClient";
 class Constants {
     public readonly isProduction = process.env.NODE_ENV === "production";
     public readonly SITE_URL = process.env.FRONTEND_URL
-    public readonly SLACK_URL= process.env.SLACK_URL
+    public readonly SLACK_URL= process.env.NEXT_PUBLIC_SLACK_URL
     public readonly dateLegale = {
         brand: 'MarWeb',
         site: "marweb.ro",
